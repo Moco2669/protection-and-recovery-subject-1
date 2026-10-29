@@ -15,10 +15,10 @@ Komponente firme [[Fakturis]] po tipu:
 
 | Tip | Komponente |
 |---|---|
-| softverska | web aplikacija, Ubuntu i nginx na aplikacionom serveru, PostgreSQL, GitLab, Windows i Office na poslovnim računarima |
-| hardverska | aplikacioni server, NAS skladišta dokumenata, server za rezervne kopije, laptopovi zaposlenih |
-| mrežna | ruter sa zaštitnim zidom, mrežni preklopnik, Wi-Fi pristupna tačka, kablovske veze |
-| ljudska | Jelena, Stefan, programeri, direktor i knjigovođa |
+| softverska | [[Web aplikacija]], [[Baza podataka]], [[Repozitorijum izvornog koda]], [[Sistem za upravljanje nalozima]], [[Sistem za zapise o radu]] |
+| hardverska | [[Server]] (aplikacioni server, GitLab server), [[Skladište dokumenata]] (NAS), [[Sistem za rezervne kopije]], [[Poslovni računar]] |
+| mrežna | [[Mrežni prolaz]], [[Interna mreža]] |
+| ljudska | [[Zaposleni]]: Jelena, Stefan, programeri, direktor i knjigovođa |
 | fizička | server soba, kancelarija, napajanje |
 
 ## Napomene

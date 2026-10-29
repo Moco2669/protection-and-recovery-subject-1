@@ -8,7 +8,7 @@ sloj: jezgro
 # Injekcija (injection)
 
 ## Definicija
-Injekcija je [[Slabost|slabost]] u kojoj [[Komponenta sistema|komponenta sistema]] ugrađuje ulazne podatke koje može da kontroliše neko drugi u naredbu, upit ili stranicu koju zatim izvršava ili prikazuje, bez razdvajanja podataka od naredbe, pa se delovi ulaza izvršavaju kao deo naredbe.
+Injekcija je [[Ranjivost|ranjivost]] [[Komponenta sistema|komponente sistema]], najčešće [[Web aplikacija|web aplikacije]], u kojoj komponenta ugrađuje ulazne podatke koje može da kontroliše neko drugi u naredbu, upit ili stranicu koju zatim izvršava ili prikazuje, bez razdvajanja podataka od naredbe, pa se delovi ulaza izvršavaju kao deo naredbe.
 
 ## Primer
 Pretraga kupaca u aplikaciji [[Fakturis]] sastavlja upit ovako:

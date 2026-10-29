@@ -18,3 +18,10 @@ Kontraprimer: laptop kupca koji otvara link ka fakturi takođe sadrži fakturu, 
 ## Napomene
 - Podela na komponente je logička. Aplikacija, operativni sistem servera i baza su različite komponente i kada rade na istoj mašini, jer imaju različite uloge, ranjivosti i kontrole.
 - Komponente se grupišu po prirodi u [[Tip komponente sistema|tipove komponenti]].
+- Konkretne komponente opisane u bazi, po celinama iz konteksta [[Fakturis]]:
+  - ljudi i radno okruženje: [[Zaposleni]], [[Poslovni računar]]
+  - mreža i komunikacija: [[Mrežni prolaz]], [[Interna mreža]]
+  - aplikacija i serversko okruženje: [[Server]], [[Web aplikacija]]
+  - čuvanje podataka: [[Baza podataka]], [[Skladište dokumenata]]
+  - razvoj i održavanje: [[Repozitorijum izvornog koda]]
+  - zajedničke funkcije zaštite i podrške: [[Sistem za upravljanje nalozima]], [[Sistem za zapise o radu]], [[Sistem za rezervne kopije]]

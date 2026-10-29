@@ -18,4 +18,14 @@ Kontraprimeri: javna stranica sa cenovnikom dostupna je svima, i to je u skladu 
 ## Napomene
 - Ranjivost nastaje u dizajnu, implementaciji, konfiguraciji ili načinu upotrebe komponente. U Fakturisu: izostanak provere vlasništva fakture je greška dizajna i implementacije, fabrička lozinka rutera greška konfiguracije, a otvaranje priloga bez provere pošiljaoca greška upotrebe.
 - Nedostatak iz kontraprimera sa XML modulom je [[Slabost|slabost]]: ako se modul ponovo uključi, postaće ranjivost.
-- Pregled poznatih ranjivosti Fakturisa nalazi se u beleški konteksta, odeljak *Poznate ranjivosti*.
+- Pregled poznatih ranjivosti Fakturisa nalazi se u beleški konteksta, odeljak *Poznate ranjivosti*. Ranjivosti opisane u bazi, po komponenti na kojoj se najčešće javljaju:
+  - [[Zaposleni]]: [[Podložnost socijalnom inženjeringu]]
+  - [[Poslovni računar]] i [[Mrežni prolaz]]: [[Pogrešna bezbednosna konfiguracija]]
+  - [[Interna mreža]]: [[Nedostatak segmentacije mreže]]
+  - [[Server]]: [[Nezakrpljen softver]]
+  - [[Web aplikacija]]: [[Neispravna kontrola pristupa]], [[Injekcija]], [[Nedovoljna provera autentičnosti podataka]], [[Nekontrolisana učestalost zahteva]]
+  - [[Baza podataka]] i [[Skladište dokumenata]]: [[Prekomerno ovlašćenje]]
+  - [[Repozitorijum izvornog koda]]: [[Ugrađeni pristupni podatak]]
+  - [[Sistem za upravljanje nalozima]]: [[Slaba autentifikacija]]
+  - [[Sistem za zapise o radu]]: [[Nedovoljno beleženje i praćenje]]
+  - [[Sistem za rezervne kopije]]: [[Nezaštićena rezervna kopija]]

@@ -8,13 +8,13 @@ sloj: jezgro
 # Pogrešna bezbednosna konfiguracija (security misconfiguration)
 
 ## Definicija
-Pogrešna bezbednosna konfiguracija je [[Slabost|slabost]] u kojoj su podešavanja [[Komponenta sistema|komponente sistema]], za razliku od njenog dizajna ili koda, postavljena tako da dozvoljavaju više nego što [[Bezbednosni zahtev|bezbednosni zahtevi]] traže.
+Pogrešna bezbednosna konfiguracija je [[Ranjivost|ranjivost]] [[Komponenta sistema|komponente sistema]] u kojoj su njena podešavanja, za razliku od dizajna ili koda, postavljena tako da dozvoljavaju radnje koje [[Bezbednosni zahtev|bezbednosni zahtevi]] ne dozvoljavaju.
 
 ## Primer
 Pogrešne konfiguracije u firmi [[Fakturis]]:
-- administratorski panel rutera dostupan je sa interneta, a lozinka je ostala fabrička;
-- Office na poslovnim računarima pokreće makroe iz dokumenata preuzetih sa interneta;
-- nginx u porukama o greškama prikazuje svoju verziju i putanje fajlova na serveru.
+- administratorski panel [[Mrežni prolaz|mrežnog prolaza]] dostupan je sa interneta na portu 8080, a lozinka je ostala fabrička (`admin`). Svako ko pronađe panel može da promeni pravila zaštitnog zida;
+- Office na [[Poslovni računar|poslovnim računarima]] pokreće makroe iz dokumenata preuzetih sa interneta;
+- nginx na aplikacionom [[Server|serveru]] u porukama o greškama prikazuje svoju verziju i putanje fajlova.
 
 U sva tri slučaja softver radi ispravno. Problem je u tome kako je podešen.
 

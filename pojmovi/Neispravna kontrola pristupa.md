@@ -8,11 +8,11 @@ sloj: jezgro
 # Neispravna kontrola pristupa (broken access control)
 
 ## Definicija
-Neispravna kontrola pristupa je [[Slabost|slabost]] u kojoj [[Komponenta sistema|komponenta sistema]] dozvoljava licu ili procesu radnju nad [[Resurs|resursom]] bez provere, ili uz pogrešnu proveru, da li mu [[Bezbednosni zahtev|bezbednosni zahtevi]] tu radnju dozvoljavaju.
+Neispravna kontrola pristupa je [[Ranjivost|ranjivost]] [[Komponenta sistema|komponente sistema]], najčešće [[Web aplikacija|web aplikacije]], u kojoj komponenta dozvoljava licu ili procesu radnju nad [[Resurs|resursom]] bez provere, ili uz pogrešnu proveru, da li mu [[Bezbednosni zahtev|bezbednosni zahtevi]] tu radnju dozvoljavaju.
 
 ## Primer
-Adresa `/api/fakture/{id}` aplikacije [[Fakturis]] proverava samo da li je korisnik prijavljen, ali ne i da li faktura pripada njemu. Brojevi faktura idu redom, pa korisnik koji promeni broj u adresi čita tuđe fakture. Ovaj oblik slabosti, gde je dovoljno promeniti identifikator objekta u zahtevu, naziva se nebezbedna direktna referenca na objekat (insecure direct object reference, IDOR).
+Adresa `/api/fakture/{id}` aplikacije [[Fakturis]] proverava samo da li je korisnik prijavljen, ali ne i da li faktura pripada njemu. Brojevi faktura idu redom, pa korisnik koji promeni broj u adresi čita tuđe fakture. Ovaj oblik ranjivosti, gde je dovoljno promeniti identifikator objekta u zahtevu, naziva se nebezbedna direktna referenca na objekat (insecure direct object reference, IDOR).
 
 ## Napomene
 - Prijava utvrđuje ko je korisnik, a kontrola pristupa šta taj korisnik sme. Aplikacija iz primera ispravno prijavljuje korisnika, ali ne proverava šta sme.
-- Prema OWASP Top 10:2025, ovo je najzastupljenija kategorija slabosti web aplikacija.
+- Prema OWASP Top 10:2025, ovo je najzastupljenija kategorija [[Slabost|slabosti]] web aplikacija.
