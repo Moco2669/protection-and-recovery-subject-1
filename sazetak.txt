@@ -1,0 +1,45 @@
+Posmatramo informacioni sistem zamišljene firme koja razvija i koristi sopstvenu web aplikaciju. Aplikaciji pristupaju spoljni korisnici i ovlašćeni zaposleni, ona čuva korisničke podatke i poslovne dokumente i razmenjuje podatke sa jednim spoljnim servisom.
+
+Glavni resursi koje pratimo su korisnički podaci, poslovni dokumenti i izvorni kod aplikacije. Prateći resursi su podešavanja sistema, evidencije naloga i dozvola, zapisi o radu i rezervne kopije. Resurse razlikujemo od komponenti u kojima se čuvaju, obrađuju ili kroz koje se prenose.
+
+Sistem delimo na sledeće celine i konkretne komponente:
+
+**1. Ljudi i radno okruženje**
+- Zaposleni koji obrađuje korisničke zahteve i radi sa podacima i dokumentima.
+- Poslovni računar sa operativnim sistemom i programima potrebnim za rad.
+- U okviru ljudi razlikujemo uloge zaposlenog, administratora i programera.
+
+**2. Mreža i komunikacija**
+- Mrežni prolaz firme — ruter i zaštitni zid koji povezuju firmu sa internetom i ograničavaju komunikaciju.
+- Interna mreža — mrežni preklopnik, Wi-Fi pristupna tačka i veze između uređaja.
+
+**3. Aplikacija i serversko okruženje**
+- Server sa operativnim sistemom na kojem se aplikacija izvršava.
+- Poslovna web aplikacija koja prima zahteve, obrađuje podatke i omogućava poslovne funkcije.
+- Veza sa spoljnim servisom posmatra se kao deo aplikacije, kroz podatke koje razmenjuje i dozvole koje koristi.
+
+**4. Čuvanje podataka**
+- Sistem baze podataka u kojem se čuvaju korisnički i poslovni podaci.
+- Zajedničko skladište poslovnih dokumenata, poput ugovora, izveštaja i drugih datoteka.
+
+**5. Razvoj i održavanje**
+- Repozitorijum izvornog koda koji čuva kod i istoriju izmena.
+- Uz njega prikazujemo proveru izmena u testnom okruženju i objavljivanje novih verzija aplikacije.
+
+**6. Zajedničke funkcije zaštite i podrške**
+- Sistem za upravljanje korisničkim nalozima i pravima pristupa.
+- Sistem za prikupljanje i čuvanje zapisa o radu.
+- Sistem za izradu i čuvanje rezervnih kopija podataka i važnih podešavanja.
+
+Glavne veze u sistemu su:
+- Zaposleni preko poslovnog računara i interne mreže pristupa aplikaciji i dokumentima.
+- Spoljni korisnik preko interneta pristupa web aplikaciji.
+- Aplikacija čita i menja podatke u bazi, koristi skladište dokumenata i komunicira sa spoljnim servisom.
+- Programeri čuvaju izmene u repozitorijumu, proveravaju ih i objavljuju novu verziju aplikacije.
+- Upravljanje nalozima, praćenje rada i rezervne kopije podržavaju više komponenti sistema.
+
+Spoljni korisnik sa svojim uređajem i spoljni servis nalaze se izvan granice sistema firme. Prostorije, oprema i napajanje čine fizičko okruženje sistema. Aplikacija, serveri, baza i rezervne kopije mogu biti smešteni lokalno ili u oblaku; oblak sam po sebi ne predstavlja dodatnu komponentu bez određene uloge.
+
+Ova podela je logička: aplikacija, server i baza imaju različite uloge čak i kada se nalaze na istoj fizičkoj mašini. Slično tome, upravljanje nalozima ili praćenje rada ne moraju biti zasebni proizvodi da bismo ih izdvojili kao funkcionalne komponente.
+
+Za svaku komponentu povezujemo resurs koji se u njoj nalazi, bezbednosni zahtev, moguću pretnju, ranjivost i odgovarajuću kontrolu. Na primer: korisnički podaci su resurs, web aplikacija je komponenta koja ih obrađuje, zahtev je da korisnik vidi samo svoje podatke, ranjivost je izostanak provere prava pristupa, a kontrola je provera dozvole pre vraćanja svakog zapisa.
