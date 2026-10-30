@@ -6,7 +6,7 @@ izvor: 'Nastavna formulacija prema svrsi kontrole; izvor za primer oporavka: CIS
 # Korektivna kontrola (Corrective control)
 
 ## Definicija
-Korektivna kontrola je bezbednosna mera čija je osnovna svrha da ispravi utvrđeni problem, otkloni njegove posledice ili pomogne vraćanju sistema u ispravno stanje. Može se primeniti posle otkrivanja greške, zloupotrebe ili drugog incidenta.
+Korektivna kontrola je bezbednosna kontrola čija je osnovna svrha da ispravi utvrđeni problem, otkloni njegove posledice ili pomogne vraćanju sistema u ispravno stanje. Može se primeniti posle otkrivanja greške, zloupotrebe ili drugog incidenta.
 
 ## Primer
 Kompromitovan nalog briše poslovne dokumente iz zajedničkog skladišta. Nakon ograničavanja incidenta, firma pokreće vraćanje dokumenata.

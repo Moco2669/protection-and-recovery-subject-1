@@ -6,7 +6,7 @@ izvor: 'Nastavna formulacija prema svrsi kontrole; izvor za primer: CIS Controls
 # Detektivna kontrola (Detective control)
 
 ## Definicija
-Detektivna kontrola je bezbednosna mera čija je osnovna svrha da otkrije neželjeni događaj, pokušaj narušavanja bezbednosti ili njegove tragove. Omogućava da odgovorna osoba sazna za problem i pokrene proveru i odgovarajuće postupanje.
+Detektivna kontrola je bezbednosna kontrola čija je osnovna svrha da otkrije neželjeni događaj, pokušaj narušavanja bezbednosti ili njegove tragove. Omogućava da odgovorna osoba sazna za problem i pokrene proveru i odgovarajuće postupanje.
 
 ## Primer
 Napadač pokušava veliki broj prijava na nalog zaposlenog.

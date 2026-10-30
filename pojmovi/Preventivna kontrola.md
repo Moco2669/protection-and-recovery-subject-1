@@ -6,7 +6,7 @@ izvor: 'Nastavna formulacija prema svrsi kontrole; izvor za primer: CIS Controls
 # Preventivna kontrola (Preventive control)
 
 ## Definicija
-Preventivna kontrola je bezbednosna mera čija je osnovna svrha da spreči neželjenu radnju ili smanji mogućnost njenog nastanka. Deluje pre nego što se radnja ostvari, na primer proverom dozvole ili ograničavanjem dostupnih funkcija.
+Preventivna kontrola je bezbednosna kontrola čija je osnovna svrha da spreči neželjenu radnju ili smanji mogućnost njenog nastanka. Deluje pre nego što se radnja ostvari, na primer proverom dozvole ili ograničavanjem dostupnih funkcija.
 
 ## Primer
 Spoljni korisnik menja oznaku zapisa u zahtevu poslovnoj web aplikaciji i pokušava da pročita tuđe podatke.

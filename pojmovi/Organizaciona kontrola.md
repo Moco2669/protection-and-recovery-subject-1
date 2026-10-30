@@ -6,7 +6,7 @@ izvor: 'Najbliža šira oblast: NIST CSRC Glossary — Management controls, http
 # Organizaciona kontrola (Organizational control)
 
 ## Definicija
-Organizaciona kontrola je bezbednosna mera sprovedena kroz pravila, procedure, raspodelu odgovornosti i nadzor njihovog izvršavanja. Određuje ko šta radi, pod kojim uslovima i uz čije odobrenje.
+Organizaciona kontrola je bezbednosna kontrola sprovedena kroz pravila, procedure, raspodelu odgovornosti i nadzor njihovog izvršavanja. Određuje ko šta radi, pod kojim uslovima i uz čije odobrenje.
 
 ## Primer
 Firma uvodi novu verziju poslovne web aplikacije.

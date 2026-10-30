@@ -6,7 +6,7 @@ izvor: 'NIST CSRC Glossary — Technical controls; definicija iz FIPS 200: https
 # Tehnička kontrola (Technical control)
 
 ## Definicija
-Tehnička kontrola je bezbednosna mera koja se prvenstveno sprovodi mehanizmima softvera, hardvera ili firmvera. Sistem izvršava proveru, ograničenje ili drugu zaštitnu funkciju prema podešavanjima i pravilima.
+Tehnička kontrola je bezbednosna kontrola koja se prvenstveno sprovodi mehanizmima softvera, hardvera ili firmvera. Sistem izvršava proveru, ograničenje ili drugu zaštitnu funkciju prema podešavanjima i pravilima.
 
 ## Primer
 Zaštitni zid firme ograničava pristup internim servisima sa interneta.
