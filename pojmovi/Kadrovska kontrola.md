@@ -6,7 +6,7 @@ izvor: 'Najbliže oblasti: NIST SP 800-53 Rev. 5, porodice PS — Personnel Secu
 # Kadrovska kontrola (Personnel security control)
 
 ## Definicija
-Kadrovska kontrola je bezbednosna kontrola usmerena na zaposlene, njihove odgovornosti, osposobljenost i postupanje tokom dolaska, rada, promene uloge i odlaska iz firme. Smanjuje rizike koji nastaju zbog ljudske greške, nepoznavanja pravila ili zloupotrebe poverenja.
+Kadrovska kontrola je bezbednosna kontrola usmerena na zaposlene, njihove odgovornosti, osposobljenost i postupanje tokom dolaska, rada, promene uloge i odlaska iz firme. Smanjuje mogućnost da zaposleni greškom ili zloupotrebom naruši bezbednosno svojstvo resursa koji nastaju zbog ljudske greške, nepoznavanja pravila ili zloupotrebe poverenja.
 
 ## Primer
 Zaposleni dobija poruku u kojoj se od njega traži da poslovni dokument pošalje na novu adresu.

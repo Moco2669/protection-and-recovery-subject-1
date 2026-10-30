@@ -23,5 +23,5 @@ Zaposleni koristi zajedničko skladište poslovnih dokumenata.
 - Provera dozvole je [[Tehnička kontrola|tehnička]] i [[Preventivna kontrola|preventivna kontrola]]. Odobravanje prava je organizaciona mera, a odlazak zaposlenog povezuje je sa kadrovskim postupkom.
 - Autentifikacija proverava identitet; autorizacija proverava dozvoljene radnje. Uspešna prijava ne daje pristup svim podacima.
 - Prava ograničavamo i nalogu aplikacije u bazi, spoljnom servisu, repozitorijumu i kopijama.
-- [[Evidentiranje i praćenje rada]] omogućava pregled korišćenja prava.
+- [[Sistem za zapise o radu]] je komponenta koja čuva zapise o pristupu i omogućava pregled korišćenja prava.
 - **Ideja za vizualizaciju:** matrica uloga i resursa sa dozvolama čitanja, izmene i brisanja.
