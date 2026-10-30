@@ -8,7 +8,7 @@ sloj: temelj
 # Zaposleni (employee)
 
 ## Definicija
-Zaposleni je ljudska [[Komponenta sistema|komponenta sistema]]: osoba koja za organizaciju obavlja poslove u određenoj ulozi i pri tome obrađuje [[Resurs|resurse]] ili upravlja drugim komponentama sistema.
+Zaposleni je ljudska komponenta sistema: osoba koja za organizaciju obavlja poslove u određenoj ulozi i pri tome obrađuje resurse ili upravlja drugim komponentama sistema.
 
 ## Primer
 U firmi [[Fakturis]] razlikujemo tri uloge zaposlenih:
@@ -18,7 +18,7 @@ U firmi [[Fakturis]] razlikujemo tri uloge zaposlenih:
 
 Direktor i knjigovođa rade sa ugovorima i finansijskim izveštajima.
 
-Kontraprimer: kupac koji plaća fakturu na stranici za plaćanje takođe radi sa podacima Fakturisa, ali nije zaposleni ni [[Komponenta sistema|komponenta sistema]], jer ne radi za firmu.
+Kontraprimer: kupac koji plaća fakturu na stranici za plaćanje takođe radi sa podacima Fakturisa, ali nije zaposleni ni komponenta sistema, jer ne radi za firmu.
 
 ## Napomene
 - Uloga određuje kojim resursima zaposleni pristupa, pa i koliko štete može da nastane ako ga neko obmane ili ako sam naudi firmi. Stefanov nalog može sve što i sistem.

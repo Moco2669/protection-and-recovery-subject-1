@@ -8,7 +8,7 @@ sloj: temelj
 # Interna mreža (internal network)
 
 ## Definicija
-Interna mreža je mrežna [[Komponenta sistema|komponenta sistema]] koju čine mrežni uređaji i veze preko kojih komponente sistema unutar organizacije komuniciraju međusobno, a kojom upravlja sama organizacija.
+Interna mreža je mrežna komponenta sistema koju čine mrežni uređaji i veze preko kojih komponente sistema unutar organizacije komuniciraju međusobno, a kojom upravlja sama organizacija.
 
 ## Primer
 Internu mrežu firme [[Fakturis]] čine jedan mrežni preklopnik u server sobi, jedna Wi-Fi pristupna tačka i kablovi do kancelarija. Na nju su povezani poslovni računari, aplikacioni server, NAS skladišta dokumenata, GitLab server i server za rezervne kopije. Isti Wi-Fi koriste i posetioci, uz lozinku zapisanu na tabli u sali za sastanke.

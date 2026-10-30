@@ -8,7 +8,7 @@ sloj: temelj
 # Baza podataka (database)
 
 ## Definicija
-Baza podataka je softverska [[Komponenta sistema|komponenta sistema]] koja trajno čuva strukturisane podatke i drugim komponentama omogućava da ih čitaju i menjaju preko upita, u granicama prava dodeljenih njihovim nalozima.
+Baza podataka je softverska komponenta sistema koja trajno čuva strukturisane podatke i drugim komponentama omogućava da ih čitaju i menjaju preko upita, u granicama prava dodeljenih njihovim nalozima.
 
 ## Primer
 [[Fakturis]] koristi PostgreSQL bazu na aplikacionom serveru. U njoj su nalozi korisnika sa hešovima lozinki, podaci o firmama korisnika, evidencije kupaca, fakture i statusi plaćanja. Jedina komponenta koja joj pristupa u radu je [[Web aplikacija|web aplikacija]]. Stefan joj pristupa radi održavanja, a [[Sistem za rezervne kopije|sistem za rezervne kopije]] svake noći pravi njenu kopiju.

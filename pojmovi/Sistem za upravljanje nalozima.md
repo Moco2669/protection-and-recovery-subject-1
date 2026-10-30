@@ -8,7 +8,7 @@ sloj: temelj
 # Sistem za upravljanje nalozima (identity and access management system)
 
 ## Definicija
-Sistem za upravljanje nalozima je [[Komponenta sistema|komponenta sistema]] u kojoj se vode nalozi lica i procesa, proverava ko se prijavljuje i čuvaju prava pristupa dodeljena svakom nalogu.
+Sistem za upravljanje nalozima je komponenta sistema u kojoj se vode nalozi lica i procesa, proverava ko se prijavljuje i čuvaju prava pristupa dodeljena svakom nalogu.
 
 ## Primer
 [[Fakturis]] ima dva takva sistema:

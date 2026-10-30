@@ -8,7 +8,7 @@ sloj: temelj
 # Server (server)
 
 ## Definicija
-Server je računar, fizički ili virtuelni, zajedno sa operativnim sistemom, na kom se izvršavaju programi koji drugim [[Komponenta sistema|komponentama sistema]] pružaju usluge ili podatke preko mreže.
+Server je računar, fizički ili virtuelni, zajedno sa operativnim sistemom, na kom se izvršavaju programi koji drugim komponentama sistema pružaju usluge ili podatke preko mreže.
 
 ## Primer
 Glavni server firme [[Fakturis]] je aplikacioni server u server sobi: fizička mašina sa Ubuntu Server operativnim sistemom i nginx web serverom, na kojoj se izvršava [[Web aplikacija|web aplikacija]]. Firma ima još tri servera: NAS [[Skladište dokumenata|skladišta dokumenata]], GitLab server sa [[Repozitorijum izvornog koda|repozitorijumom]] i server [[Sistem za rezervne kopije|za rezervne kopije]].

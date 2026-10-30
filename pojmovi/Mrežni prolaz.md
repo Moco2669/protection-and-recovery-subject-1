@@ -8,7 +8,7 @@ sloj: temelj
 # Mrežni prolaz (network gateway)
 
 ## Definicija
-Mrežni prolaz je mrežna [[Komponenta sistema|komponenta sistema]] koja povezuje mrežu organizacije sa internetom i, prema zadatim pravilima, propušta, odbija ili preusmerava saobraćaj između njih.
+Mrežni prolaz je mrežna komponenta sistema koja povezuje mrežu organizacije sa internetom i, prema zadatim pravilima, propušta, odbija ili preusmerava saobraćaj između njih.
 
 ## Primer
 Mrežni prolaz firme [[Fakturis]] je jedan uređaj koji je istovremeno ruter i zaštitni zid. Zahteve korisnika i kupaca sa interneta na portu 443 (HTTPS) preusmerava ka aplikacionom serveru, a ostale dolazne zahteve odbija. Kroz njega prolazi i sav saobraćaj zaposlenih ka internetu, kao i zahtevi aplikacije ka PayNet-u i obaveštenja koja PayNet šalje nazad.

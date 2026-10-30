@@ -8,7 +8,7 @@ sloj: temelj
 # Skladište dokumenata (file storage)
 
 ## Definicija
-Skladište dokumenata je [[Komponenta sistema|komponenta sistema]] u kojoj se čuvaju datoteke, kao što su ugovori, izveštaji i generisane fakture, i koja ih preko mreže stavlja na raspolaganje [[Zaposleni|zaposlenima]] i drugim komponentama.
+Skladište dokumenata je komponenta sistema u kojoj se čuvaju datoteke, kao što su ugovori, izveštaji i generisane fakture, i koja ih preko mreže stavlja na raspolaganje [[Zaposleni|zaposlenima]] i drugim komponentama.
 
 ## Primer
 Skladište dokumenata firme [[Fakturis]] je mrežni uređaj za skladištenje (NAS) u server sobi. U njemu su PDF fakture koje generiše [[Web aplikacija|web aplikacija]], kao i poslovni dokumenti firme: ugovori sa korisnicima i partnerima, finansijski izveštaji i ponude. Zaposleni mu pristupaju kao deljenom folderu `\\nas\dokumenti` sa svojih [[Poslovni računar|poslovnih računara]].
