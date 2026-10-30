@@ -29,11 +29,12 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
   - beleške Granica sistema, Tip komponente sistema, Tok podataka, Poslovni proces i Spoljni servis ostaju kao pomoćni pojmovi za opis arhitekture i ne ulaze u osnovni spisak prezentacije 1.
 - 2026-10-29: Tabela konkretnih ranjivosti u beleški konteksta ([[Fakturis]], *Poznate ranjivosti*) grupisana je po komponentama. Prva ranjivost uz svaku komponentu je glavna.
 - 2026-10-29: U definiciji Bezbednosne kontrole ispravljena je slovna greška sa predavanja („mehanizam ugrađenu“ u „mehanizam ugrađen“).
+- 2026-10-30: `sazetak.txt` je uklonjen. Struktura firme živi u belešci konteksta [[Fakturis]]. `handoff.md` nije deo zajedničke baze na `main`. Ostaje na ličnim granama, za presek statusa.
 
 ## Otvorena pitanja
 - **Primarni kontekst.** Fakturis (aplikacija za izdavanje i naplatu faktura, sopstvena server soba, PayNet kao spoljni servis) je predlog. Potvrditi domen, naziv i odluku da su serveri lokalno, a ne u oblaku.
 - **Slabost.** Usvojena je šira formulacija, po kojoj je slabost nedostatak koji pod određenim okolnostima postaje ranjivost (CWE). Pošto prezentacija 2 sada govori o ranjivostima, ovo pitanje je manje hitno. Ostaje da se odluči da li se pojam Slabost uopšte prikazuje u prvoj rundi.
-- **Fizičko okruženje.** Nije među dvanaest komponenti, jer ga `sazetak.txt` navodi posebno. Ako se uključi kao trinaesta komponenta, treba definisati i [[Nedostatak fizičke zaštite]].
+- **Fizičko okruženje.** Nije među dvanaest komponenti. U [[Fakturis]] opisano je posebno, van tih dvanaest. Ako se uključi kao trinaesta komponenta, treba definisati i [[Nedostatak fizičke zaštite]].
 - **Pretnje bez napadača.** Po definiciji sa predavanja, kvar, požar ili greška zaposlenog nisu pretnje. Da li su onda rezervne kopije, napajanje bez prekida i zaštita od požara bezbednosne kontrole, kada štite od događaja koji nisu pretnje? Pitanje za profesora.
 - **„Događaj“ u definiciji pretnje.** Sada se koristi u svakodnevnom smislu. Kada se definiše pojam Događaj iz kostura (Događaj, incident i log), proveriti da li je to isto značenje.
 - **Ovlašćenje, pravo pristupa, dozvola, privilegija.** Koriste se kao sinonimi. Ustaliti jedan termin kada se definiše kontrola pristupa. Uz to: naziv beleške [[Prekomerno ovlašćenje]] je u jednini po konvenciji, iako je množina prirodnija.

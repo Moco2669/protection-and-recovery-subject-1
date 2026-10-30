@@ -1,6 +1,6 @@
 # Handoff: presek posle spajanja sa main
 
-Stanje na dan 30. 10. 2026. Grana `moco-branch` spojena je sa `origin/main` (commit „Uklonjeni pojmovi”).
+Stanje na dan 30. 10. 2026. Grana `moco-branch` spojena je sa `origin/main` (commiti „Uklonjeni pojmovi” i „Uklanjanje handoff-a i sažetka”).
 
 ## Šta je urađeno
 
@@ -16,9 +16,9 @@ pojmovi/                 16 beleški (12 komponenti i 4 ranjivosti)
 handoff.md               ovaj fajl
 ```
 
-Ulazi koji su ranije korišćeni za izradu pojmova: `Tema 1 - Kostur.md`, `sazetak.txt` i predavanja ZOSS 01, 02 i 03 iz `Materijali/`.
+Ulazi koji su ranije korišćeni za izradu pojmova: `Tema 1 - Kostur.md` i predavanja ZOSS 01, 02 i 03 iz `Materijali/`. `sazetak.txt` je uklonjen 30. 10. 2026. Struktura firme je u [[Fakturis]].
 
-**Primarni kontekst.** Firma *Fakturis d.o.o.* (oko 20 zaposlenih, Novi Sad) razvija web aplikaciju za izdavanje i naplatu faktura. Aplikacija čuva podatke korisnika i njihovih kupaca, a naplatu obavlja preko spoljnog platnog servisa *PayNet*. Dvanaest komponenti preuzeto je iz `sazetak.txt`. Svi serveri su u sopstvenoj server sobi. Beleška konteksta sadrži tabelu bezbednosnih zahteva (resurs × svojstvo) i tabelu konkretnih ranjivosti grupisanih po komponentama.
+**Primarni kontekst.** Firma *Fakturis d.o.o.* (oko 20 zaposlenih, Novi Sad) razvija web aplikaciju za izdavanje i naplatu faktura. Aplikacija čuva podatke korisnika i njihovih kupaca, a naplatu obavlja preko spoljnog platnog servisa *PayNet*. Dvanaest komponenti opisano je u [[Fakturis]]. Svi serveri su u sopstvenoj server sobi. Beleška konteksta sadrži tabelu bezbednosnih zahteva (resurs × svojstvo) i tabelu konkretnih ranjivosti grupisanih po komponentama.
 
 **Pojmovi koji ostaju** (sve su `status: predlog`):
 
@@ -34,7 +34,7 @@ Ulazi koji su ranije korišćeni za izradu pojmova: `Tema 1 - Kostur.md`, `sazet
 ## Mapa za prvu rundu (3 × 10 minuta)
 
 ### Prezentacija 1: komponente i arhitektura sistema
-Dvanaest konkretnih komponenti i dalje ima beleške, po celinama iz `sazetak.txt`:
+Dvanaest konkretnih komponenti i dalje ima beleške, po celinama iz [[Fakturis]]:
 
 | Celina | Komponente |
 |---|---|
@@ -79,3 +79,4 @@ Odluka o širem pojmu Slabost ostaje zapisana, ali beleška Slabost više ne pos
 ## Napomene
 - Ovaj fajl nije ni verzija sa `main` ni verzija sa grane pre spajanja. `main` opisuje prazan `pojmovi/`. Grana pre spajanja opisuje 52 beleške.
 - `_meta/konfiguracija.md` nije menjana ni na `main` ni na ovoj grani posle početne baze.
+- `handoff.md` ostaje samo na ovoj grani, za lični presek statusa. Na `main` je uklonjen. `sazetak.txt` je uklonjen i ovde i na `main`.
