@@ -1,13 +1,14 @@
-| **tip** | pojam |
-|---|---|
-| **aliases** | broken access control, improper access control |
-| **izvor** | [OWASP Top 10:2025 — A01 Broken Access Control](https://top10.owasp.org/2025/A01_2025-Broken_Access_Control/); [MITRE CWE-862 — Missing Authorization](https://cwe.mitre.org/data/definitions/862.html) |
+---
+tip: pojam
+aliases: ["broken access control", "improper access control"]
+izvor: "OWASP Top 10:2025 — A01 Broken Access Control, https://top10.owasp.org/2025/A01_2025-Broken_Access_Control/; MITRE CWE-862 — Missing Authorization, https://cwe.mitre.org/data/definitions/862.html"
+---
 
 # Neispravna kontrola pristupa (broken access control)
 
 ## Definicija
 
-Neispravna kontrola pristupa jeste slabost u sprovođenju pravila pristupa zbog koje komponenta sistema omogućava korisniku ili programu da pristupi resursu ili izvrši radnju za koju nije ovlašćen.
+Neispravna kontrola pristupa jeste [[Slabost|slabost]] u sprovođenju pravila pristupa zbog koje komponenta sistema omogućava korisniku ili programu da pristupi resursu ili izvrši radnju za koju nije ovlašćen.
 
 ## Primer
 
@@ -15,13 +16,9 @@ U posmatranom sistemu firme, zaposleni iz korisničke podrške sme da pregleda f
 
 Zaposleni neposredno pošalje zahtev za storniranje i aplikacija ga izvrši. Izostanak serverske provere predstavlja konkretnu ranjivost modula: omogućava nedozvoljenu izmenu fakture i narušava njen integritet.
 
-## Kontraprimer
-
-Zaposleni iz podrške neposredno pošalje zahtev za storniranje fakture, ali serverski modul proveri njegova prava i odbije zahtev. Za tu radnju kontrola pristupa je ispravno sprovedena, iako korisnik može da pošalje zahtev.
-
 ## Napomene
 
-Autentifikacija proverava identitet korisnika, dok autorizacija proverava da li on ima pravo da izvrši određenu radnju nad određenim resursom. Uspešna prijava zato ne daje pravo na korišćenje svih funkcija aplikacije.
+Uspešna prijava ne znači da korisnik sme da izvrši svaku radnju. Potrebna prava proveravaju se kroz [[Kontrola pristupa|kontrolu pristupa]].
 
 Neispravna kontrola pristupa obuhvata potpuno odsustvo potrebne provere, ali i proveru koja se izvršava pogrešno. Može omogućiti pristup tuđim podacima ili izvršavanje funkcija rezervisanih za drugu ulogu.
 

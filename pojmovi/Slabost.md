@@ -1,7 +1,8 @@
-| **tip** | pojam |
-|---|---|
-| **aliases** | weakness |
-| **izvor** | MITRE CWE Glossary, odrednice *Weakness* i *Vulnerability*, [https://cwe.mitre.org/documents/glossary/](https://cwe.mitre.org/documents/glossary/) |
+---
+tip: pojam
+aliases: ["weakness"]
+izvor: "MITRE CWE Glossary, odrednice Weakness i Vulnerability, https://cwe.mitre.org/documents/glossary/"
+---
 
 # Slabost (weakness)
 
@@ -14,10 +15,6 @@ Slabost jeste nedostatak u softverskoj, firmverskoj, hardverskoj ili servisnoj k
 U posmatranom sistemu firme, modul za pregled faktura proverava da li je korisnik prijavljen, ali ne proverava da li ima pravo da pristupi traženoj fakturi. Izostanak provere prava pristupa predstavlja slabost.
 
 Ako korisnik promenom identifikatora u zahtevu dobije fakturu drugog preduzeća, u tom modulu postoji konkretna ranjivost: omogućeno je neovlašćeno čitanje podataka koje narušava poverljivost fakture i krši zahtev da korisnik vidi samo fakture svog preduzeća.
-
-## Kontraprimer
-
-Javni cenovnik firme dostupan je svakom posetiocu sajta bez prijave. Pošto je namenjen javnosti, takav pristup odgovara zahtevima firme. Odsustvo prijave u ovom slučaju nije slabost.
 
 ## Napomene
 
