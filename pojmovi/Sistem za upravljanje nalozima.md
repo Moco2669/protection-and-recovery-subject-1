@@ -19,4 +19,4 @@ Kontraprimer: tabela u kojoj Stefan beleži ko je dobio koji laptop nije sistem 
 
 ## Napomene
 - Svaka druga komponenta oslanja se na ovaj sistem da bi znala ko joj šalje zahtev. Napadač koji preuzme nalog u njemu preuzima i sva prava tog naloga na svim komponentama.
-- Karakteristične ranjivosti: prijava samo lozinkom ([[Slaba autentifikacija]]) i nalozi bivših zaposlenih koji nisu ugašeni ([[Prekomerno ovlašćenje]]).
+- U [[Fakturis]] se na GitLab i na administratorski deo aplikacije prijavljuje samo lozinkom. Nalog programera koji je otišao i dalje je aktivan u GitLab-u.

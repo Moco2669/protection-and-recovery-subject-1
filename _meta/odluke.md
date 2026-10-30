@@ -13,7 +13,7 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 - SQL upit
 - računar, operativni sistem, virtuelna mašina, oblak (cloud)
 - računarska mreža, internet, ruter, mrežni preklopnik, Wi-Fi pristupna tačka, mrežni segment
-- zaštitni zid (firewall), kao uređaj; njegova uloga u zaštiti opisuje se kroz [[Bezbednosna kontrola|bezbednosnu kontrolu]]
+- zaštitni zid (firewall), kao uređaj
 - izvorni kod, softverska biblioteka, verzija softvera, testno okruženje, CI cevovod
 - lozinka, nalog, prijava na sistem (u svakodnevnom smislu; autentifikacija se definiše kasnije)
 - e-pošta, prilog, makro (kao funkcija Office paketa)
@@ -25,18 +25,20 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 - 2026-10-29 (zamenjeno istog dana, vidi sledeću stavku): konkretne ranjivosti vode se u beleški konteksta, a beleške pojmova opisuju slabosti.
 - 2026-10-29: **Promena po dogovoru sa studentima.** Prezentacije ne ponavljaju pojmove sa predavanja, nego uvode nove:
   - prezentacija 1 uvodi dvanaest konkretnih komponenti sistema kao pojmove (Zaposleni, Poslovni računar, Mrežni prolaz, Interna mreža, Server, Web aplikacija, Baza podataka, Skladište dokumenata, Repozitorijum izvornog koda, Sistem za upravljanje nalozima, Sistem za zapise o radu, Sistem za rezervne kopije). Zato zaposleni, web aplikacija, baza podataka, server i repozitorijum izvornog koda više nisu pretpostavljeni pojmovi;
-  - prezentacija 2 uvodi ranjivosti tih komponenti. Beleške ranjivosti se definišu kao vrsta [[Ranjivost|ranjivosti]] vezana za komponentu („X je ranjivost web aplikacije u kojoj...“), a ne kao [[Slabost|slabost]]. Slabost ostaje pomoćni pojam za razliku između ranjivosti i kataloga kao što su CWE i OWASP;
+  - prezentacija 2 uvodi ranjivosti tih komponenti. Ta odluka važi za rundu, ali beleške ranjivosti nisu na ovoj grani;
   - beleške Granica sistema, Tip komponente sistema, Tok podataka, Poslovni proces i Spoljni servis ostaju kao pomoćni pojmovi za opis arhitekture i ne ulaze u osnovni spisak prezentacije 1.
 - 2026-10-29: Tabela konkretnih ranjivosti u beleški konteksta ([[Fakturis]], *Poznate ranjivosti*) grupisana je po komponentama. Prva ranjivost uz svaku komponentu je glavna.
 - 2026-10-29: U definiciji Bezbednosne kontrole ispravljena je slovna greška sa predavanja („mehanizam ugrađenu“ u „mehanizam ugrađen“).
 - 2026-10-30: `sazetak.txt` je uklonjen. Struktura firme živi u belešci konteksta [[Fakturis]]. `handoff.md` nije deo zajedničke baze na `main`. Ostaje na ličnim granama, za presek statusa.
+- 2026-10-30: Prezentacija 1 uvodi [[Resurs]] i [[Komponenta sistema]] po ZOSS 03, i deset konkretnih komponenti: Zaposleni, Poslovni računar, Mrežni prolaz, Interna mreža, Server, Web aplikacija, Baza podataka, Skladište dokumenata, Repozitorijum izvornog koda, Sistem za rezervne kopije. Korisnički podaci, fakture, poslovni dokumenti, izvorni kod i rezervne kopije su primeri resursa, ne zasebne beleške. PayNet nije komponenta sistema: servis je druge firme. Tok podataka, granica sistema i poslovni proces se na ovoj prezentaciji ne definišu. Beleške Sistema za upravljanje nalozima i Sistema za zapise o radu ostaju u bazi, ali nisu deo ove prezentacije.
+- 2026-10-30: Sa ove grane obrisane su beleške ranjivosti (Podložnost socijalnom inženjeringu, Nedostatak segmentacije mreže, Slaba autentifikacija, Nezaštićena rezervna kopija). Pojmove za prezentaciju 2 radi kolega na svojoj grani. U [[Fakturis]] ostaje tabela konkretnih slabosti firme, bez linkova ka tim pojmovima.
 
 ## Otvorena pitanja
 - **Primarni kontekst.** Fakturis (aplikacija za izdavanje i naplatu faktura, sopstvena server soba, PayNet kao spoljni servis) je predlog. Potvrditi domen, naziv i odluku da su serveri lokalno, a ne u oblaku.
-- **Slabost.** Usvojena je šira formulacija, po kojoj je slabost nedostatak koji pod određenim okolnostima postaje ranjivost (CWE). Pošto prezentacija 2 sada govori o ranjivostima, ovo pitanje je manje hitno. Ostaje da se odluči da li se pojam Slabost uopšte prikazuje u prvoj rundi.
-- **Fizičko okruženje.** Nije među dvanaest komponenti. U [[Fakturis]] opisano je posebno, van tih dvanaest. Ako se uključi kao trinaesta komponenta, treba definisati i [[Nedostatak fizičke zaštite]].
+- **Slabost.** Usvojena je šira formulacija, po kojoj je slabost nedostatak koji pod određenim okolnostima postaje ranjivost (CWE). Beleške nema na ovoj grani. Pitanje ostaje kolegi koji radi prezentaciju 2.
+- **Fizičko okruženje.** Nije među dvanaest komponenti. U [[Fakturis]] opisano je posebno, van tih dvanaest. Ako se uključi kao trinaesta komponenta, treba definisati i nedostatak fizičke zaštite.
 - **Pretnje bez napadača.** Po definiciji sa predavanja, kvar, požar ili greška zaposlenog nisu pretnje. Da li su onda rezervne kopije, napajanje bez prekida i zaštita od požara bezbednosne kontrole, kada štite od događaja koji nisu pretnje? Pitanje za profesora.
 - **„Događaj“ u definiciji pretnje.** Sada se koristi u svakodnevnom smislu. Kada se definiše pojam Događaj iz kostura (Događaj, incident i log), proveriti da li je to isto značenje.
-- **Ovlašćenje, pravo pristupa, dozvola, privilegija.** Koriste se kao sinonimi. Ustaliti jedan termin kada se definiše kontrola pristupa. Uz to: naziv beleške [[Prekomerno ovlašćenje]] je u jednini po konvenciji, iako je množina prirodnija.
+- **Ovlašćenje, pravo pristupa, dozvola, privilegija.** Koriste se kao sinonimi. Ustaliti jedan termin kada se definiše kontrola pristupa. Naziv „prekomerno ovlašćenje“ prirodniji je u množini, a beleška bi po konvenciji bila u jednini. Pojam nije na ovoj grani.
 - **Skeneri ranjivosti kao kontrola.** Da li su SAST, DAST i pentest detektivne kontrole (otkrivaju) ili preventivne (deluju pre napada)? Izvori se razlikuju.
 - **Rizik.** Kostur ga stavlja u temelj, ali ga nema na dijagramu sa predavanja. Treba ga definisati pre prioritizacije ranjivosti (CVSS).

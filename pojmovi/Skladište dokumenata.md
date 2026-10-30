@@ -17,4 +17,4 @@ Kontraprimer: dokument koji Jelena drži samo na svom laptopu nije u skladištu 
 
 ## Napomene
 - Za razliku od [[Baza podataka|baze podataka]], skladište ne zna šta je unutar datoteke. Prava pristupa se zato zadaju po folderima, a ne po pojedinačnim podacima.
-- Karakteristična ranjivost: svi zaposleni imaju pravo čitanja i pisanja nad celim deljenim folderom ([[Prekomerno ovlašćenje]]).
+- U [[Fakturis]] svi zaposleni imaju pravo čitanja i pisanja nad celim deljenim folderom, uključujući finansijske izveštaje.

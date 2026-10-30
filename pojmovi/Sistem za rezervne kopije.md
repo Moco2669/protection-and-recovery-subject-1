@@ -1,6 +1,6 @@
 ---
 tip: pojam
-aliases: [backup system, backup, rezervna kopija]
+aliases: [backup system]
 izvor: NIST SP 800-34 Rev. 1, "backup" (https://csrc.nist.gov/glossary/term/backup)
 status: predlog
 sloj: temelj
@@ -17,5 +17,4 @@ Kontraprimer: kada programer pre rizične izmene ručno napravi kopiju jedne tab
 
 ## Napomene
 - Rezervne kopije sadrže sve što i originali, pa su i same [[Resurs|resurs]] kome treba ista zaštita poverljivosti kao originalima.
-- Kopija koja nikad nije vraćena nije proverena. Firma ne zna da li može da ispuni zahtev da se podaci vrate u roku od četiri sata.
-- Karakteristična ranjivost: [[Nezaštićena rezervna kopija]].
+- Kopija koja nikad nije vraćena nije proverena. Firma ne zna da li može da ispuni zahtev da se podaci vrate u roku od četiri sata. U [[Fakturis]] su kopije u istoj mreži, dostupne Stefanovim nalogom, nešifrovane, a vraćanje nikad nije probano.

@@ -1,6 +1,6 @@
 ---
 tip: pojam
-aliases: [employee, personnel, korisnik sistema]
+aliases: [employee, personnel]
 izvor: ZOSS 03 (predavanje, „zaposleni koji obrađuje podatke“ kao ljudska komponenta); ISO/IEC 27002:2022, poglavlje 6 People controls
 status: predlog
 sloj: temelj
@@ -18,8 +18,7 @@ U firmi [[Fakturis]] razlikujemo tri uloge zaposlenih:
 
 Direktor i knjigovođa rade sa ugovorima i finansijskim izveštajima.
 
-Kontraprimer: kupac koji plaća fakturu na stranici za plaćanje takođe radi sa podacima Fakturisa, ali nije zaposleni ni komponenta sistema, jer je izvan [[Granica sistema|granice sistema]].
+Kontraprimer: kupac koji plaća fakturu na stranici za plaćanje takođe radi sa podacima Fakturisa, ali nije zaposleni ni [[Komponenta sistema|komponenta sistema]], jer ne radi za firmu.
 
 ## Napomene
-- Uloga određuje kojim resursima zaposleni pristupa, pa i koliko štete može da nastane ako ga napadač obmane ili ako sam postane napadač. Stefanov nalog može sve što i sistem.
-- Karakteristična ranjivost ove komponente: [[Podložnost socijalnom inženjeringu]].
+- Uloga određuje kojim resursima zaposleni pristupa, pa i koliko štete može da nastane ako ga neko obmane ili ako sam naudi firmi. Stefanov nalog može sve što i sistem.

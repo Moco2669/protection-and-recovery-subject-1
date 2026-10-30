@@ -17,4 +17,4 @@ Kontraprimer: lokalna kopija koda na Milanovom laptopu sadrži isti kod, ali iz 
 
 ## Napomene
 - Repozitorijum sadrži više od koda: konfiguracione fajlove, skripte za objavljivanje, ponekad i pristupne podatke. Ko može da menja repozitorijum, može da promeni i ono što se izvršava na produkcionom serveru.
-- Karakteristična ranjivost: produkcioni API ključ za PayNet upisan u konfiguracioni fajl ([[Ugrađeni pristupni podatak]]).
+- U [[Fakturis]] je produkcioni API ključ za PayNet upisan u `config/paynet.yml`. Ključ je [[Resurs|resurs]] firme, a repozitorijum je komponenta u kojoj se taj resurs nalazi.

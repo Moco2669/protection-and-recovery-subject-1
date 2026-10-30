@@ -11,8 +11,8 @@ Pri spajanju prihvaćeno je brisanje svega što je `main` obrisao, uključujući
 ```
 _meta/konfiguracija.md   tema, problem, publika, primarni kontekst
 _meta/odluke.md          verzija sa ove grane; deo linkova vodi na obrisane beleške
-konteksti/Fakturis.md    verzija sa ove grane; tabela ranjivosti linkuje i obrisane beleške
-pojmovi/                 16 beleški (12 komponenti i 4 ranjivosti)
+konteksti/Fakturis.md    verzija sa ove grane; tabela slabosti firme bez linkova ka pojmovima ranjivosti
+pojmovi/                 14 beleški (Resurs, Komponenta sistema, 10 komponenti prezentacije 1, i dve koje nisu u izlaganju)
 handoff.md               ovaj fajl
 ```
 
@@ -20,44 +20,86 @@ Ulazi koji su ranije korišćeni za izradu pojmova: `Tema 1 - Kostur.md` i preda
 
 **Primarni kontekst.** Firma *Fakturis d.o.o.* (oko 20 zaposlenih, Novi Sad) razvija web aplikaciju za izdavanje i naplatu faktura. Aplikacija čuva podatke korisnika i njihovih kupaca, a naplatu obavlja preko spoljnog platnog servisa *PayNet*. Dvanaest komponenti opisano je u [[Fakturis]]. Svi serveri su u sopstvenoj server sobi. Beleška konteksta sadrži tabelu bezbednosnih zahteva (resurs × svojstvo) i tabelu konkretnih ranjivosti grupisanih po komponentama.
 
-**Pojmovi koji ostaju** (sve su `status: predlog`):
+**Pojmovi na grani posle brisanja ranjivosti, 30. 10.**
 
-| Grupa | Beleške | Sloj |
+| Grupa | Beleške | Status |
 |---|---|---|
-| konkretne komponente | [[Zaposleni]], [[Poslovni računar]], [[Mrežni prolaz]], [[Interna mreža]], [[Server]], [[Web aplikacija]], [[Baza podataka]], [[Skladište dokumenata]], [[Repozitorijum izvornog koda]], [[Sistem za upravljanje nalozima]], [[Sistem za zapise o radu]], [[Sistem za rezervne kopije]] | `temelj` |
-| ranjivosti dodate na ovoj grani | [[Podložnost socijalnom inženjeringu]], [[Nedostatak segmentacije mreže]], [[Slaba autentifikacija]], [[Nezaštićena rezervna kopija]] | `jezgro` |
+| sa predavanja | [[Resurs]], [[Komponenta sistema]] | `predavanje` |
+| prezentacija 1 | [[Zaposleni]], [[Poslovni računar]], [[Mrežni prolaz]], [[Interna mreža]], [[Server]], [[Web aplikacija]], [[Baza podataka]], [[Skladište dokumenata]], [[Repozitorijum izvornog koda]], [[Sistem za rezervne kopije]] | `predlog` |
+| u bazi, van izlaganja | [[Sistem za upravljanje nalozima]], [[Sistem za zapise o radu]] | `predlog` |
 
-**Uklonjeno sa maina, pa i sa ove grane.** 36 beleški početne baze: 14 pojmova sa predavanja ZOSS 03, 9 ranjivosti koje je ova grana bila izmenila (Injekcija, Nedovoljna provera autentičnosti podataka, Nedovoljno beleženje i praćenje, Neispravna kontrola pristupa, Nekontrolisana učestalost zahteva, Nezakrpljen softver, Pogrešna bezbednosna konfiguracija, Prekomerno ovlašćenje, Ugrađeni pristupni podatak), 7 tipova bezbednosnih kontrola i 6 pomoćnih pojmova (Granica sistema, Tip komponente sistema, Tok podataka, Poslovni proces, Spoljni servis, Slabost). Komponenta sistema, Ranjivost i Resurs su među obrisanima.
-
-**Linkovi ka nepostojećim beleškama.** Svaka od 16 zadržanih beleški u definiciji koristi bar jedan obrisan pojam. Najčešće su to [[Komponenta sistema]], [[Ranjivost]] i [[Resurs]]. [[Fakturis]] u tabeli *Poznate ranjivosti* i dalje linkuje obrisane vrste ranjivosti, i [[Nedostatak fizičke zaštite]], koja ni ranije nije imala belešku. `_meta/odluke.md` linkuje [[Bezbednosna kontrola]], [[Ranjivost]], [[Slabost]], [[Prekomerno ovlašćenje]] i [[Nedostatak fizičke zaštite]].
+Beleške ranjivosti su obrisane. Prezentaciju 2 radi kolega na svojoj grani. U [[Fakturis]], odeljak *Poznate ranjivosti*, ostaju konkretni opisi firme, bez linkova ka tim pojmovima.
 
 ## Mapa za prvu rundu (3 × 10 minuta)
 
-### Prezentacija 1: komponente i arhitektura sistema
-Dvanaest konkretnih komponenti i dalje ima beleške, po celinama iz [[Fakturis]]:
+### Prezentacija 1
+
+Dogovoreni kostur. [[Resurs]] i [[Komponenta sistema]] imaju beleške po ZOSS 03. Pet imena ispod resursa nemaju beleške: to su primeri u [[Fakturis]], ne pojmovi. Strele nemaju beleške: pokazuju arhitekturu. PayNet, korisnici i kupci su izvan sistema. [[Sistem za upravljanje nalozima]] i [[Sistem za zapise o radu]] imaju beleške, ali nisu u ovom kosturu.
+
+**Resurs.** Jedan pojam. Primeri u firmi, i komponenta u kojoj leže:
+
+| Primer | Gde leži |
+|---|---|
+| korisnički podaci | [[Baza podataka]] |
+| fakture | [[Baza podataka]]; PDF i u [[Skladište dokumenata]] |
+| poslovni dokumenti | [[Skladište dokumenata]] |
+| izvorni kod | [[Repozitorijum izvornog koda]] |
+| rezervne kopije | [[Sistem za rezervne kopije]] |
+
+**Komponente.** Deset pojmova:
 
 | Celina | Komponente |
 |---|---|
 | ljudi i radno okruženje | [[Zaposleni]], [[Poslovni računar]] |
-| mreža i komunikacija | [[Mrežni prolaz]], [[Interna mreža]] |
-| aplikacija i serversko okruženje | [[Server]], [[Web aplikacija]] |
+| mreža | [[Mrežni prolaz]], [[Interna mreža]] |
+| aplikacija | [[Server]], [[Web aplikacija]] |
 | čuvanje podataka | [[Baza podataka]], [[Skladište dokumenata]] |
-| razvoj i održavanje | [[Repozitorijum izvornog koda]] |
-| zajedničke funkcije zaštite i podrške | [[Sistem za upravljanje nalozima]], [[Sistem za zapise o radu]], [[Sistem za rezervne kopije]] |
+| razvoj | [[Repozitorijum izvornog koda]] |
+| oporavak | [[Sistem za rezervne kopije]] |
 
-Arhitektura i tokovi podataka ostaju u [[Fakturis]], odeljak *Glavni tokovi podataka*. Pojmovi kojima se te komponente definišu (Komponenta sistema, Resurs, Granica sistema, Tok podataka, Tip komponente sistema, Poslovni proces, Spoljni servis) nemaju beleške i treba ih ponovo definisati pre izlaganja, ili iz definicija komponenti izbaciti.
+**Putevi.** Nisu pojmovi. Na izlaganju se kaže „pratimo jednu fakturu“ i „pratimo jednu izmenu koda“.
+
+1. Faktura. Korisnik, izvan firme, preko [[Mrežni prolaz|mrežnog prolaza]] stigne do [[Web aplikacija|web aplikacije]]. Aplikacija je upiše u [[Baza podataka|bazu]] i sačuva PDF u [[Skladište dokumenata|skladište]]. Zatim pošalje zahtev za naplatu PayNet-u, PayNet vrati obaveštenje, aplikacija u bazi promeni status u „plaćeno“. Kartica kupca u sistem ne ulazi. Noćno kopiranje baze i skladišta nije korak ove priče.
+2. Izmena koda. Programer sa [[Poslovni računar|poslovnog računara]] pošalje izmenu u [[Repozitorijum izvornog koda|repozitorijum]]. Odatle se nova verzija objavi na [[Server|aplikacioni server]], gde radi web aplikacija.
+
+```mermaid
+flowchart LR
+  subgraph spolja["Izvan granice sistema"]
+    K["Spoljni korisnik"]
+    KU["Kupac"]
+    PN["PayNet"]
+  end
+  subgraph firma["Sistem firme Fakturis"]
+    Z["Zaposleni"]
+    PR["Poslovni računari"]
+    MP["Mrežni prolaz"]
+    IM["Interna mreža"]
+    APP["Web aplikacija na aplikacionom serveru"]
+    DB[("Baza podataka: korisnički podaci i fakture")]
+    SD[("Skladište dokumenata: PDF fakture i poslovni dokumenti")]
+    GIT["Repozitorijum: izvorni kod"]
+    BK[("Sistem za rezervne kopije: kopije tih podataka")]
+  end
+  K -->|HTTPS| MP
+  KU -->|HTTPS| MP
+  MP --> APP
+  APP -->|zahtev za naplatu| PN
+  PN -->|obaveštenje o uplati| APP
+  Z --- PR
+  PR --- IM
+  IM --- MP
+  PR -->|izmene koda| GIT
+  PR -->|administratorski deo| APP
+  PR -->|deljeni folder| SD
+  GIT -->|objavljivanje| APP
+  APP --> DB
+  APP --> SD
+  DB -->|noćna kopija| BK
+  SD -->|noćna kopija| BK
+```
 
 ### Prezentacija 2: ranjivosti tih komponenti
-Tabela u [[Fakturis]], odeljak *Poznate ranjivosti*, i dalje je spisak primera. Od vrsta ranjivosti belešku imaju samo četiri:
-
-| Komponenta | Glavna ranjivost u Fakturisu | Beleška |
-|---|---|---|
-| Zaposleni | Jelena otvara priloge bez provere pošiljaoca | [[Podložnost socijalnom inženjeringu]] |
-| Interna mreža | računari, serveri i Wi-Fi za posetioce u istom segmentu | [[Nedostatak segmentacije mreže]] |
-| Sistem za upravljanje nalozima | prijava samo lozinkom, procurela lozinka administratora | [[Slaba autentifikacija]] |
-| Sistem za rezervne kopije | kopije dostupne iz iste mreže, nešifrovane, neprobane | [[Nezaštićena rezervna kopija]] |
-
-Ostale vrste iz tabele (Pogrešna bezbednosna konfiguracija, Nezakrpljen softver, Neispravna kontrola pristupa, Prekomerno ovlašćenje, Ugrađeni pristupni podatak, Nedovoljno beleženje i praćenje, Injekcija, Nedovoljna provera autentičnosti podataka, Nekontrolisana učestalost zahteva) treba ponovo definisati. Isto važi za Ranjivost, Slabost, Bezbednosni zahtev, Napad i Napadač, jer se preostale beleške ranjivosti na njih oslanjaju.
+Nije na ovoj grani. Kolega definiše pojmove. Tabela u [[Fakturis]], odeljak *Poznate ranjivosti*, ostaje kao opis firme.
 
 ### Prezentacija 3: tipovi bezbednosnih kontrola
 Beleški nema. Ponovo definisati: Bezbednosna kontrola; po dejstvu Preventivna, Detektivna, Korektivna; po prirodi Tehnička, Organizaciona, Kadrovska, Fizička.
@@ -71,9 +113,9 @@ Detalji su u `_meta/odluke.md`, odeljak *Otvorena pitanja*. Najvažnije su:
 Odluka o širem pojmu Slabost ostaje zapisana, ali beleška Slabost više ne postoji.
 
 ## Sledeći koraci
-1. **Temelj pre ostatka.** Zadržane definicije nisu samostalne. Prvo ponovo definisati Komponenta sistema, Resurs i Ranjivost, ili preformulisati 16 beleški tako da te pojmove ne koriste.
-2. **Vrste ranjivosti i kontrole.** Vratiti beleške potrebne za drugu i treću prezentaciju, pa u [[Fakturis]] i `_meta/odluke.md` srediti linkove koji sada vode u prazno.
-3. **Provera izvora.** Pre prezentacija proveriti CWE oznake i odredbe ISO/IEC 27002:2022 koje se citiraju u zadržanim beleškama.
+1. **Prezentacija 1.** Pojmovi su upisani. Sledeći korak je da student prođe definicije i prihvaćenima promeni `status` u `prihvaćeno`.
+2. **Prezentacija 2.** Ne dirati na ovoj grani. Kolega uvodi pojmove ranjivosti.
+3. **Provera izvora.** Pre prezentacije proveriti odredbe ISO/IEC 27002:2022 koje se citiraju uz Zaposlenog.
 4. **Rok za materijale.** Po predavanju ZOSS 02, materijali se šalju 48 sati pre sesije. Za grupe G3 i G4 rok je 1. 11., a sesija 3. 11. Proverite koja je vaša grupa.
 
 ## Napomene

@@ -153,31 +153,31 @@ Opis stanja od kog firma polazi. Služi kao zajednička osnova za primere ranjiv
 - Na poslovnim računarima je uključen Microsoft Defender.
 
 ### Poznate ranjivosti
-Po komponentama. Prva ranjivost uz svaku komponentu je glavna, i ona čini osnovni spisak za prezentaciju o ranjivostima.
+Po komponentama. Prva stavka uz svaku komponentu je glavna. Kolona „Vrsta“ je radni naziv za koleginu prezentaciju. Na ovoj grani te vrste nisu pojmovi i nemaju beleške.
 
-| Komponenta | Ranjivost | Vrsta ranjivosti | Ugroženi zahtev |
+| Komponenta | Šta je u Fakturisu | Vrsta (nije pojam na ovoj grani) | Ugroženi zahtev |
 |---|---|---|---|
-| [[Zaposleni]] | Jelena otvara priloge iz e-pošte bez provere pošiljaoca i menja podatke naloga na osnovu telefonskog poziva | [[Podložnost socijalnom inženjeringu]] | programe na računaru instalira samo administrator; korisničke podatke menja vlasnik naloga |
-| [[Poslovni računar]] | makroi u Office dokumentima sa interneta su dozvoljeni | [[Pogrešna bezbednosna konfiguracija]] | programe na računaru instalira samo administrator |
-| [[Poslovni računar]] | zaposleni rade kao lokalni administratori | [[Prekomerno ovlašćenje]] | programe na računaru instalira samo administrator |
-| [[Poslovni računar]] | Windows se ne ažurira automatski | [[Nezakrpljen softver]] | programe na računaru instalira samo administrator |
-| [[Mrežni prolaz]] | administratorski panel rutera dostupan je sa interneta, sa fabričkom lozinkom | [[Pogrešna bezbednosna konfiguracija]] | podešavanja mreže menja samo administrator |
-| [[Interna mreža]] | poslovni računari, serveri i Wi-Fi za posetioce su u istom segmentu | [[Nedostatak segmentacije mreže]] | serverima pristupaju samo administrator i aplikacija |
-| [[Server]] | Ubuntu i nginx nisu ažurirani od marta, a za verziju nginx-a postoji javno objavljena slabost | [[Nezakrpljen softver]] | podešavanja servera menja samo administrator |
-| [[Server]] | nginx u porukama o greškama prikazuje verziju i putanje fajlova | [[Pogrešna bezbednosna konfiguracija]] | podešavanja servera vidi samo administrator |
-| [[Web aplikacija]] | `/api/fakture/{id}` vraća fakturu svakom prijavljenom korisniku, bez provere da li je njegova | [[Neispravna kontrola pristupa]] | fakture vide samo izdavalac i kupac |
-| [[Web aplikacija]] | obaveštenje o uplati prihvata se bez provere potpisa PayNet-a | [[Nedovoljna provera autentičnosti podataka]] | status „plaćeno“ postavlja samo potvrđeno obaveštenje PayNet-a |
-| [[Web aplikacija]] | stranica za plaćanje ne ograničava broj pokušaja plaćanja, a prijava broj pokušaja prijave | [[Nekontrolisana učestalost zahteva]] | proces naplate radi neprekidno |
-| [[Web aplikacija]] | pretraga kupaca ugrađuje tekst pretrage direktno u SQL upit | [[Injekcija]] | korisnik vidi i menja samo svoje kupce |
-| [[Web aplikacija]] | polje „napomena“ prikazuje se na stranici za plaćanje bez kodiranja, pa se u njega može ubaciti skripta | [[Injekcija]] | stranicu za plaćanje menja samo aplikacija |
-| [[Web aplikacija]] | biblioteka PdfGen 2.3 preko adrese slike u HTML šablonu čita fajlove sa servera, a korisnik može da doda logo preko adrese slike | [[Nezakrpljen softver]] | podešavanja servera vidi samo administrator |
-| [[Web aplikacija]] | API ključ za PayNet ima i pravo povraćaja novca, iako ga aplikacija ne koristi | [[Prekomerno ovlašćenje]] | povraćaj novca odobrava samo direktor |
-| [[Baza podataka]] | aplikacija se povezuje na bazu kao njen vlasnik | [[Prekomerno ovlašćenje]] | aplikacija ne briše tabele |
-| [[Skladište dokumenata]] | svi zaposleni imaju pravo čitanja i pisanja nad celim deljenim folderom, uključujući finansijske izveštaje | [[Prekomerno ovlašćenje]] | finansijske izveštaje vide rukovodstvo i knjigovođa; dokumente menja autor |
-| [[Repozitorijum izvornog koda]] | produkcioni API ključ za PayNet upisan je u `config/paynet.yml` | [[Ugrađeni pristupni podatak]] | API ključ znaju samo aplikacioni server i administrator |
-| [[Repozitorijum izvornog koda]] | testno okruženje koristi kopiju produkcione baze sa pravim podacima korisnika | [[Prekomerno ovlašćenje]] | korisničke podatke vide samo vlasnik naloga i podrška |
-| [[Sistem za upravljanje nalozima]] | prijava na GitLab i administratorski deo aplikacije samo lozinkom; Stefan za GitLab koristi lozinku koja je procurela sa jednog foruma | [[Slaba autentifikacija]] | izvorni kod vide samo programeri firme; administratorskom delu pristupa samo podrška |
-| [[Sistem za upravljanje nalozima]] | nalog programera koji je otišao pre dva meseca i dalje je aktivan u GitLab-u | [[Prekomerno ovlašćenje]] | izvorni kod vide samo programeri firme |
-| [[Sistem za zapise o radu]] | aplikacija beleži samo greške, ne i prijave, storniranja i promene statusa; zapisi se ne pregledaju | [[Nedovoljno beleženje i praćenje]] | zna se ko je fakturu stornirao |
-| [[Sistem za rezervne kopije]] | kopije su u istoj mreži, dostupne Stefanovim nalogom čiji su podaci sačuvani na Jeleninom laptopu, nešifrovane, a vraćanje nikad nije probano | [[Nezaštićena rezervna kopija]] | podaci se vraćaju u roku od četiri sata |
-| Fizičko okruženje | server ormar u hodniku nije zaključan | [[Nedostatak fizičke zaštite]] | serverima fizički pristupa samo administrator |
+| [[Zaposleni]] | Jelena otvara priloge iz e-pošte bez provere pošiljaoca i menja podatke naloga na osnovu telefonskog poziva | podložnost socijalnom inženjeringu | programe na računaru instalira samo administrator; korisničke podatke menja vlasnik naloga |
+| [[Poslovni računar]] | makroi u Office dokumentima sa interneta su dozvoljeni | pogrešna bezbednosna konfiguracija | programe na računaru instalira samo administrator |
+| [[Poslovni računar]] | zaposleni rade kao lokalni administratori | prekomerno ovlašćenje | programe na računaru instalira samo administrator |
+| [[Poslovni računar]] | Windows se ne ažurira automatski | nezakrpljen softver | programe na računaru instalira samo administrator |
+| [[Mrežni prolaz]] | administratorski panel rutera dostupan je sa interneta, sa fabričkom lozinkom | pogrešna bezbednosna konfiguracija | podešavanja mreže menja samo administrator |
+| [[Interna mreža]] | poslovni računari, serveri i Wi-Fi za posetioce su u istom segmentu | nedostatak segmentacije mreže | serverima pristupaju samo administrator i aplikacija |
+| [[Server]] | Ubuntu i nginx nisu ažurirani od marta, a za verziju nginx-a postoji javno objavljena slabost | nezakrpljen softver | podešavanja servera menja samo administrator |
+| [[Server]] | nginx u porukama o greškama prikazuje verziju i putanje fajlova | pogrešna bezbednosna konfiguracija | podešavanja servera vidi samo administrator |
+| [[Web aplikacija]] | `/api/fakture/{id}` vraća fakturu svakom prijavljenom korisniku, bez provere da li je njegova | neispravna kontrola pristupa | fakture vide samo izdavalac i kupac |
+| [[Web aplikacija]] | obaveštenje o uplati prihvata se bez provere potpisa PayNet-a | nedovoljna provera autentičnosti podataka | status „plaćeno“ postavlja samo potvrđeno obaveštenje PayNet-a |
+| [[Web aplikacija]] | stranica za plaćanje ne ograničava broj pokušaja plaćanja, a prijava broj pokušaja prijave | nekontrolisana učestalost zahteva | proces naplate radi neprekidno |
+| [[Web aplikacija]] | pretraga kupaca ugrađuje tekst pretrage direktno u SQL upit | injekcija | korisnik vidi i menja samo svoje kupce |
+| [[Web aplikacija]] | polje „napomena“ prikazuje se na stranici za plaćanje bez kodiranja, pa se u njega može ubaciti skripta | injekcija | stranicu za plaćanje menja samo aplikacija |
+| [[Web aplikacija]] | biblioteka PdfGen 2.3 preko adrese slike u HTML šablonu čita fajlove sa servera, a korisnik može da doda logo preko adrese slike | nezakrpljen softver | podešavanja servera vidi samo administrator |
+| [[Web aplikacija]] | API ključ za PayNet ima i pravo povraćaja novca, iako ga aplikacija ne koristi | prekomerno ovlašćenje | povraćaj novca odobrava samo direktor |
+| [[Baza podataka]] | aplikacija se povezuje na bazu kao njen vlasnik | prekomerno ovlašćenje | aplikacija ne briše tabele |
+| [[Skladište dokumenata]] | svi zaposleni imaju pravo čitanja i pisanja nad celim deljenim folderom, uključujući finansijske izveštaje | prekomerno ovlašćenje | finansijske izveštaje vide rukovodstvo i knjigovođa; dokumente menja autor |
+| [[Repozitorijum izvornog koda]] | produkcioni API ključ za PayNet upisan je u `config/paynet.yml` | ugrađeni pristupni podatak | API ključ znaju samo aplikacioni server i administrator |
+| [[Repozitorijum izvornog koda]] | testno okruženje koristi kopiju produkcione baze sa pravim podacima korisnika | prekomerno ovlašćenje | korisničke podatke vide samo vlasnik naloga i podrška |
+| [[Sistem za upravljanje nalozima]] | prijava na GitLab i administratorski deo aplikacije samo lozinkom; Stefan za GitLab koristi lozinku koja je procurela sa jednog foruma | slaba autentifikacija | izvorni kod vide samo programeri firme; administratorskom delu pristupa samo podrška |
+| [[Sistem za upravljanje nalozima]] | nalog programera koji je otišao pre dva meseca i dalje je aktivan u GitLab-u | prekomerno ovlašćenje | izvorni kod vide samo programeri firme |
+| [[Sistem za zapise o radu]] | aplikacija beleži samo greške, ne i prijave, storniranja i promene statusa; zapisi se ne pregledaju | nedovoljno beleženje i praćenje | zna se ko je fakturu stornirao |
+| [[Sistem za rezervne kopije]] | kopije su u istoj mreži, dostupne Stefanovim nalogom čiji su podaci sačuvani na Jeleninom laptopu, nešifrovane, a vraćanje nikad nije probano | nezaštićena rezervna kopija | podaci se vraćaju u roku od četiri sata |
+| Fizičko okruženje | server ormar u hodniku nije zaključan | nedostatak fizičke zaštite | serverima fizički pristupa samo administrator |

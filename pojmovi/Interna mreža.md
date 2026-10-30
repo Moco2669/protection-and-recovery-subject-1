@@ -16,5 +16,4 @@ Internu mrežu firme [[Fakturis]] čine jedan mrežni preklopnik u server sobi, 
 Kontraprimer: kućna mreža programera koji radi od kuće nije interna mreža firme, iako preko nje pristupa GitLab-u, jer njome firma ne upravlja.
 
 ## Napomene
-- Interna mreža se deli na segmente, delove između kojih je saobraćaj ograničen. Koje komponente su u istom segmentu određuje koliko daleko napadač može da stigne kada preuzme jednu od njih.
-- Karakteristična ranjivost: [[Nedostatak segmentacije mreže]].
+- Interna mreža se deli na segmente, delove između kojih je saobraćaj ograničen. U [[Fakturis]] su poslovni računari, serveri i Wi-Fi za posetioce u istom segmentu.

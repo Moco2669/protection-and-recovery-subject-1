@@ -17,4 +17,4 @@ Kontraprimer: Jelenin laptop izvršava programe samo za nju i ne pruža usluge d
 
 ## Napomene
 - Server i programi koji se na njemu izvršavaju su različite komponente. Ako napadač preuzme operativni sistem aplikacionog servera, dobija pristup i aplikaciji, i njenim zapisima o radu, i podešavanjima sa lozinkom baze.
-- Karakteristična ranjivost: operativni sistem i web server koji se ne ažuriraju ([[Nezakrpljen softver]]).
+- U [[Fakturis]] Ubuntu i nginx na aplikacionom serveru nisu ažurirani od marta.

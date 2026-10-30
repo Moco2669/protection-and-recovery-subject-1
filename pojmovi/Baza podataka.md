@@ -17,4 +17,4 @@ Kontraprimer: Excel tabela u kojoj knjigovođa vodi mesečne prihode takođe sad
 
 ## Napomene
 - CIS pod bazom podrazumeva samo podatke, a softver koji njima upravlja (DBMS) posmatra odvojeno. Ovde su obuhvaćeni zajedno, jer imaju iste ranjivosti i kontrole.
-- Karakteristična ranjivost: aplikacija se na bazu povezuje kao njen vlasnik ([[Prekomerno ovlašćenje]]).
+- U [[Fakturis]] se aplikacija na bazu povezuje kao njen vlasnik, pa njen nalog može i da briše tabele.

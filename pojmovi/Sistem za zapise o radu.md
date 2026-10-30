@@ -16,5 +16,5 @@ U firmi [[Fakturis]] ovaj sistem još nije izdvojen. [[Web aplikacija]], nginx n
 Kontraprimer: tabela statusa faktura u bazi pokazuje trenutno stanje svake fakture, ali ne i ko ju je i kada menjao. Ona nije zapis o radu.
 
 ## Napomene
-- Zapisi o radu su istovremeno [[Resurs|resurs]] (prateći) i preduslov za [[Detektivna kontrola|detektivne kontrole]] i za [[Neporecivost|neporecivost]]. Napadač koji ih izmeni ili obriše briše i tragove napada.
-- Karakteristična ranjivost: [[Nedovoljno beleženje i praćenje]].
+- Zapisi o radu su istovremeno [[Resurs|resurs]], prateći: ko ih izmeni ili obriše, briše i trag ko je šta uradio.
+- U [[Fakturis]] aplikacija beleži samo greške, ne i prijave, storniranja i promene statusa, a zapise niko redovno ne pregleda.

@@ -16,5 +16,5 @@ Mrežni prolaz firme [[Fakturis]] je jedan uređaj koji je istovremeno ruter i z
 Kontraprimer: mrežni preklopnik u server sobi takođe prenosi saobraćaj, ali povezuje uređaje unutar firme, a ne firmu sa internetom. On je deo [[Interna mreža|interne mreže]].
 
 ## Napomene
-- Mrežni prolaz je fizička tačka kroz koju prelaze svi [[Tok podataka|tokovi podataka]] preko [[Granica sistema|granice sistema]]. Zato je istovremeno važna bezbednosna kontrola i privlačna meta.
-- Karakteristična ranjivost: administratorski panel dostupan sa interneta, sa fabričkom lozinkom ([[Pogrešna bezbednosna konfiguracija]]).
+- Sav saobraćaj između firme i interneta prolazi kroz mrežni prolaz, uključujući zahteve web aplikacije ka PayNet-u. PayNet ipak nije deo ovog prolaza: prolaz samo prenosi saobraćaj, a PayNet-om upravlja druga firma.
+- U [[Fakturis]] je administratorski panel prolaza dostupan sa interneta, sa fabričkom lozinkom.

@@ -16,5 +16,5 @@ Svaki zaposleni u firmi [[Fakturis]] ima laptop sa Windows 11, Microsoft Office 
 Kontraprimer: privatni telefon na kom Jelena čita službenu e-poštu nije poslovni računar, jer ga firma nije dodelila i njime ne upravlja.
 
 ## Napomene
-- Poslovni računar je tačka u kojoj se spoljni svet (e-pošta, internet) susreće sa unutrašnjim sistemom, pa je čest prvi korak [[Napad|napada]].
-- Karakteristične ranjivosti: makroi dozvoljeni u dokumentima sa interneta ([[Pogrešna bezbednosna konfiguracija]]) i rad sa administratorskim pravima ([[Prekomerno ovlašćenje]]).
+- Poslovni računar je tačka u kojoj se e-pošta i internet susreću sa unutrašnjim sistemom.
+- U [[Fakturis]] su na tim računarima makroi iz dokumenata sa interneta dozvoljeni, a zaposleni rade kao lokalni administratori.
