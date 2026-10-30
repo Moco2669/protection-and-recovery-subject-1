@@ -1,6 +1,6 @@
 ---
 tip: pojam
-aliases: [web application, aplikacija, API]
+aliases: [web application]
 izvor: CIS Critical Security Controls v8, Glossary, "application"
 status: predlog
 sloj: temelj
