@@ -11,7 +11,7 @@ sloj: temelj
 Sistem za zapise o radu je komponenta sistema koja prikuplja zapise o radnjama i događajima u drugim komponentama, čuva ih i omogućava njihov pregled.
 
 ## Primer
-U firmi [[Fakturis]] ovaj sistem još nije izdvojen. [[Web aplikacija]], nginx na [[Server|serveru]] i [[Mrežni prolaz|mrežni prolaz]] vode zapise svako na svom uređaju. Zapisi aplikacije čuvaju se sedam dana, a niko ih redovno ne pregleda. Logička komponenta ipak postoji: to je skup tih zapisa i načina na koji se čuvaju.
+U firmi [[Fakturis]] ovaj sistem još nije izdvojen. [[Web aplikacija]], nginx na [[Server|serveru]] i [[Mrežni prolaz|mrežni prolaz]] vode zapise svako na svom uređaju. Zapisi aplikacije čuvaju se sedam dana, a niko ih redovno ne pregleda.
 
 Kontraprimer: tabela statusa faktura u bazi pokazuje trenutno stanje svake fakture, ali ne i ko ju je i kada menjao. Ona nije zapis o radu.
 
