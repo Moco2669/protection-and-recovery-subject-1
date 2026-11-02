@@ -1,24 +1,20 @@
 ---
 tip: pojam
 aliases: [employee, personnel]
-izvor: ZOSS 03 (predavanje, „zaposleni koji obrađuje podatke“ kao ljudska komponenta); ISO/IEC 27002:2022, poglavlje 6 People controls
-status: predlog
+izvor: formulacija je naša; srodno: ISO/IEC 27002:2022, poglavlje 6 People controls
+status: prihvaćeno
 sloj: temelj
 ---
 # Zaposleni (employee)
 
 ## Definicija
-Zaposleni je ljudska komponenta sistema: osoba koja za organizaciju obavlja poslove u određenoj ulozi i pri tome obrađuje resurse ili upravlja drugim komponentama sistema.
+Zaposleni je osoba koja za organizaciju obavlja rad na osnovu ugovora o radu ili drugog ugovora kojim joj je taj rad poveren.
 
 ## Primer
-U firmi [[Fakturis]] razlikujemo tri uloge zaposlenih:
-- **korisnička podrška** (Jelena) prima zahteve korisnika, kroz administratorski deo aplikacije pregleda i ispravlja njihove podatke i radi sa ugovorima;
-- **administrator sistema** (Stefan) održava servere, mrežu, naloge zaposlenih i rezervne kopije;
-- **programer** (Milan i još petoro) razvija aplikaciju i objavljuje nove verzije.
+U firmi [[Fakturis]] po ugovoru rade Jelena, Stefan, Milan, direktor, knjigovođa i čistač.
 
-Direktor i knjigovođa rade sa ugovorima i finansijskim izveštajima.
-
-Kontraprimer: kupac koji plaća fakturu na stranici za plaćanje takođe radi sa podacima Fakturisa, ali nije zaposleni ni komponenta sistema, jer ne radi za firmu.
+Kontraprimer: osoba zaposlena kod firme koja pruža platni servis ne radi za Fakturis. Ona nije zaposleni ove firme.
 
 ## Napomene
-- Uloga određuje kojim resursima zaposleni pristupa, pa i koliko štete može da nastane ako ga neko obmane ili ako sam naudi firmi. Stefanov nalog može sve što i sistem.
+- Nije svaki zaposleni komponenta sistema. Komponenta je [[Zaposleni sa pristupom|zaposleni sa pristupom]].
+- Ugovor na jedan posao, sa licem koje ne radi u procesima firme, ne čini tog čoveka zaposlenim. Radnik tuđe firme koja isporučuje uslugu ostaje spoljni subjekt.

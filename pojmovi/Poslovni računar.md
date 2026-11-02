@@ -8,13 +8,13 @@ sloj: temelj
 # Poslovni računar (workstation)
 
 ## Definicija
-Poslovni računar je računar koji organizacija dodeljuje [[Zaposleni|zaposlenom]], zajedno sa operativnim sistemom i programima na njemu, preko kog zaposleni obavlja svakodnevni rad i pristupa drugim komponentama sistema.
+Poslovni računar je računar koji organizacija dodeljuje [[Zaposleni sa pristupom|zaposlenom sa pristupom]], zajedno sa operativnim sistemom i programima na njemu, preko kog on obavlja svakodnevni rad i pristupa drugim komponentama sistema.
 
 ## Primer
-Svaki zaposleni u firmi [[Fakturis]] ima laptop sa Windows 11, Microsoft Office paketom, web pregledačem i klijentom e-pošte. Programeri imaju i razvojne alate i lokalnu kopiju repozitorijuma. Jelena preko svog laptopa otvara administratorski deo aplikacije, čita e-poštu korisnika i radi sa ugovorima u skladištu dokumenata.
+Svaki [[Zaposleni sa pristupom|zaposleni sa pristupom]] u firmi [[Fakturis]] ima laptop firme. Jelena na njemu radi u [[Softverski proizvod|proizvodu]] i otvara ugovore. Isti laptop Milan koristi i od kuće.
 
-Kontraprimer: privatni telefon na kom Jelena čita službenu e-poštu nije poslovni računar, jer ga firma nije dodelila i njime ne upravlja.
+Kontraprimer: privatni telefon na kom Jelena čita službenu e-poštu nije poslovni računar, jer ga firma nije dodelila. Čistač nema poslovni računar.
 
 ## Napomene
+- Mesto na kom se računar nalazi nije deo definicije. Od kuće on i dalje jeste poslovni računar, a put do ostalih komponenti je [[Udaljeni pristup|udaljeni pristup]].
 - Poslovni računar je tačka u kojoj se e-pošta i internet susreću sa unutrašnjim sistemom.
-- U [[Fakturis]] su na tim računarima makroi iz dokumenata sa interneta dozvoljeni, a zaposleni rade kao lokalni administratori.

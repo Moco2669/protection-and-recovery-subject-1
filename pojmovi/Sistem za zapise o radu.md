@@ -2,19 +2,18 @@
 tip: pojam
 aliases: [logging system, log management, sistem za logove]
 izvor: NIST SP 800-92, Guide to Computer Security Log Management ("log": a record of the events occurring within an organization's systems and networks)
-status: predlog
+status: prihvaćeno
 sloj: temelj
 ---
 # Sistem za zapise o radu (logging system)
 
 ## Definicija
-Sistem za zapise o radu je komponenta sistema koja prikuplja zapise o radnjama i događajima u drugim komponentama, čuva ih i omogućava njihov pregled.
+Sistem za zapise o radu je komponenta sistema koja prikuplja zapise o radnjama u drugim komponentama, čuva ih u [[Skladište zapisa|skladištu zapisa]] i omogućava njihov pregled.
 
 ## Primer
-U firmi [[Fakturis]] ovaj sistem još nije izdvojen. [[Web aplikacija]], nginx na [[Server|serveru]] i [[Mrežni prolaz|mrežni prolaz]] vode zapise svako na svom uređaju. Zapisi aplikacije čuvaju se sedam dana, a niko ih redovno ne pregleda.
+U firmi [[Fakturis]] sistem nije izdvojen. [[Softverski proizvod|Softverski proizvod]], programi na [[Server|serveru]] i [[Mrežni prolaz|mrežni prolaz]] upisuju zapise svaki u svoje skladište zapisa. Zapisi proizvoda čuvaju se sedam dana, a niko ih redovno ne pregleda.
 
-Kontraprimer: tabela statusa faktura u bazi pokazuje trenutno stanje svake fakture, ali ne i ko ju je i kada menjao. Ona nije zapis o radu.
+Kontraprimer: tabela statusa faktura pokazuje trenutno stanje, ali je ne vodi ovaj sistem i ona ne služi pregledu toga ko je šta uradio.
 
 ## Napomene
-- Zapisi o radu su istovremeno resurs, prateći: ko ih izmeni ili obriše, briše i trag ko je šta uradio.
-- U [[Fakturis]] aplikacija beleži samo greške, ne i prijave, storniranja i promene statusa, a zapise niko redovno ne pregleda.
+- Zapisi o radu su istovremeno resurs: ko ih izmeni ili obriše, briše i trag ko je šta uradio.
