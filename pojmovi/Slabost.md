@@ -1,25 +1,25 @@
 ---
 tip: pojam
 aliases: ["weakness"]
-izvor: "MITRE CWE Glossary, odrednice Weakness i Vulnerability, https://cwe.mitre.org/documents/glossary/"
+izvor: "MITRE CWE Glossary, Weakness, Class Weakness i Vulnerability, https://cwe.mitre.org/documents/glossary/; za širi obuhvat komponenti: NIST CSRC Glossary, vulnerability, https://csrc.nist.gov/glossary/term/vulnerability"
 ---
 
 # Slabost (weakness)
 
 ## Definicija
 
-Slabost jeste nedostatak u softverskoj, firmverskoj, hardverskoj ili servisnoj komponenti koji pod određenim okolnostima može doprineti nastanku ranjivosti.
+Slabost je vrsta nedostatka u projektovanju, izradi, podešavanju ili upotrebi komponente sistema, čije konkretne pojave u odgovarajućim uslovima mogu predstavljati ranjivosti koje omogućavaju radnje suprotne bezbednosnim zahtevima.
 
 ## Primer
 
-U posmatranom sistemu firme, modul za pregled faktura proverava da li je korisnik prijavljen, ali ne proverava da li ima pravo da pristupi traženoj fakturi. Izostanak provere prava pristupa predstavlja slabost.
-
-Ako korisnik promenom identifikatora u zahtevu dobije fakturu drugog preduzeća, u tom modulu postoji konkretna ranjivost: omogućeno je neovlašćeno čitanje podataka koje narušava poverljivost fakture i krši zahtev da korisnik vidi samo fakture svog preduzeća.
+U sistemu organizacije podrška sme da čita poslovni dokument, ali ne i da ga menja. Ako komponenta koja obrađuje zahtev proverava samo prijavu, pa izvrši i zahtev podrške za izmenu tog dokumenta, u toj komponenti postoji konkretna ranjivost. Vrsta nedostatka je [[Neispravna kontrola pristupa|neispravna kontrola pristupa]], zahtev ograničava ko sme da menja dokument, a pretnja po komponenti je neovlašćena izmena podataka tokom obrade. Primer ne zavisi od namene dokumenta, vrste proizvoda ili izabrane baze.
 
 ## Napomene
 
-Slabost opisuje nedostatak koji može doprineti nastanku ranjivosti. Da bi se utvrdila konkretna ranjivost, potrebno je razmotriti komponentu, uslove njenog korišćenja i mogućnost da napadač iskoristi taj nedostatak za narušavanje bezbednosnog svojstva resursa.
+Slabost označava vrstu nedostatka, a ranjivost njegovu konkretnu pojavu u komponenti koja u datim uslovima omogućava radnju suprotnu bezbednosnom zahtevu. Jedna vrsta slabosti može imati više konkretnih pojava, a jedna ranjivost može zavisiti od više povezanih nedostataka.
 
-Ista vrsta slabosti može se pojaviti u različitim komponentama i doprineti nastanku više različitih ranjivosti.
+Pretnja po komponenti opisuje moguće narušavanje svojstva resursa u određenoj komponenti. Napad je niz radnji kojim napadač pokušava da je ostvari.
 
-Postojanje slabosti ili ranjivosti ne znači da je napad već izveden niti da je šteta nastala.
+Nedostatak može postojati i u postupku ljudske komponente. Za utvrđivanje konkretne ranjivosti potrebno je pokazati koje nedozvoljeno postupanje taj nedostatak omogućava.
+
+Postojanje ranjivosti ne znači da je napad već izveden.
