@@ -11,7 +11,7 @@ sloj: temelj
 Softverski proizvod je skup softverskih komponenti koje organizacija sama razvija i izvršava, i preko kojih korisnici ili drugi programi koriste njene poslovne funkcije.
 
 ## Primer
-Proizvod firme [[Fakturis]] izvršava se na aplikacionom [[Server|serveru]]. Korisnici preko njega izdaju fakture. Proizvod čita i menja podatke u [[Baza podataka|bazi podataka]], upisuje fakture u [[Skladište datoteka|skladište datoteka]] i preko [[Interfejs ka spoljnom servisu|interfejsa ka spoljnom servisu]] poziva [[Spoljni servis|spoljni servis]] za naplatu.
+Proizvod firme [[Fakturis]] izvršava se na aplikacionom [[Server|serveru]]. Korisnici preko njega izdaju fakture. Proizvod čita i menja podatke u [[Baza podataka|bazi podataka]], upisuje fakture u [[Skladište datoteka|skladište datoteka]] i poziva [[Spoljni servis|spoljni servis]] za naplatu. Poziv servisa deo je proizvoda.
 
 Kontraprimer: program na istom serveru koji samo prosleđuje saobraćaj proizvodu nije softverski proizvod. Firma ga nije razvila, i on ne obavlja poslovne funkcije.
 

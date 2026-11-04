@@ -8,7 +8,7 @@ sloj: temelj
 # Spoljni servis (external service)
 
 ## Definicija
-Spoljni servis je servis kojim upravlja druga organizacija, van sistema organizacije, a koji [[Softverski proizvod|softverski proizvod]] poziva da bi obavio deo svog posla.
+Spoljni servis je resurs kojim upravlja druga organizacija, van sistema organizacije, a koji [[Softverski proizvod|softverski proizvod]] poziva da bi obavio deo svog posla.
 
 ## Primer
 [[Fakturis]] za naplatu faktura koristi dva spoljna servisa, oba tuđe firme. [[Softverski proizvod|Softverski proizvod]] poziva jedan od njih. Nijedan nije komponenta Fakturisa, i podaci o kartici kupca u sistem ne ulaze.
@@ -16,4 +16,4 @@ Spoljni servis je servis kojim upravlja druga organizacija, van sistema organiza
 Kontraprimer: internet provajder je tuđa firma, ali proizvod ga ne poziva da obavi deo posla. On nije spoljni servis u ovom smislu.
 
 ## Napomene
-- Spoljni servis stoji van granice sistema. Deo proizvoda koji ga poziva je [[Interfejs ka spoljnom servisu|interfejs ka spoljnom servisu]].
+- Spoljni servis stoji van granice sistema. Kod koji ga poziva deo je [[Softverski proizvod|softverskog proizvoda]], ne poseban pojam.

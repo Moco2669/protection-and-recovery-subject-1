@@ -8,7 +8,7 @@ sloj: temelj
 # Repozitorijum izvornog koda (source code repository)
 
 ## Definicija
-Repozitorijum izvornog koda je softverska komponenta sistema koja čuva izvorni kod sa celom istorijom izmena i iz koje se nove verzije softvera proveravaju i objavljuju.
+Repozitorijum izvornog koda je [[Skladište podataka|skladište podataka]] koje čuva izvorni kod sa celom istorijom izmena i iz kojeg se nove verzije softvera proveravaju i objavljuju.
 
 ## Primer
 Programeri firme [[Fakturis]] čuvaju kod [[Softverski proizvod|softverskog proizvoda]] na internom GitLab [[Server|serveru]]. Svaka izmena ostaje u istoriji, sa imenom autora. Posle provere, nova verzija se objavljuje na aplikacioni server.
@@ -17,4 +17,4 @@ Kontraprimer: lokalna kopija koda na Milanovom laptopu sadrži isti kod, ali iz 
 
 ## Napomene
 - Repozitorijum sadrži više od koda: konfiguracione fajlove, skripte za objavljivanje, ponekad i pristupne podatke. Ko može da menja repozitorijum, može da promeni i ono što se izvršava na serveru.
-- Nije [[Skladište podataka|skladište podataka]]. Čuva kod radi istorije izmena i objavljivanja verzija.
+- Provera i objava nove verzije, kad se crta na dijagramu toka podataka, jeste [[Procesna jedinica|procesna jedinica]] koja čita ovo skladište. Sam repozitorijum je mesto gde kod stoji.
