@@ -40,3 +40,8 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 - **Ovlašćenje, pravo pristupa, dozvola, privilegija.** Koriste se kao sinonimi. Ustaliti jedan termin kada se definiše kontrola pristupa. Konkretnija beleška o prekomernom ovlašćenju nije deo ovog prvog skupa.
 - **Skeneri ranjivosti kao kontrola.** Da li su SAST, DAST i pentest detektivne kontrole (otkrivaju) ili preventivne (deluju pre napada)? Izvori se razlikuju.
 - **Rizik.** Kostur ga stavlja u temelj, ali ga nema na dijagramu sa predavanja. Treba ga definisati pre prioritizacije ranjivosti (CVSS).
+
+
+## Revizija tipova pretnji od 2026 11 05
+
+Za Nedin deo „Tipovi pretnji po komponentama sistema“ prethodni skup zamenjen je sa šest tipova pretnji. Manifestacije se razrađuju prema procesnoj jedinici, toku i skladištu podataka, uz ulogu spoljnih učesnika. STRIDE je oslonac za proveru pokrivenosti, a ne zahtev za novu metodološku belešku. Ranjivost ostaje osobina određene komponente koja omogućava ostvarenje pretnje suprotno zahtevu. Ranije odluke o prethodnom skupu su istorijske. Primeri su uslovni scenariji; izmene Momčilove grane nisu ovim preuzete.
