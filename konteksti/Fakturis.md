@@ -68,6 +68,8 @@ Jelena, Stefan, programeri, direktor i knjigovođa su [[Zaposleni sa pristupom|z
 ### Tokovi podataka
 Ovo su [[Tok podataka|tokovi podataka]], ne samo spisak veza. [[Softverski proizvod]] je pri izdavanju fakture [[Procesna jedinica|procesna jedinica]].
 
+Korisnici, njihovi kupci i servisi za naplatu su [[Spoljni entitet|spoljni entiteti]] u ovom modelu. Granica poverenja obuhvata komponente koje kontroliše Fakturis; tokovi između njih i spoljašnjih entiteta prelaze tu granicu.
+
 - Korisnik i kupac, preko interneta i mrežnog prolaza, stižu do proizvoda.
 - Proizvod čita i menja [[Baza podataka|bazu]] i upisuje datoteke u [[Skladište datoteka|skladište datoteka]]. Ne razgovara sa skladištem podataka kao jednim sistemom.
 - Proizvod poziva spoljni servis za naplatu iz svog koda.
@@ -77,14 +79,25 @@ Ovo su [[Tok podataka|tokovi podataka]], ne samo spisak veza. [[Softverski proiz
 - Baza i skladište datoteka kopiraju se na sistem za rezervne kopije.
 - Proizvod, server i mrežni prolaz upisuju zapise u svoja skladišta zapisa.
 
-Primer dijagrama za izdavanje fakture. Strelica je tok podataka. Baza, skladište datoteka i repozitorijum su skladišta podataka. Rezervne kopije nisu.
+Oznake HTTP, HTTPS, DNS, SSH, TCP, UDP, TLS i MQTT u primerima pojmova služe da objasne uloge protokola. One ne određuju stvarnu konfiguraciju Fakturisovog proizvoda, koja u ovoj studiji nije fiksirana. Dodatni učesnici ili komponente u primerima, poput DNS servera, MQTT posrednika ili druge [[Procesna jedinica|procesne jedinice]], služe samo za objašnjenje protokola i nisu utvrđeni elementi osnovne studije.
+
+Primer [[Dijagram toka podataka|dijagrama toka podataka]] za izdavanje fakture. Strelica je tok podataka. Isprekidani okvir označava granicu poverenja oko sistema Fakturisa. Baza i skladište datoteka su skladišta podataka. Rezervne kopije nisu.
 
 ```mermaid
 flowchart LR
-  K["Korisnik van sistema"] -->|stavke fakture| APP["Softverski proizvod"]
-  APP -->|zapis fakture| DB[("Baza podataka")]
-  APP -->|datoteka| SD[("Skladište datoteka")]
-  APP -->|poziv naplate| SS["Spoljni servis"]
+  K["Korisnik van sistema"]
+  SS["Spoljni servis"]
+  subgraph fakturis["Sistem Fakturisa"]
+    direction LR
+    APP["Softverski proizvod"]
+    DB[("Baza podataka")]
+    SD[("Skladište datoteka")]
+  end
+  K -->|stavke fakture| APP
+  APP -->|zapis fakture| DB
+  APP -->|datoteka| SD
+  APP -->|poziv naplate| SS
+  style fakturis stroke:#b33,stroke-dasharray: 5 5
 ```
 
 Pregled komponenti, ne dijagram toka podataka. Cilindri su skladišta podataka. Rezervne kopije su posebna komponenta.
