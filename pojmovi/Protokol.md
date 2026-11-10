@@ -18,5 +18,5 @@ Kontraprimer: pravila koja određuju ko u Fakturisu sme da izda fakturu nisu kom
 ## Napomene
 - Protokol opisuje pravila razmene, dok je [[Tok podataka|tok podataka]] konkretan prenos podataka između elemenata sistema. Na dijagramu toka protokol može biti upisan uz strelicu.
 - [[Aplikacioni protokol|Aplikacioni protokoli]] i [[Transportni protokol|transportni protokoli]] imaju različite uloge. Jedan tok može koristiti protokole sa više slojeva.
-- Primeri aplikacionih protokola su [[HTTP]], [[DNS]] i [[SSH]]. [[HTTPS]] označava HTTP komunikaciju zaštićenu [[TLS|TLS-om]]; nije samo drugo ime za HTTP.
+- Primeri aplikacionih protokola su [[HTTP]], [[DNS]], [[SSH]], [[MQTT]] i [[FTP]]. [[HTTPS]] označava HTTP komunikaciju zaštićenu [[TLS|TLS-om]]; nije samo drugo ime za HTTP.
 - Primeri transportnih protokola su [[TCP]] i [[UDP]]. [[MQTT]] je primer aplikacionog protokola za razmenu poruka.

@@ -16,5 +16,5 @@ Kada korisnik u pregledaču pošalje zahtev za izdavanje fakture, [[HTTP]] defin
 Kontraprimer: [[TCP]] ne određuje šta znači zahtev za izdavanje fakture. On je [[Transportni protokol|transportni protokol]] koji prenosi podatke potrebne za komunikaciju.
 
 ## Napomene
-- Primeri aplikacionih protokola su [[HTTP]], [[DNS]], [[SSH]] i [[MQTT]]. [[HTTPS]] označava HTTP komunikaciju zaštićenu [[TLS|TLS-om]].
+- Primeri aplikacionih protokola su [[HTTP]], [[DNS]], [[SSH]], [[MQTT]] i [[FTP]]. [[HTTPS]] označava HTTP komunikaciju zaštićenu [[TLS|TLS-om]].
 - „Aplikacioni“ opisuje ulogu protokola, a ne nužno mesto gde se izvršava. Protokol koriste programi na krajnjim sistemima.
