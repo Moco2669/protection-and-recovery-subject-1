@@ -55,6 +55,7 @@ Definicije su preuzete sa predavanja *ZOSS 03: Osnovna terminologija pretnji*. O
 - 2026-11-05: **Interfejs ka spoljnom servisu** više nije pojam. Poziv spoljnog servisa deo je [[Softverski proizvod|softverskog proizvoda]], u studiji na primer posebna klasa. Beleška je obrisana.
 - 2026-11-05: **Skladište podataka** nije jedan sistem. Druga komponenta razgovara sa konkretnom podvrstom. Podvrste su [[Baza podataka]], [[Skladište datoteka]], [[Skladište zapisa]] i [[Repozitorijum izvornog koda]]. Time se menja odluka od 2026-11-01 po kojoj repozitorijum nije skladište podataka. [[Sistem za rezervne kopije]] i dalje nije. [[Sistem za zapise o radu]] u studiji može da se konkretizuje kao SIEM, bez posebne beleške.
 - 2026-11-05: Dodati su [[Procesna jedinica]] i [[Tok podataka]], da bi se kasnije crtali dijagrami toka podataka za slabosti, napade i kontrole. Formulacije su predlog.
+- 2026-11-11: Softverska [[Procesna jedinica|procesna jedinica]] opisuje se na tri nivoa — [[Hardverska platforma|hardverska platforma]], [[Sistemsko okruženje|sistemsko okruženje]] i [[Aplikativni softver|aplikativni softver]]. Konkretne tehnologije u primerima za [[Fakturis]] služe kao ilustracije.
 
 ## Otvorena pitanja
 - **Pravo pristupa i ovlašćenje.** Koji od ta dva termina ostaje, bira se kad se bude definisala kontrola pristupa.
