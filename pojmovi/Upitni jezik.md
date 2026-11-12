@@ -16,6 +16,6 @@ Da bi prikazao fakture jednog kupca, [[Softverski proizvod|softverski proizvod]]
 Kontraprimer: kada Jelena otvori datoteku u [[Deljeni mrežni folder|deljenom mrežnom folderu]], njen računar ne šalje upit. On traži datoteku po imenu, a skladište ne tumači njen sadržaj.
 
 ## Napomene
-- Primeri su SQL kod [[Relaciona baza podataka|relacionih baza]] i upiti u obliku objekata kod [[Dokument-orijentisana baza podataka|dokument-orijentisanih baza]]. Naredbe [[Ključ-vrednost baza podataka|ključ-vrednost baze]], kao GET i SET, biraju podatak samo po ključu i bliže su radu sa datotekama.
+- Primeri su SQL kod [[Relaciona baza podataka|relacionih baza]] i upiti u obliku objekata kod [[Dokument-orijentisana baza podataka|dokument-orijentisanih baza]]. Naredbe [[Ključ-vrednost baza podataka|ključ-vrednost baze]], kao GET i SET, biraju podatak po ključu i ne opisuju koje podatke treba pronaći, pa nisu upitni jezik.
 - Skladište izvršava ceo opis koji primi, u granicama prava naloga. Ono ne razlikuje deo koji je napisao programer od dela ugrađenog iz korisnikovog unosa. Na tome se zasniva grupa slabosti koju MITRE vodi kao CWE-943.
 - „SQL upit“ je u bazi pretpostavljen pojam. Ova beleška ga uopštava na skladišta koja ne koriste SQL.

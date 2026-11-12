@@ -1,14 +1,14 @@
 ---
 tip: pojam
-aliases: [document database, document store, dokument baza, NoSQL baza, MongoDB]
-izvor: nema posebne standardne definicije; karakteristike prema MongoDB Manual, Security Checklist for Self-Managed Deployments
+aliases: [document database, document store, dokument baza, MongoDB]
+izvor: nema posebne standardne definicije; karakteristike prema MongoDB Manual, Security Checklist for Self-Managed Deployments i Schema Validation
 status: predlog
 sloj: jezgro
 ---
 # Dokument-orijentisana baza podataka (document database)
 
 ## Definicija
-Dokument-orijentisana baza podataka je [[Baza podataka|baza podataka]] koja podatke čuva kao dokumente, zapise sa imenovanim i ugnježdenim poljima nalik JSON-u, bez strukture koju svi dokumenti moraju da prate.
+Dokument-orijentisana baza podataka je [[Baza podataka|baza podataka]] koja podatke čuva kao dokumente, zapise sa imenovanim i ugnježdenim poljima nalik JSON-u, i pronalazi ih po vrednostima tih polja.
 
 ## Primer
 Kada bi [[Fakturis]] fakture čuvao u MongoDB-u, jedna faktura bila bi jedan dokument sa podacima o kupcu i listom stavki. Dve fakture u istoj kolekciji mogle bi da imaju različita polja, na primer samo jedna polje za popust.
@@ -16,7 +16,9 @@ Kada bi [[Fakturis]] fakture čuvao u MongoDB-u, jedna faktura bila bi jedan dok
 Kontraprimer: JSON datoteka u [[Skladište datoteka|skladištu datoteka]] ima isti oblik, ali to nije dokument-orijentisana baza. Skladište ne tumači njen sadržaj i ne može da pronađe dokumente po vrednosti polja.
 
 ## Napomene
-**Upotreba.** Koristi se kada zapisi nemaju istu strukturu ili su prirodno ugnježdeni, kao katalog proizvoda ili podešavanja korisnika. Novo polje ne traži izmenu strukture baze.
+**Upotreba.** Koristi se kada zapisi nemaju istu strukturu ili su prirodno ugnježdeni, kao katalog proizvoda ili podešavanja korisnika. Novo polje po pravilu ne traži izmenu strukture baze.
+
+**Struktura.** Dokumenti u istoj kolekciji podrazumevano ne moraju da imaju ista polja. MongoDB ipak omogućava pravila provere šeme za kolekciju, posle kojih svaki novi dokument mora da ih zadovolji. Promenljiva struktura je zato podrazumevano ponašanje, a ne svojstvo vrste.
 
 **Čuvanje na disku.** MongoDB čuva dokumente u binarnom zapisu JSON-a (BSON), u datotekama podataka na serveru. Kao i kod [[Relaciona baza podataka|relacione baze]], ko čita te datoteke ili kopiju baze, čita sve.
 

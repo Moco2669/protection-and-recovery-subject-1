@@ -13,7 +13,7 @@ Deljeni mrežni folder je [[Skladište datoteka|skladište datoteka]] čije fold
 ## Primer
 Skladište datoteka firme [[Fakturis]] je mrežni uređaj u prostorijama firme. [[Zaposleni sa pristupom]] otvaraju njegove foldere sa [[Poslovni računar|poslovnog računara]]. Na Jeleninom laptopu folder sa fakturama mapiran je kao mrežni disk, pa ga ona vidi kao još jedan disk.
 
-Kontraprimer: [[Objektno skladište|objektno skladište]] takođe čuva datoteke, ali se ne mapira kao disk. Svaki objekat se traži posebnim HTTP zahtevom.
+Kontraprimer: [[Objektno skladište|objektno skladište]] takođe čuva datoteke, ali se svakom objektu izvorno pristupa posebnim HTTP zahtevom. Alat poput Mountpoint for Amazon S3 može da ga prikaže kao disk, ali samo prevodi operacije nad datotekama u te zahteve, pa ograničenja objekata ostaju: postojeća datoteka ne može da se izmeni na mestu.
 
 ## Napomene
 **Upotreba.** Svakodnevni rad zaposlenih sa dokumentima u kancelariji. Folder se ponaša kao lokalni disk, pa ne traži poseban program.
