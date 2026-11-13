@@ -70,3 +70,5 @@ Definicije su preuzete sa predavanja *ZOSS 03: Osnovna terminologija pretnji*. O
 
 
 
+
+- 2026-11-13: Dodat je [[Prevođenje mrežnih adresa|NAT]] radi objašnjenja mrežnog prolaza i FTP režima. Primer NAT preslikavanja je hipotetički i ne definiše konfiguraciju Fakturisa.

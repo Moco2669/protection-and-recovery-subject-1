@@ -14,6 +14,7 @@ FTP pasivni režim je način rada u kojem klijent zatraži pasivni endpoint, ser
 Klijent šalje `EPSV`; server vraća `229 Entering Extended Passive Mode (|||50000|)`. Klijent otvara drugu TCP vezu ka portu 50000 na istom serveru.
 
 ## Napomene
-- Režim se često lakše koristi iza NAT-a jer klijent inicira obe veze; serverova mreža ipak mora dozvoliti pasivni opseg portova.
+- Režim se često lakše koristi iza [[Prevođenje mrežnih adresa|NAT-a]] jer klijent inicira obe veze; serverova mreža ipak mora dozvoliti pasivni opseg portova.
 - EPSV vraća samo port i klijent koristi adresu servera sa kontrolne veze. PASV odgovor 227 može sadržati adresu i port.
+
 

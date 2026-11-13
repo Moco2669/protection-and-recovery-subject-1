@@ -14,7 +14,8 @@ FTP aktivni režim je način rada u kojem klijent saopšti adresu i port na koje
 Klijent šalje `EPRT |1|198.51.100.25|49152|`; server potom otvara TCP vezu ka toj adresi i portu.
 
 ## Napomene
-- Odlaznu vezu servera može blokirati NAT ili firewall klijenta.
+- Odlaznu vezu servera može blokirati [[Prevođenje mrežnih adresa|NAT]] ili firewall klijenta.
 - Zloupotreba PORT/EPRT da server kontaktira treći host/port je FTP bounce. Ograničiti odredišta i onemogućiti neophodni proxy FTP.
 - EPRT proširuje PORT za IPv4/IPv6.
+
 
