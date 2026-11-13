@@ -18,3 +18,4 @@ Kontraprimer: lokalna kopija koda na Milanovom laptopu sadrži isti kod, ali iz 
 ## Napomene
 - Repozitorijum sadrži više od koda: konfiguracione fajlove, skripte za objavljivanje, ponekad i pristupne podatke. Ko može da menja repozitorijum, može da promeni i ono što se izvršava na serveru.
 - Provera i objava nove verzije, kad se crta na dijagramu toka podataka, jeste [[Procesna jedinica|procesna jedinica]] koja čita ovo skladište. Sam repozitorijum je mesto gde kod stoji.
+

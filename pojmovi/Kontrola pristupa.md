@@ -25,3 +25,4 @@ Zaposleni koristi zajedničko skladište poslovnih dokumenata.
 - Prava ograničavamo i nalogu aplikacije u bazi, spoljnom servisu, repozitorijumu i kopijama.
 - [[Sistem za zapise o radu]] je komponenta koja čuva zapise o pristupu i omogućava pregled korišćenja prava.
 - **Ideja za vizualizaciju:** matrica uloga i resursa sa dozvolama čitanja, izmene i brisanja.
+

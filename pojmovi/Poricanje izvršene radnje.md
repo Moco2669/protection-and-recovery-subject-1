@@ -23,3 +23,4 @@ Procesi stvaraju potrebne dokaze, a sistem za zapise i skladište zapisa podrža
 Neporecivost je svojstvo koje se štiti, a poricanje je tip pretnje. Nedovoljno beleženje je mogući nedostatak koji otežava dokazivanje. Samo postojanje zapisa ne garantuje neporecivost.
 
 [[Lažno predstavljanje]] može dovesti do pogrešnog pripisivanja radnje. Pouzdanost zaključka zato zavisi i od utvrđivanja identiteta i od zaštite dokaza o radnji.
+

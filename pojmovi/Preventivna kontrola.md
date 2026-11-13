@@ -24,3 +24,4 @@ Spoljni korisnik menja oznaku zapisa u zahtevu poslovnoj web aplikaciji i pokuš
 - Preventivnu ulogu mogu imati i [[Organizaciona kontrola|organizaciona]], [[Kadrovska kontrola|kadrovska]] i [[Fizička kontrola|fizička kontrola]]. Primeri su postupak odobravanja izmena, obuka zaposlenih i zaključavanje prostorije sa serverom.
 - Prevencija ne garantuje da incident neće nastati. Dopunjuju je [[Detektivna kontrola|detektivne]] i [[Korektivna kontrola|korektivne kontrole]].
 - **Ideja za vizualizaciju:** zahtev → provera dozvole → dozvoljen pristup ili odbijanje.
+

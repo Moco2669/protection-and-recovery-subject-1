@@ -17,3 +17,5 @@ Kontraprimer: internet provajder je tuđa firma, ali proizvod ga ne poziva da ob
 
 ## Napomene
 - Spoljni servis stoji van granice sistema. Kod koji ga poziva deo je [[Softverski proizvod|softverskog proizvoda]], ne poseban pojam.
+- U [[Dijagram toka podataka|dijagramu toka podataka]], spoljni servis je vrsta [[Spoljni entitet|spoljnog entiteta]].
+

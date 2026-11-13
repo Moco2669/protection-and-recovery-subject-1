@@ -9,7 +9,7 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 - organizacija, preduzeće, korisnik
 - sistem (u opštem smislu), arhitektura softvera
 - podatak, informacija, dokument, fajl
-- aplikacija (u opštem smislu), programski interfejs (API), HTTP zahtev i odgovor, HTTPS
+- aplikacija (u opštem smislu), programski interfejs (API), HTTP zahtev i odgovor
 - SQL upit
 - računar, operativni sistem, virtuelna mašina, oblak (cloud)
 - računarska mreža, internet, ruter, mrežni preklopnik, Wi-Fi pristupna tačka, mrežni segment
@@ -55,8 +55,20 @@ Definicije su preuzete sa predavanja *ZOSS 03: Osnovna terminologija pretnji*. O
 - 2026-11-05: **Interfejs ka spoljnom servisu** više nije pojam. Poziv spoljnog servisa deo je [[Softverski proizvod|softverskog proizvoda]], u studiji na primer posebna klasa. Beleška je obrisana.
 - 2026-11-05: **Skladište podataka** nije jedan sistem. Druga komponenta razgovara sa konkretnom podvrstom. Podvrste su [[Baza podataka]], [[Skladište datoteka]], [[Skladište zapisa]] i [[Repozitorijum izvornog koda]]. Time se menja odluka od 2026-11-01 po kojoj repozitorijum nije skladište podataka. [[Sistem za rezervne kopije]] i dalje nije. [[Sistem za zapise o radu]] u studiji može da se konkretizuje kao SIEM, bez posebne beleške.
 - 2026-11-05: Dodati su [[Procesna jedinica]] i [[Tok podataka]], da bi se kasnije crtali dijagrami toka podataka za slabosti, napade i kontrole. Formulacije su predlog.
+- 2026-11-07: Za rad na [[Tok podataka|tokovima podataka]] dodati su predlozi za [[Protokol]], [[Aplikacioni protokol]] i [[Transportni protokol]]. Tok podataka je preformulisan kao prenos podataka između elemenata dijagrama, da bi se razlikovao od kanala kojim se prenos ostvaruje. Protokoli uz strelicu opisuju način prenosa; podaci koji se prenose mogu se navesti kao oznaka toka. Primeri HTTP i TCP su ilustrativni, ne određuju konfiguraciju [[Fakturis]]. Sve nove formulacije su predlozi.
+- 2026-11-07: Dodate su predložene beleške za [[HTTP]], [[DNS]], [[SSH]], [[TCP]], [[UDP]] i QUIC kao primere protokola. QUIC je dodat da bi se objasnio prenos HTTP/3 i razlika u odnosu na TCP. Primeri su ilustrativni, ne utvrđuju protokole koje Fakturis stvarno koristi.
+- 2026-11-07: Po želji studenta, beleška QUIC je uklonjena iz skupa pojmova za ovu komponentu, a dodat je [[MQTT]]. MQTT je klasifikovan kao aplikacioni protokol u ovoj bazi, uz napomenu da ga OASIS opisuje kao messaging transport protocol, što ne znači da pripada transportnom sloju TCP/UDP. Primer objavljivanja/pretplate koristi hipotetičkog posrednika i drugu procesnu jedinicu, koji nisu utvrđeni u osnovnoj skici [[Fakturis]].
+- 2026-11-07: Dodati su predlozi [[Spoljni entitet]], [[Dijagram toka podataka]] i [[Granica poverenja]] i povezani sa postojećim pojmovima i studijom [[Fakturis]]. Spoljni entitet je ovde određen u odnosu na opseg modelovanog sistema; protumačen je kroz granicu kontrole organizacije, jer u studiji korisnici i servisi drugih organizacija razmenjuju podatke sa komponentama firme. Granica poverenja je logička i ne poistovećuje se sa fizičkom ili mrežnom granicom.
+- 2026-11-10: Na osnovu prezentacije o Data Flow dodat je predlog [[FTP]] kao aplikacionog protokola. Beleška povezuje komande i odgovore na kontrolnoj vezi sa prenosom datoteke preko zasebne podatkovne veze, objašnjava aktivni i pasivni režim, osnovne komande i odgovore, kao i to da običan FTP ne šifruje saobraćaj. Primer je sekundaran i ne određuje konfiguraciju [[Fakturis]].
 
 ## Otvorena pitanja
 - **Pravo pristupa i ovlašćenje.** Koji od ta dva termina ostaje, bira se kad se bude definisala kontrola pristupa.
 - **Skeneri ranjivosti kao kontrola.** Da li su SAST, DAST i pentest detektivne kontrole (otkrivaju) ili preventivne (deluju pre napada)? Izvori se razlikuju.
 - **Rizik.** Kostur ga stavlja u temelj, ali ga nema na dijagramu sa predavanja. Treba ga definisati pre prioritizacije ranjivosti (CVSS).
+- 2026-11-13: Po dopunama Data Flow prezentacije razrađeni su pojmovi protokola i kriterijum aplikacionog/transportnog/protokola zaštite; „server“ kao računar razdvojen je od [[Serverski program|serverske uloge]]. Dodati su OSI i TCP/IP modeli, HTTP/2, HTTP/3 i QUIC, DNS uloge/poddomen/zapisi A i AAAA, MQTT broker/tema/QoS, te FTP kontrolna veza, veza za prenos podataka, aktivni/pasivni režim i napad posrednikom. U TCP-u su razjašnjeni prozor, broj sekvence, ACK i nepredvidivi početni broj. QUIC vraćen je kao pojam jer je neophodan za novu obradu HTTP/3. Root DNS činjenice opisuju globalnu infrastrukturu, ne komponente Fakturisa. Sve mrežne konfiguracije iz primera ostaju ilustrativne.
+
+
+
+
+
+- 2026-11-13: Dodat je [[Prevođenje mrežnih adresa|NAT]] radi objašnjenja mrežnog prolaza i FTP režima. Primer NAT preslikavanja je hipotetički i ne definiše konfiguraciju Fakturisa.

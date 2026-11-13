@@ -17,3 +17,4 @@ Kontraprimer: tabela statusa faktura u [[Baza podataka|bazi podataka]] pokazuje 
 
 ## Napomene
 - Zapise u ovo skladište upisuje [[Sistem za zapise o radu|sistem za zapise o radu]]. Definicija skladišta ne imenuje taj sistem, da dve definicije ne bi zavisile jedna od druge.
+

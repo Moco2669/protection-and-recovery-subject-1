@@ -17,3 +17,4 @@ Kontraprimer: kućna mreža programera koji radi od kuće nije interna mreža fi
 
 ## Napomene
 - Interna mreža se deli na segmente, delove između kojih je saobraćaj ograničen.
+

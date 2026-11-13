@@ -18,3 +18,4 @@ Kontraprimer: Excel tabela u kojoj knjigovođa vodi mesečne prihode takođe sad
 ## Napomene
 - CIS pod bazom podrazumeva samo podatke, a softver koji njima upravlja posmatra odvojeno. Ovde su obuhvaćeni zajedno, jer imaju iste ranjivosti i kontrole.
 - SQL je jezik upita u primeru, ne uslov definicije. Alias „SQL baza“ pokriva naziv podvrste sa časa.
+

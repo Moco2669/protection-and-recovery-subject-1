@@ -25,3 +25,4 @@ Kompromitovan nalog briše poslovne dokumente iz zajedničkog skladišta. Nakon 
 - U ovoj nastavnoj podeli oporavak obrađujemo uz korektivne kontrole. Druge podele mogu izdvajati kontrole oporavka kao posebnu kategoriju.
 - [[Detektivna kontrola|Detektivna kontrola]] pomaže otkrivanju problema; [[Preventivna kontrola|preventivna]] smanjuje mogućnost ponavljanja.
 - **Ideja za vizualizaciju:** problem → ograničavanje posledica → vraćanje → provera rada.
+

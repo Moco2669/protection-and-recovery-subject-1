@@ -24,3 +24,4 @@ Zaštitni zid firme ograničava pristup internim servisima sa interneta.
 - [[Kontrola pristupa]] je oblast primene tehničkih kontrola. [[Sistem za zapise o radu]] i [[Sistem za rezervne kopije]] su komponente koje omogućavaju beleženje i pregled događaja, odnosno pravljenje kopija i vraćanje podataka. Sprovođenje kontrola pomoću tih komponenti zahteva i utvrđene postupke i odgovorne osobe.
 - [[Organizaciona kontrola|Organizaciona kontrola]] određuje ko odobrava i proverava pravila zaštitnog zida.
 - **Ideja za vizualizaciju:** internet → zaštitni zid → dozvoljene i blokirane veze ka servisima.
+
