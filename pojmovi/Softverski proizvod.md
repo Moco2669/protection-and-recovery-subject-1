@@ -19,3 +19,4 @@ Kontraprimer: program na istom serveru koji samo prosleđuje saobraćaj proizvod
 - Definicija ne fiksira da li je proizvod jedan program ili više delova, ni kojim protokolom govori.
 - „Poslovne funkcije“ nisu poseban pojam u bazi. Stoje u običnom značenju.
 - Mera problema i dalje govori o malicioznim zahtevima. Definicija ne traži da proizvod prima zahteve. Ako protokol kasnije nije zahtev i odgovor, menja se mera.
+

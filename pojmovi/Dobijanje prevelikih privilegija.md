@@ -23,3 +23,4 @@ Zahtev prenet tokom komunikacije može izazvati nedozvoljenu dodelu prava, ali o
 Privilegija ovde označava mogućnost izvršavanja radnje nad resursom prema pravilima pristupa. Pretnja obuhvata i sticanje prava drugog korisnika, ne samo administratorskih prava.
 
 [[Narušavanje poverljivosti podataka]] može nastati i bez trajnog sticanja novih prava. Zato samo neovlašćeno čitanje dokumenta nije dovoljno da zaključimo da je napadač promenio svoja prava pristupa.
+

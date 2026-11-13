@@ -1,19 +1,19 @@
 ---
 tip: pojam
 aliases: [server, host, aplikacioni server]
-izvor: CIS Critical Security Controls v8, Glossary, "servers"
+izvor: CIS Critical Security Controls v8, Glossary, servers
 status: predlog
 sloj: temelj
 ---
-# Server (server)
+# Server (server computer)
 
 ## Definicija
-Server je računar, fizički ili virtuelni, zajedno sa operativnim sistemom, na kom se izvršavaju programi koji drugim komponentama sistema pružaju usluge ili podatke preko mreže.
+Server je fizički ili virtuelni računar, sa operativnim sistemom, na kojem se izvršavaju programi koji pružaju usluge ili podatke drugim komponentama sistema.
 
 ## Primer
-Aplikacioni server firme [[Fakturis]] je računar na kom se izvršava [[Softverski proizvod|softverski proizvod]]. Firma ima i server [[Skladište datoteka|skladišta datoteka]], server [[Repozitorijum izvornog koda|repozitorijuma]] i server [[Sistem za rezervne kopije|rezervnih kopija]].
-
-Kontraprimer: Jelenin laptop izvršava programe samo za nju i ne pruža usluge drugim komponentama, pa je [[Poslovni računar|poslovni računar]], a ne server.
+Aplikacioni server Fakturisa je računar na kojem radi [[Softverski proizvod]]. Isti računar može da pokreće i PostgreSQL bazu.
 
 ## Napomene
-- Server i programi koji se na njemu izvršavaju su različite komponente. [[Softverski proizvod|Softverski proizvod]] nije server na kom radi.
+- U razgovoru o mrežama reč „server“ često označava i [[Serverski program|serverski program]], odnosno ulogu programa u komunikaciji. U ovoj belešci „server“ znači računar; program koji radi na njemu je zaseban pojam.
+- „DNS server“ može značiti DNS program ili računar na kojem radi; precizirati značenje po potrebi.
+

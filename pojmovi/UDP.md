@@ -18,3 +18,4 @@ Kontraprimer: TCP pruža pouzdan i uređen tok bajtova. UDP ne pruža te garanci
 ## Napomene
 - UDP čuva granice datagrama, dok TCP krajnjem programu pruža tok bajtova.
 - DNS može koristiti i TCP; UDP nije jedini prenosni protokol za DNS.
+

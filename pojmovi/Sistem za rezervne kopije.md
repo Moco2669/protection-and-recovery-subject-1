@@ -19,3 +19,4 @@ Kontraprimer: kada programer pre rizične izmene ručno napravi kopiju jedne tab
 - Rezervne kopije sadrže sve što i originali, pa su i same resurs kome treba ista zaštita poverljivosti kao originalima.
 - Nije [[Skladište podataka|skladište podataka]]. Iz kopija se ne radi. Podaci se iz njih vraćaju u skladište.
 - Kopija koja nikad nije vraćena nije proverena.
+

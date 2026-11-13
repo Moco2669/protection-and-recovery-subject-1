@@ -8,14 +8,16 @@ sloj: jezgro
 # SSH (Secure Shell)
 
 ## Definicija
-SSH je skup komunikacionih protokola za bezbednu udaljenu prijavu i druge mrežne usluge preko mreže kojoj se ne može unapred verovati.
+SSH je protokolarna porodica za bezbednu udaljenu prijavu i druge mrežne usluge preko nepouzdane mreže; obuhvata zaštićeni transportni podprotokol, autentifikaciju korisnika i protokol za multipleksiranje kanala.
 
 ## Primer
-Ako administrator Stefan pristupa serveru Fakturisa preko SSH-a, SSH protokoli mogu da obezbede šifrovanu vezu, provere identitet servera i omoguće autentifikaciju administratora.
-
-Kontraprimer: udaljena prijava na server preko nezaštićenog protokola nije SSH, čak i kada administrator koristi istu komandnu liniju.
+Administrator Stefan pokreće SSH klijent na poslovnom računaru da bi se prijavio na aplikacioni [[Server|server]] Fakturisa. Klijent proverava host ključ, zatim se korisnik autentifikuje, pa otvara shell kanal.
 
 ## Napomene
-- SSH nije samo jedan jednostavan protokol. Arhitektura obuhvata protokol za zaštićeni transport, autentifikaciju korisnika i povezivanje kanala.
-- „Transportni“ deo SSH-a nije isto što i [[Transportni protokol|transportni protokol]] poput [[TCP]]. SSH se uobičajeno prenosi preko TCP veze.
-- Primer je ilustrativan. Udaljeni pristup Fakturisu u studiji slučaja nije vezan za SSH.
+- SSH se uobičajeno prenosi preko [[TCP|TCP-a]]. „SSH transportni sloj“ je komponenta SSH arhitekture, ne transportni protokol internet steka.
+- SSH serverska uloga je program na server računaru. Razlikovati [[Serverski program]] od [[Server|računara-servera]].
+- Neproveren host ključ omogućava lažnom serveru da se predstavi kao pravi; krađa korisničkog ključa ili kompromitovanje endpointa takođe ugrožava sesiju.
+- SSH kanali mogu nositi terminal, komande i prosleđivanje portova.
+
+
+

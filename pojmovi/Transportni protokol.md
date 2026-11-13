@@ -1,20 +1,21 @@
 ---
 tip: pojam
 aliases: [transport-layer protocol, transport protocol]
-izvor: IETF RFC 1122, odeljak 4, "Transport Layer" ([RFC](https://www.rfc-editor.org/rfc/rfc1122.html))
+izvor: IETF RFC 1122, odeljak 4 ([RFC](https://www.rfc-editor.org/rfc/rfc1122.html))
 status: predlog
 sloj: jezgro
 ---
 # Transportni protokol (transport-layer protocol)
 
 ## Definicija
-Transportni protokol je [[Protokol|protokol]] koji krajnjim programima na umreženim računarima pruža pravila za prenos njihovih podataka između tih računara.
+Transportni protokol pruža krajnjim programima pravila za prenos podataka između računara; može definisati identifikaciju programa preko [[Mrežni port|portova]], granice poruka ili toka bajtova i garancije isporuke/redosleda.
 
 ## Primer
-Ako pregledač korisnika i [[Softverski proizvod|softverski proizvod]] firme [[Fakturis]] razmenjuju [[HTTP]] poruke preko [[TCP|TCP-a]], HTTP određuje značenje zahteva i odgovora, dok TCP prenosi njihov sadržaj između računara i obezbeđuje pouzdan, uređen tok bajtova.
-
-Kontraprimer: [[HTTP]] nije transportni protokol. On uređuje aplikacionu razmenu, a [[TCP]] i [[UDP]] su primeri transportnih protokola.
+Pregledač i [[Serverski program|serverski program]] razmenjuju [[HTTP]] preko [[TCP|TCP-a]]. HTTP daje porukama značenje, a TCP prenosi ih kao pouzdan, uređen [[Tok bajtova|tok bajtova]].
 
 ## Napomene
-- Primeri transportnih protokola su [[TCP]] i [[UDP]]. TCP obezbeđuje pouzdan i uređen tok bajtova; UDP sam ne garantuje isporuku ni redosled.
-- Primer sa HTTP-om i TCP-om ilustruje jednu kombinaciju protokola, a ne jedinu moguću. Konkretan protokol prenosa Fakturisovog proizvoda nije utvrđen u studiji slučaja.
+- Kriterijum: protokol pruža prenosnu uslugu procesima, ne značenje web, DNS ili datotečnih operacija.
+- [[TCP]], [[UDP]] i [[QUIC]] su transportni protokoli sa različitim uslugama.
+- Portovi su polja transportnog protokola, iako ih aplikacije koriste za izbor usluge.
+- SSH-ov „transportni podprotokol“ nije isto što i TCP/UDP transportni protokol.
+

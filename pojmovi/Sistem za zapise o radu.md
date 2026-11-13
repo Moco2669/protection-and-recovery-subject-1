@@ -17,3 +17,4 @@ Kontraprimer: tabela statusa faktura pokazuje trenutno stanje, ali je ne vodi ov
 
 ## Napomene
 - Zapisi o radu su istovremeno resurs: ko ih izmeni ili obriše, briše i trag ko je šta uradio.
+

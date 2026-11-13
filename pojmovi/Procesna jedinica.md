@@ -21,3 +21,4 @@ Kontraprimer: [[Baza podataka|baza podataka]] u koju taj zapis stiže nije proce
 - [[Skladište podataka|Skladište podataka]] čuva podatke. Procesna jedinica ih obrađuje.
 - Na dubljem dijagramu procesna jedinica može biti deo proizvoda, ne samo proizvod kao celina. Klasa koja poziva [[Spoljni servis|spoljni servis]] crta se tako, a nije poseban pojam.
 - [[Zaposleni sa pristupom|Zaposleni sa pristupom]] koji od ulaznih podataka pravi druge, na dijagramu takođe može biti procesna jedinica. [[Spoljni entitet|Spoljni entiteti]] su izvan modelovanog sistema i nisu njegove procesne jedinice.
+

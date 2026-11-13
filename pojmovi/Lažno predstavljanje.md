@@ -23,3 +23,4 @@ Proces može pristupiti lažnom servisu baze umesto očekivanom. U tom slučaju 
 Lažno predstavljanje odnosi se na prihvaćeni identitet, a [[Dobijanje prevelikih privilegija]] na sticanje nedozvoljenih mogućnosti. Obe pretnje mogu biti povezane u istom napadu.
 
 Neispravna autentifikacija je mogući tip ranjivosti koji omogućava lažno predstavljanje.
+

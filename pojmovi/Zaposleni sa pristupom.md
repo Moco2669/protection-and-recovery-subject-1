@@ -18,3 +18,4 @@ Kontraprimer: čistač firme je [[Zaposleni|zaposleni]], ali ne koristi resurse 
 ## Napomene
 - Ljudska komponenta sistema, u smislu predavanja, jeste zaposleni sa pristupom. Širi pojam [[Zaposleni|zaposleni]] obuhvata i lica koja to nisu.
 - Uloga određuje kojim resursima zaposleni pristupa. „Pristup“ je ovde obična reč, ne termin kontrole pristupa.
+

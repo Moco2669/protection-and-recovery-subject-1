@@ -79,7 +79,7 @@ Korisnici, njihovi kupci i servisi za naplatu su [[Spoljni entitet|spoljni entit
 - Baza i skladište datoteka kopiraju se na sistem za rezervne kopije.
 - Proizvod, server i mrežni prolaz upisuju zapise u svoja skladišta zapisa.
 
-Oznake HTTP, HTTPS, DNS, SSH, TCP, UDP, TLS, MQTT i FTP u primerima pojmova služe da objasne uloge protokola. One ne određuju stvarnu konfiguraciju Fakturisovog proizvoda, koja u ovoj studiji nije fiksirana. Dodatni učesnici ili komponente u primerima, poput DNS servera, MQTT posrednika, FTP servera ili druge [[Procesna jedinica|procesne jedinice]], služe samo za objašnjenje protokola i nisu utvrđeni elementi osnovne studije.
+Oznake HTTP, DNS, SSH, TCP, UDP, MQTT i FTP u primerima pojmova služe da objasne uloge protokola. One ne određuju stvarnu konfiguraciju Fakturisovog proizvoda, koja u ovoj studiji nije fiksirana. Dodatni učesnici ili komponente u primerima, poput DNS servera, MQTT posrednika, FTP servera ili druge [[Procesna jedinica|procesne jedinice]], služe samo za objašnjenje protokola i nisu utvrđeni elementi osnovne studije.
 
 Primer [[Dijagram toka podataka|dijagrama toka podataka]] za izdavanje fakture. Strelica je tok podataka. Isprekidani okvir označava granicu poverenja oko sistema Fakturisa. Baza i skladište datoteka su skladišta podataka. Rezervne kopije nisu.
 
@@ -139,3 +139,5 @@ flowchart LR
 
 ## Napomena
 Ova beleška je skica za istraživanje teme. Može se menjati, nadograđivati i uprošćavati zavisno od napretka projekta. Konkretne ranjivosti i bezbednosni zahtevi dopisuju se kad zatrebaju, a ne unapred kao popis.
+
+

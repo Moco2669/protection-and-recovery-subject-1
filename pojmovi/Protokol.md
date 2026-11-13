@@ -1,22 +1,22 @@
 ---
 tip: pojam
-aliases: [protocol, communication protocol]
-izvor: IETF RFC 1392, Internet Glossary, unos "protocol" ([RFC](https://www.rfc-editor.org/rfc/rfc1392.html))
+aliases: [protocol, communication protocol, komunikacioni protokol]
+izvor: IETF RFC 1392, Internet Glossary, unos protocol ([RFC](https://www.rfc-editor.org/rfc/rfc1392.html))
 status: predlog
 sloj: temelj
 ---
 # Protokol (protocol)
 
 ## Definicija
-Protokol je skup pravila i formata poruka kojih se dva ili više učesnika pridržavaju da bi razmenili podatke.
+U ovoj bazi, protokol je skup pravila kojima učesnici komunikacije utvrđuju kako se poruke oblikuju, šta znače i kako se razmenjuju, uključujući očekivane odgovore i postupanje pri grešci.
 
 ## Primer
-Kada korisnik koristi [[Softverski proizvod|softverski proizvod]] firme [[Fakturis]], [[HTTP]] određuje oblik zahteva koje proizvod prima i odgovora koje vraća. Ako se prenos obavlja preko [[HTTPS|HTTPS-a]], razmena HTTP podataka zaštićena je protokolom [[TLS]].
+Pregledač šalje [[HTTP]] zahtev [[Serverski program|serverskom programu]] Fakturisa. HTTP određuje značenje zahteva i odgovora, dok [[TCP]] određuje transportne osobine prenosa.
 
-Kontraprimer: pravila koja određuju ko u Fakturisu sme da izda fakturu nisu komunikacioni protokol. Ona uređuju prava pristupa, a ne format i razmenu poruka.
+Kontraprimer: pravilo da zaposleni sme da odobri popust uređuje poslovno ovlašćenje, a ne razmenu poruka.
 
 ## Napomene
-- Protokol opisuje pravila razmene, dok je [[Tok podataka|tok podataka]] konkretan prenos podataka između elemenata sistema. Na dijagramu toka protokol može biti upisan uz strelicu.
-- [[Aplikacioni protokol|Aplikacioni protokoli]] i [[Transportni protokol|transportni protokoli]] imaju različite uloge. Jedan tok može koristiti protokole sa više slojeva.
-- Primeri aplikacionih protokola su [[HTTP]], [[DNS]], [[SSH]], [[MQTT]] i [[FTP]]. [[HTTPS]] označava HTTP komunikaciju zaštićenu [[TLS|TLS-om]]; nije samo drugo ime za HTTP.
-- Primeri transportnih protokola su [[TCP]] i [[UDP]]. [[MQTT]] je primer aplikacionog protokola za razmenu poruka.
+- „Protokol“ se šire koristi i za postupak izvan komunikacije. Ova baza koristi uži izraz „komunikacioni protokol“.
+- Kriterijum podele: [[Aplikacioni protokol|aplikacioni protokol]] definiše format i značenje poruka/operacija aplikacije; [[Transportni protokol|transportni protokol]] pruža programima uslugu prenosa; [[Protokol za zaštitu komunikacije]] obezbeđuje kriptografsku zaštitu. Uloge nisu uvek isključive.
+- [[HTTP]], [[DNS]], [[MQTT]] i [[FTP]] su aplikacioni; [[TCP]], [[UDP]] i [[QUIC]] transportni. [[SSH]] je porodica protokola koja objedinjuje zaštitu i udaljene usluge.
+- Protokol propisuje pravila, dok je [[Tok podataka|tok podataka]] konkretan prenos u modelu sistema.

@@ -18,3 +18,4 @@ Kontraprimer: osoba zaposlena kod firme koja pruža platni servis ne radi za Fak
 ## Napomene
 - Nije svaki zaposleni komponenta sistema. Komponenta je [[Zaposleni sa pristupom|zaposleni sa pristupom]].
 - Ugovor na jedan posao, sa licem koje ne radi u procesima firme, ne čini tog čoveka zaposlenim. Radnik tuđe firme koja isporučuje uslugu ostaje spoljni subjekt.
+

@@ -19,3 +19,4 @@ Kontraprimer: [[Baza podataka|baza podataka]] u kojoj Fakturis čuva zapis faktu
 - Spoljni entitet može biti osoba ili sistem; ne mora biti servis koji poziva softverski proizvod.
 - [[Spoljni servis|Spoljni servis]] je uži pojam: njime upravlja druga organizacija, a proizvod ga poziva da obavi deo posla.
 - Spoljni entitet se prikazuje kao element [[Dijagram toka podataka|dijagrama toka podataka]]. U ovoj notaciji prikazuje se pravougaonikom.
+

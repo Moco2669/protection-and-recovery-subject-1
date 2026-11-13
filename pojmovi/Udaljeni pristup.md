@@ -19,3 +19,4 @@ Kontraprimer: kupac koji sa interneta otvara stranicu za plaćanje ne koristi ud
 - Definicija ne fiksira realizaciju. Jedna od njih jeste VPN, ali nije uslov.
 - [[Mrežni prolaz|Mrežni prolaz]] i dalje spaja mrežu firme sa internetom. Saobraćaj udaljenog pristupa može proći kroz njega.
 - „Po pravilima organizacije“ ostavlja mesto kontrolama. Same kontrole ova beleška ne nabraja.
+
