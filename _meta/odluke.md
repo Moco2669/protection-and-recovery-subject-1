@@ -16,6 +16,8 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 - zaštitni zid (firewall), kao uređaj
 - izvorni kod, softverska biblioteka, verzija softvera, testno okruženje, CI cevovod
 - lozinka, nalog, prijava na sistem (u svakodnevnom smislu; autentifikacija se definiše kasnije)
+- API ključ, kriptografski ključ (vrednost za šifrovanje ili potpis; postupak se ne definiše)
+- pristupni token (vrednost koja se pokazuje umesto lozinke)
 - e-pošta, prilog, makro (kao funkcija Office paketa)
 
 ### Pojmovi sa predavanja ZOSS 03
@@ -57,11 +59,10 @@ Definicije su preuzete sa predavanja *ZOSS 03: Osnovna terminologija pretnji*. O
 - 2026-11-05: Dodati su [[Procesna jedinica]] i [[Tok podataka]], da bi se kasnije crtali dijagrami toka podataka za slabosti, napade i kontrole. Formulacije su predlog.
 - 2026-11-09: Po smernici nastavnika, druga sesija konkretizuje vrste komponenti, a treća se na njihove karakteristike nadovezuje eksploatacijama. Za skladišta podataka uvode se [[Relaciona baza podataka]], [[Dokument-orijentisana baza podataka]] i [[Ključ-vrednost baza podataka]] kao vrste baze, i [[Deljeni mrežni folder]] i [[Objektno skladište]] kao vrste skladišta datoteka. Beleška vrste u Napomenama ima tri odeljka: **Čuvanje na disku**, **Pristup** i **Komande**. Dodati su i [[Servisni nalog]], [[Upitni jezik]] i [[Podaci u mirovanju]]. Primeri sa MongoDB-om, Redis-om, S3 i SMB-om su ilustrativni i ne određuju konfiguraciju [[Fakturis]]. Sve formulacije su predlog.
 - 2026-11-11: Posle konsultacija sa nastavnikom, dopuna prethodne stavke: beleška vrste skladišta ima i odeljak **Upotreba**, ispred tri karakteristike. [[Skladište zapisa]] i [[Repozitorijum izvornog koda]] dobijaju iste tri karakteristike i rečenicu o razlici jedno od drugog. [[Deljeni mrežni folder]] i [[Objektno skladište]] razlikuju se po obliku podataka i načinu pristupa, a ne po tome da li su u firmi ili van nje.
+- 2026-11-16: Po primedbama nastavnika, razgraničenje skladišta. Datoteka je imenovani niz bajtova koji se ne tumači. Podatak u bazi adresira se po strukturi. JSON dokument u [[Dokument-orijentisana baza podataka|dokument-orijentisanoj bazi]] nije datoteka. PDF, slika i JSON datoteka jesu, i zato mogu stajati u istom [[Skladište datoteka|skladištu datoteka]]. **Zapis** je samo unos o radnji koja se već desila, u [[Skladište zapisa|skladištu zapisa]]. Red u bazi nije zapis. Rečenica kojom su se skladište zapisa i repozitorijum poredili, uvedena 2026-11-11, uklonjena je. [[Skladište tajni]] nije peta podvrsta. Od [[Ključ-vrednost baza podataka|ključ-vrednost baze]] razlikuju ga zaštite, ne oblik. Odeljak Pristup svake vrste kaže kako se predstavljaju servis i čovek. Privremeni pristup [[Objektno skladište|objektnom skladištu]] opisan je prema AWS Signature Version 4: potpis veže radnju, ključ objekta i rok, najviše sedam dana, a skladište potpis ponovo izračuna. API ključ, kriptografski ključ i pristupni token su pretpostavljeni.
 
 ## Otvorena pitanja
 - **Pravo pristupa i ovlašćenje.** Koji od ta dva termina ostaje, bira se kad se bude definisala kontrola pristupa.
 - **Skeneri ranjivosti kao kontrola.** Da li su SAST, DAST i pentest detektivne kontrole (otkrivaju) ili preventivne (deluju pre napada)? Izvori se razlikuju.
 - **Rizik.** Kostur ga stavlja u temelj, ali ga nema na dijagramu sa predavanja. Treba ga definisati pre prioritizacije ranjivosti (CVSS).
-- **Skladište tajni kao podvrsta.** [[Skladište tajni]] bi bilo peta podvrsta [[Skladište podataka|skladišta podataka]], što menja odluku od 2026-11-05.
-- **Aliasi roditeljskih beleški.** „SQL baza“ i „relaciona baza“ u [[Baza podataka]], i „NAS“ i „deljeni folder“ u [[Skladište datoteka]], sada imaju sopstvene beleške ([[Relaciona baza podataka]], [[Deljeni mrežni folder]]). Da li ih premestiti?
-- **Kriptografski ključ.** Koristi se u definiciji [[Skladište tajni|skladišta tajni]]. Definisati ga ili ga proglasiti pretpostavljenim?
+- **Aliasi roditeljskih beleški.** „SQL baza“ i „relaciona baza“ u [[Baza podataka]], i „NAS“ i „deljeni folder“ u [[Skladište datoteka]], sada imaju sopstvene beleške ([[Relaciona baza podataka]], [[Deljeni mrežni folder]]). Da li ih premestiti? „Skladište dokumenata“ ostaje alias skladišta datoteka, uz napomenu da je to starije ime, a ne JSON dokument.

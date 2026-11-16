@@ -11,7 +11,7 @@ sloj: temelj
 Tok podataka je prenosni kanal čiji je jedan kraj [[Procesna jedinica|procesna jedinica]], a drugi kraj procesna jedinica, [[Skladište podataka|skladište podataka]], lice van sistema ili [[Spoljni servis|spoljni servis]].
 
 ## Primer
-Pri izdavanju fakture u firmi [[Fakturis]] jedan tok podataka nosi stavke od korisnika do [[Softverski proizvod|proizvoda]], drugi nosi zapis od proizvoda do [[Baza podataka|baze podataka]], a treći nosi poziv naplate od proizvoda do [[Spoljni servis|spoljnog servisa]].
+Pri izdavanju fakture u firmi [[Fakturis]] jedan tok podataka nosi stavke od korisnika do [[Softverski proizvod|proizvoda]], drugi nosi red fakture od proizvoda do [[Baza podataka|baze podataka]], a treći nosi poziv naplate od proizvoda do [[Spoljni servis|spoljnog servisa]].
 
 Kontraprimer: to što su mrežni prolaz i server povezani nije tok podataka. Tok nastaje kad se tim putem podaci zaista prenesu.
 

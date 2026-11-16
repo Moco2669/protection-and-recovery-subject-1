@@ -9,14 +9,14 @@ izvor: 'Osnov za definiciju (parafraza): ISO/IEC 27002:2022, odeljak 4.2(a), atr
 Preventivna kontrola je bezbednosna kontrola čija je osnovna svrha da spreči narušavanje bezbednosnog svojstva resursa ili smanji mogućnost njegovog nastanka. Namenjena je sprečavanju bezbednosnog incidenta i deluje pre nego što se neželjena radnja ostvari, na primer proverom dozvole ili ograničavanjem dostupnih funkcija.
 
 ## Primer
-Spoljni korisnik menja oznaku zapisa u zahtevu poslovnoj web aplikaciji i pokušava da pročita tuđe podatke.
+Spoljni korisnik menja oznaku reda u zahtevu poslovnoj web aplikaciji i pokušava da pročita tuđe podatke.
 
 - **Komponenta:** poslovna web aplikacija.
 - **Resurs:** korisnički podaci.
-- **Bezbednosni zahtev:** korisnik može da čita samo zapise za koje ima dozvolu.
+- **Bezbednosni zahtev:** korisnik može da čita samo redove za koje ima dozvolu.
 - **Pretnja:** neovlašćeno čitanje tuđih podataka.
-- **Ranjivost:** aplikacija proverava prijavu, ali ne proverava pravo pristupa traženom zapisu.
-- **Kontrola:** provera dozvole pre vraćanja svakog zapisa i odbijanje nedozvoljenog zahteva.
+- **Ranjivost:** aplikacija proverava prijavu, ali ne proverava pravo pristupa traženom redu.
+- **Kontrola:** provera dozvole pre vraćanja svakog reda i odbijanje nedozvoljenog zahteva.
 
 ## Napomene
 - ISO/IEC 27002:2022, odeljak 4.2(a), preventivno dejstvo vezuje za sprečavanje nastanka incidenta. Definicija je parafraza prilagođena pojmovima resursa i bezbednosnih svojstava, a ne doslovan prevod standarda.

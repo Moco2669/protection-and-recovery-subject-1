@@ -1,7 +1,7 @@
 ---
 tip: pojam
 aliases: [relational database, RDBMS, SQL baza, PostgreSQL]
-izvor: Codd, A Relational Model of Data for Large Shared Data Banks, Communications of the ACM 13(6), 1970; karakteristike prema PostgreSQL Documentation, Database File Layout i Routine Vacuuming
+izvor: Codd, A Relational Model of Data for Large Shared Data Banks, Communications of the ACM 13(6), 1970; karakteristike prema PostgreSQL Documentation, Database File Layout, Routine Vacuuming i Client Authentication
 status: predlog
 sloj: jezgro
 ---
@@ -20,6 +20,6 @@ Kontraprimer: [[Dokument-orijentisana baza podataka|dokument-orijentisana baza]]
 
 **Čuvanje na disku.** PostgreSQL čuva svaku tabelu i indeks u zasebnoj datoteci u direktorijumu podataka, a izmene najpre upisuje u transakcioni dnevnik (WAL). Obrisan ili izmenjen red ne nestaje odmah: stara verzija ostaje na disku dok je čišćenje (VACUUM) ne označi kao slobodan prostor. Ko čita direktorijum podataka ili kopiju baze, čita sve tabele, mimo prava u bazi.
 
-**Pristup.** Baza prima veze na mrežnom portu, kod PostgreSQL-a podrazumevano 5432. Komponenta se prijavljuje nalogom baze, a prava se dodeljuju po tabelama, pa i po kolonama. [[Softverski proizvod|Proizvod]] pristupa bazi [[Servisni nalog|servisnim nalogom]].
+**Pristup.** Baza prima veze na mrežnom portu, kod PostgreSQL-a podrazumevano 5432. Čovek i servis predstavljaju se nalogom baze, koji PostgreSQL zove ulogom, i lozinkom te uloge. Stefan za održavanje ima svoj nalog. [[Softverski proizvod|Proizvod]] ima [[Servisni nalog|servisni nalog]], koji ne pripada zaposlenom. Lozinka se ne čuva čitljiva: baza čuva izvedenicu i njome proverava unetu lozinku. Uobičajen način je SCRAM. Prava se dodeljuju po tabelama i kolonama. Nalog bez prava nad tabelom ne vidi njene redove, iako je veza prihvaćena.
 
 **Komande.** Komponente šalju SQL kao tekst: SELECT za čitanje, INSERT, UPDATE i DELETE za izmenu, a nalozi sa većim pravima i naredbe koje menjaju strukturu ili prava, kao DROP i GRANT. Baza izvršava ceo tekst koji primi. Ako proizvod u tekst ugradi vrednost koju je uneo korisnik, korisnik može da promeni i sam [[Upitni jezik|upit]].

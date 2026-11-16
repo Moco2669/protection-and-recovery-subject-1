@@ -21,8 +21,6 @@ Kontraprimer: lokalna kopija koda na Milanovom laptopu sadrži isti kod, ali iz 
 
 **Čuvanje na disku.** Svaka kopija repozitorijuma sadrži celu istoriju izmena. Ono što je obrisano iz poslednje verzije ostaje u istoriji.
 
-**Pristup.** Programeri pristupaju preko SSH ključa ili pristupnog tokena, sa pravom čitanja ili i upisa.
+**Pristup.** Programer se predstavlja SSH ključem ili pristupnim tokenom vezanim za svoj nalog. Token ima pravo čitanja ili i upisa. Servis koji proverava i objavljuje verziju ima svoj token ili svoj SSH ključ, užeg prava, i ne koristi programerov ključ. Prijava lozinkom preko veba služi čoveku.
 
 **Komande.** Preuzimanje kopije (clone), upis izmena (commit, push) i spajanje grana. Objava nove verzije čita repozitorijum.
-
-Razlika od [[Skladište zapisa|skladišta zapisa]]: oba čuvaju istoriju, ali repozitorijum čuva ono što će se izvršavati i menjaju ga ljudi namerno, dok skladište zapisa čuva trag o onome što se već desilo.

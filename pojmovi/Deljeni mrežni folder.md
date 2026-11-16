@@ -20,7 +20,7 @@ Kontraprimer: [[Objektno skladište|objektno skladište]] takođe čuva datoteke
 
 **Čuvanje na disku.** Datoteke stoje kao obične datoteke u sistemu datoteka uređaja. Prava se zadaju po folderima i datotekama, a uređaj ne zna šta je u njima. Ko dođe do diska uređaja ili njegove kopije, čita sve.
 
-**Pristup.** Windows računari koriste protokol SMB preko TCP/IP-a. Folder se otvara po putanji oblika `\\server\folder` ili se mapira kao mrežni disk, a pristup se odobrava nalogu zaposlenog. Svaki program koji radi pod tim nalogom ima ista prava nad folderom kao i zaposleni. U Fakturisu isti Wi-Fi koriste i posetioci, pa je uređaj na mreži dostupan i njihovim računarima.
+**Pristup.** Windows računari koriste protokol SMB preko TCP/IP-a. Folder se otvara po putanji oblika `\\server\folder` ili se mapira kao mrežni disk. Zaposleni se predstavlja svojim nalogom i lozinkom. Lozinku proverava [[Sistem za upravljanje nalozima|sistem za upravljanje nalozima]], a folder pravo daje tom nalogu. [[Softverski proizvod|Proizvod]] koji upisuje PDF koristi [[Servisni nalog|servisni nalog]], ne nalog zaposlenog. Svaki program koji radi pod tim nalogom ima ista prava nad folderom. Posebnog tokena za jednu datoteku i ograničen rok nema: pravo traje dok traje prijava. U Fakturisu isti Wi-Fi koriste i posetioci, pa je uređaj na mreži dostupan i njihovim računarima.
 
 **Komande.** Klijent traži otvaranje, čitanje, upis, preimenovanje i brisanje datoteka, kao i nad lokalnim diskom. Upita po sadržaju nema. Program koji redom šifruje sve datoteke na mapiranom disku za uređaj je samo niz običnih upisa.
 

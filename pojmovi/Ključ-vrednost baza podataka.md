@@ -20,7 +20,7 @@ Kontraprimer: tabela sesija u [[Relaciona baza podataka|relacionoj bazi]] čuva 
 
 **Čuvanje na disku.** Redis drži podatke u radnoj memoriji. Na disk ih upisuje kao povremeni snimak celog skupa (RDB, datoteka `dump.rdb`), kao dnevnik svih naredbi upisa (AOF), ili nikako kada služi samo kao keš. Snimak je jedna datoteka sa svim podacima.
 
-**Pristup.** Redis je projektovan za pouzdane klijente u pouzdanom okruženju i ne treba da bude dostupan sa interneta. Podrazumevani port je 6379. Stariji način prijave je jedna lozinka zajednička svim klijentima, upisana čitljivo u datoteku podešavanja. Noviji su nalozi sa listama dozvoljenih naredbi (ACL). Bez lozinke i uz podrazumevana podešavanja Redis odgovara samo klijentima sa istog računara.
+**Pristup.** Redis je projektovan za pouzdane klijente u pouzdanom okruženju i ne treba da bude dostupan sa interneta. Podrazumevani port je 6379. Klijenti su servisi. Naloga zaposlenog nema. Stariji način prijave je jedna lozinka zajednička svim klijentima, upisana čitljivo u datoteku podešavanja. Noviji su imenovani nalozi sa lozinkom i listom dozvoljenih naredbi (ACL). Bez lozinke i uz podrazumevana podešavanja Redis odgovara samo klijentima sa istog računara. Vrednosti su u memoriji čitljive. Čitanje jedne vrednosti ne beleži se posebno. Nalog koji sme sve naredbe može i CONFIG. Zato ovo nije [[Skladište tajni|skladište tajni]].
 
 **Komande.** Kratke naredbe, kao GET i SET, ali i administrativne: FLUSHALL briše sve podatke, a CONFIG menja podešavanja i omogućava upis datoteke na proizvoljnu putanju servera. Klijent sa punim pristupom može da koristi sve naredbe.
 
