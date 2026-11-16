@@ -11,9 +11,9 @@ sloj: temelj
 Procesna jedinica je komponenta sistema koja od podataka koje prima podatke, transformiše ih i šalje ih dalje.
 
 ## Primer
-Pri izdavanju fakture u firmi [[Fakturis]] [[Softverski proizvod|softverski proizvod]] je procesna jedinica: od stavki koje korisnik unese pravi zapis fakture i datoteku.
+Pri izdavanju fakture u firmi [[Fakturis]] [[Softverski proizvod|softverski proizvod]] je procesna jedinica: od stavki koje korisnik unese pravi red fakture i datoteku.
 
-Kontraprimer: [[Baza podataka|baza podataka]] u koju taj zapis stiže nije procesna jedinica. Ona ga čuva, a ne pravi drugi podatak od njega.
+Kontraprimer: [[Baza podataka|baza podataka]] u koju taj red stiže nije procesna jedinica. Ona ga čuva, a ne pravi drugi podatak od njega.
 
 ## Napomene
 - Ovo nije centralna procesna jedinica računara. U dijagramima toka podataka engleski termin je process.

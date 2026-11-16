@@ -18,4 +18,5 @@ Kontraprimer: Excel tabela u kojoj knjigovođa vodi mesečne prihode takođe sad
 ## Napomene
 - CIS pod bazom podrazumeva samo podatke, a softver koji njima upravlja posmatra odvojeno. Ovde su obuhvaćeni zajedno, jer imaju iste ranjivosti i kontrole.
 - SQL je jezik upita u primeru, ne uslov definicije. Alias „SQL baza“ pokriva naziv podvrste sa časa.
-
+- Vrste su [[Relaciona baza podataka|relaciona baza]], [[Dokument-orijentisana baza podataka|dokument-orijentisana baza]] i [[Ključ-vrednost baza podataka|ključ-vrednost baza]]. Način prijave servisa i čoveka opisan je u odeljku Pristup svake vrste.
+- „Preko upita“ za ključ-vrednost bazu znači zahtev po ključu. [[Upitni jezik|Upitni jezik]] imaju relaciona i dokument-orijentisana baza. Naredbe po ključu nisu taj jezik.

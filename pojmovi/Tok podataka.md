@@ -11,7 +11,9 @@ sloj: temelj
 Tok podataka je usmeren prenos podataka između elemenata [[Dijagram toka podataka|dijagrama toka podataka]]; u konvenciji ove baze jedan kraj toka je uvek [[Procesna jedinica|procesna jedinica]], a drugi može biti druga procesna jedinica, [[Skladište podataka|skladište podataka]] ili [[Spoljni entitet]].
 
 ## Primer
-Pri izdavanju fakture, korisnik šalje stavke [[Softverski proizvod|softverskom proizvodu]], a proizvod prenosi zapis do baze i datoteku do skladišta datoteka. Svaka strelica prikazuje poseban tok i smer prenosa.
+Pri izdavanju fakture u firmi [[Fakturis]] jedan tok podataka nosi stavke od korisnika do [[Softverski proizvod|proizvoda]], drugi nosi red fakture od proizvoda do [[Baza podataka|baze podataka]], a treći nosi poziv naplate od proizvoda do [[Spoljni servis|spoljnog servisa]].
+
+Kontraprimer: to što su mrežni prolaz i server povezani nije tok podataka. Tok nastaje kad se tim putem podaci zaista prenesu.
 
 ## Napomene
 - Strelica prikazuje smer. Oznaka može navesti prenete podatke i [[Protokol|protokol]].
