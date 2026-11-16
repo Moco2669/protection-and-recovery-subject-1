@@ -25,3 +25,4 @@ Podrška organizacije sme da pročita poslovni dokument, ali ne i da promeni nje
 Pravila određuju koje promene su dozvoljene i ko sme da ih izvrši. Svaka promena nije narušavanje integriteta.
 
 Izostanak potrebne provere integriteta može omogućiti da promena ostane neotkrivena. Ne objašnjava nužno kako je napadač dobio mogućnost izmene. Provera zahteva pouzdanu osnovu koju napadač ne može zameniti zajedno sa sadržajem.
+

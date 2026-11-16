@@ -18,3 +18,4 @@ Kontraprimer: privatni telefon na kom Jelena čita službenu e-poštu nije poslo
 ## Napomene
 - Mesto na kom se računar nalazi nije deo definicije. Od kuće on i dalje jeste poslovni računar, a put do ostalih komponenti je [[Udaljeni pristup|udaljeni pristup]].
 - Poslovni računar je tačka u kojoj se e-pošta i internet susreću sa unutrašnjim sistemom.
+

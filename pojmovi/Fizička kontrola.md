@@ -24,3 +24,4 @@ Firma drži server i mrežnu opremu u prostoriji u koju mogu da uđu i posetioci
 - [[Kontrola pristupa]] obuhvata i fizički pristup, dok [[Organizaciona kontrola]] određuje ko dobija i vraća ključ ili karticu.
 - Kod smeštaja u oblaku fizičku zaštitu infrastrukture uglavnom sprovodi pružalac usluge, dok firma i dalje štiti svoje prostorije i uređaje.
 - **Ideja za vizualizaciju:** prostorija sa serverom i kontrolisana ulazna tačka.
+

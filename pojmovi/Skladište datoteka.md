@@ -17,3 +17,4 @@ Kontraprimer: dokument koji Jelena drži samo na svom laptopu nije u skladištu 
 
 ## Napomene
 - Prava pristupa zadaju se po datotekama i folderima. [[Baza podataka|Baza podataka]] ih zadaje po pojedinačnim podacima, jer zna šta je u zapisu.
+

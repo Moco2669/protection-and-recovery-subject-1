@@ -25,3 +25,4 @@ Poslovni dokument organizacije smeju da čitaju samo određeni korisnici. Ako na
 Narušavanje poverljivosti tokom prenosa i narušavanje poverljivosti sačuvanih podataka su manifestacije istog opštijeg tipa pretnje.
 
 [[Narušavanje integriteta podataka]] odnosi se na nedozvoljenu izmenu, a ne na saznavanje sadržaja. Zaštita jedne veze ili skladišta ne dokazuje zaštitu drugih mesta na kojima se isti podaci pojavljuju.
+

@@ -18,3 +18,5 @@ Kontraprimer: [[Sistem za rezervne kopije|sistem za rezervne kopije]] drži kopi
 ## Napomene
 - Podvrste su [[Baza podataka|baza podataka]], [[Skladište datoteka|skladište datoteka]], [[Skladište zapisa|skladište zapisa]] i [[Repozitorijum izvornog koda|repozitorijum izvornog koda]].
 - [[Sistem za rezervne kopije|Sistem za rezervne kopije]] nije skladište podataka.
+- Na [[Dijagram toka podataka|dijagramu toka podataka]] skladište je mesto gde se podaci čuvaju između obrada.
+
