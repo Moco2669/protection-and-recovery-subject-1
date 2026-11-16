@@ -24,3 +24,4 @@ Firma uvodi novu verziju poslovne web aplikacije.
 - Pravilo mora biti poznato, primenjivo i proveravano. Samo postojanje dokumenta ne potvrđuje da kontrola funkcioniše.
 - [[Kadrovska kontrola]] ovde se izdvaja radi nastave: naglasak joj je na zaposlenom, njegovoj osposobljenosti i statusu. U širim podelama može biti deo organizacionih mera.
 - **Ideja za vizualizaciju:** programer → pregled → testiranje → odgovorna osoba → objavljivanje.
+

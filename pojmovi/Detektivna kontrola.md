@@ -25,3 +25,4 @@ Napadač pokušava veliki broj prijava na nalog zaposlenog.
 - Upozorenje ukazuje na potrebu za proverom; samo po sebi nije dokaz uspešnog napada.
 - Detekcija ne podrazumeva automatsko blokiranje. Blokiranje može imati [[Preventivna kontrola|preventivnu]], a vraćanje ispravnog stanja [[Korektivna kontrola|korektivnu ulogu]].
 - **Ideja za vizualizaciju:** događaji iz više komponenti → pregled zapisa → upozorenje.
+
