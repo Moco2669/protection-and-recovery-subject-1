@@ -17,6 +17,6 @@ Kada Jelena iz firme [[Fakturis]] na privatnom telefonu koristi aplikaciju za sl
 - Sandbox ograničava šta aplikacija sme da uradi ostatku sistema. Deo je njenog [[Sistemsko okruženje|sistemskog okruženja]].
 - Na Androidu operativni sistem sprovodi odvajanje aplikacija i proverava prava pristupa.
 - Sandbox označava koncept ograničenog izvršavanja, ali i konkretno okruženje koje taj koncept sprovodi. Android Application Sandbox je primer stvarne realizacije; zato nije tačno reći da je sandbox samo koncept, a kontejner jedino konkretno rešenje.
-- Sandbox i [[Kontejner|kontejner]] nisu sinonimi. Sandbox naglašava bezbednosnu namenu i dozvoljene radnje, dok kontejner označava izdvajanje izvršnog okruženja uz deljeno jezgro OS-a. Docker je primer konkretne tehnologije za kontejnere.
+- Sandbox i [[Kontejner|kontejner]] nisu sinonimi. Sandbox naglašava bezbednosnu namenu i dozvoljene radnje, dok kontejner označava izdvajanje izvršnog okruženja, najčešće uz deljeno jezgro OS-a. Postoje i realizacije sa zasebnim jezgrom, poput Windows Hyper-V izolacije. Docker je primer konkretne tehnologije za kontejnere.
 - Sandbox se može realizovati ograničenjima procesa u OS-u, korišćenjem kontejnera ili [[Virtuelna mašina|virtuelne mašine]], ili kombinacijom mehanizama. Može postojati i unutar tih okruženja.
 - Postojanje sandboxa ne garantuje da nema ranjivosti.
