@@ -11,7 +11,7 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 - podatak, informacija, dokument, fajl
 - aplikacija (u opštem smislu), programski interfejs (API), HTTP zahtev i odgovor, HTTPS
 - SQL upit
-- računar, operativni sistem, virtuelna mašina, oblak (cloud)
+- računar, operativni sistem, oblak (cloud)
 - računarska mreža, internet, ruter, mrežni preklopnik, Wi-Fi pristupna tačka, mrežni segment
 - zaštitni zid (firewall), kao uređaj
 - izvorni kod, softverska biblioteka, verzija softvera, testno okruženje, CI cevovod
@@ -37,6 +37,7 @@ Definicije su preuzete sa predavanja *ZOSS 03: Osnovna terminologija pretnji*. O
 - **Bezbednosna kontrola (security control).** Bezbednosna kontrola je mehanizam ugrađen u komponentu sistema ili posebna komponenta, kojom organizacija sprečava, otkriva ili ispravlja narušavanje bezbednosnih svojstava resursa. Može biti tehnička, organizaciona, kadrovska ili fizička.
 
 ## Promene konvencija
+- 2026-11-19: Na zahtev za doradu materijala uvedeni su [[Sistemski softver]], [[Virtuelna mašina]] i [[IoT uređaj]]. Virtuelna mašina više nije pretpostavljen pojam. Tri grupe hardverskih platformi razdvojene su prema pretežnoj nameni, uz napomenu o preklapanju. [[Sandbox]] označava i koncept i konkretnu realizaciju ograničenog izvršavanja; [[Kontejner]] označava izdvojeno izvršno okruženje sa deljenim jezgrom. Njihov odnos ne svodi se na „koncept naspram konkretnog rešenja“.
 - 2026-10-29: Temeljne definicije preuzete su sa predavanja ZOSS 03. Nabrajanja vrsta (osnovna bezbednosna svojstva, tipovi kontrola, poreklo ranjivosti) premeštena su iz definicije u Napomene, da definicije ne bi bile cirkularne preko beleški koje ih definišu.
 - 2026-10-29: Frontmatter beleške pojma ima, pored polja iz šablona, polje `status` (`predavanje`: definicija sa predavanja; `predlog`: čeka potvrdu studenata; `prihvaćeno`: potvrđeno) i polje `sloj` (`temelj`, `jezgro`, `front`, prema kosturu teme).
 - 2026-10-29: Glavni termini prate predavanja (resurs, dostupnost), a termini iz srpskog izdanja ISO/IEC 27000 (imovina, raspoloživost) stavljaju se u `aliases`.

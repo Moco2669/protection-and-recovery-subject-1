@@ -15,7 +15,7 @@ Ako bi [[Softverski proizvod|softverski proizvod]] firme [[Fakturis]] bio napisa
 
 ## Napomene
 - Primeri su JVM za Javu, .NET za C# i Python interpreter, odnosno program koji izvršava Python kod.
-- Izvršno okruženje odnosi se na izvršavanje programskog koda. [[Sistemsko okruženje]] opisuje OS, kontejner ili virtuelnu mašinu u kojima aplikacija radi.
+- Izvršno okruženje odnosi se na izvršavanje programskog koda. [[Sistemsko okruženje]] opisuje OS, [[Kontejner|kontejner]] ili [[Virtuelna mašina|virtuelnu mašinu]] u kojima aplikacija radi.
 - Aplikacijska virtuelna mašina, poput JVM-a, izvršava programski kod. Virtuelna mašina sa sopstvenim OS-om predstavlja virtuelni računar. To su različiti pojmovi.
 - Automatsko upravljanje memorijom smanjuje potrebu da programer ručno oslobađa memoriju, ali ne garantuje odsustvo svih grešaka i ranjivosti.
 - Pristup datotekama, mreži i uređajima i dalje zavisi od prava procesa i ograničenja operativnog sistema.
