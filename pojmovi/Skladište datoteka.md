@@ -16,4 +16,6 @@ Skladište datoteka firme [[Fakturis]] je mrežni uređaj u prostorijama firme. 
 Kontraprimer: dokument koji Jelena drži samo na svom laptopu nije u skladištu datoteka. Zato ne ulazi ni u rezervne kopije.
 
 ## Napomene
-- Prava pristupa zadaju se po datotekama i folderima. [[Baza podataka|Baza podataka]] ih zadaje po pojedinačnim podacima, jer zna šta je u zapisu.
+- Prava pristupa zadaju se po datotekama i folderima. [[Baza podataka|Baza podataka]] ih zadaje po redovima, kolonama ili poljima, jer zna strukturu.
+- „Skladište dokumenata“ je starije ime ovog pojma. Poslovni dokument, kao PDF faktura ili ugovor, ovde je datoteka. JSON dokument u [[Dokument-orijentisana baza podataka|dokument-orijentisanoj bazi]] nije ta datoteka: baza tumači njegova polja.
+- Način prijave zavisi od vrste i opisan je u odeljku Pristup beleški [[Deljeni mrežni folder|deljenog mrežnog foldera]] i [[Objektno skladište|objektnog skladišta]].

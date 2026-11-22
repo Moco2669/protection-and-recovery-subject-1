@@ -9,13 +9,15 @@ Pojmovi koje publika zna bez definisanja. Ne otvaraju se ponovo osim na zahtev s
 - organizacija, preduzeće, korisnik
 - sistem (u opštem smislu), arhitektura softvera
 - podatak, informacija, dokument, fajl
-- aplikacija (u opštem smislu), programski interfejs (API), HTTP zahtev i odgovor, HTTPS
+- aplikacija (u opštem smislu), programski interfejs (API), HTTP zahtev i odgovor
 - SQL upit
 - računar, operativni sistem, oblak (cloud)
 - računarska mreža, internet, ruter, mrežni preklopnik, Wi-Fi pristupna tačka, mrežni segment
 - zaštitni zid (firewall), kao uređaj
 - izvorni kod, softverska biblioteka, verzija softvera, testno okruženje, CI cevovod
 - lozinka, nalog, prijava na sistem (u svakodnevnom smislu; autentifikacija se definiše kasnije)
+- API ključ, kriptografski ključ (vrednost za šifrovanje ili potpis; postupak se ne definiše)
+- pristupni token (vrednost koja se pokazuje umesto lozinke)
 - e-pošta, prilog, makro (kao funkcija Office paketa)
 
 ### Pojmovi sa predavanja ZOSS 03
@@ -57,8 +59,24 @@ Definicije su preuzete sa predavanja *ZOSS 03: Osnovna terminologija pretnji*. O
 - 2026-11-05: **Skladište podataka** nije jedan sistem. Druga komponenta razgovara sa konkretnom podvrstom. Podvrste su [[Baza podataka]], [[Skladište datoteka]], [[Skladište zapisa]] i [[Repozitorijum izvornog koda]]. Time se menja odluka od 2026-11-01 po kojoj repozitorijum nije skladište podataka. [[Sistem za rezervne kopije]] i dalje nije. [[Sistem za zapise o radu]] u studiji može da se konkretizuje kao SIEM, bez posebne beleške.
 - 2026-11-05: Dodati su [[Procesna jedinica]] i [[Tok podataka]], da bi se kasnije crtali dijagrami toka podataka za slabosti, napade i kontrole. Formulacije su predlog.
 - 2026-11-11: Softverska [[Procesna jedinica|procesna jedinica]] opisuje se na tri nivoa — [[Hardverska platforma|hardverska platforma]], [[Sistemsko okruženje|sistemsko okruženje]] i [[Aplikativni softver|aplikativni softver]]. Konkretne tehnologije u primerima za [[Fakturis]] služe kao ilustracije.
+- 2026-11-09: Po smernici nastavnika, druga sesija konkretizuje vrste komponenti, a treća se na njihove karakteristike nadovezuje eksploatacijama. Za skladišta podataka uvode se [[Relaciona baza podataka]], [[Dokument-orijentisana baza podataka]] i [[Ključ-vrednost baza podataka]] kao vrste baze, i [[Deljeni mrežni folder]] i [[Objektno skladište]] kao vrste skladišta datoteka. Beleška vrste u Napomenama ima tri odeljka: **Čuvanje na disku**, **Pristup** i **Komande**. Dodati su i [[Servisni nalog]], [[Upitni jezik]] i [[Podaci u mirovanju]]. Primeri sa MongoDB-om, Redis-om, S3 i SMB-om su ilustrativni i ne određuju konfiguraciju [[Fakturis]]. Sve formulacije su predlog.
+- 2026-11-11: Posle konsultacija sa nastavnikom, dopuna prethodne stavke: beleška vrste skladišta ima i odeljak **Upotreba**, ispred tri karakteristike. [[Skladište zapisa]] i [[Repozitorijum izvornog koda]] dobijaju iste tri karakteristike i rečenicu o razlici jedno od drugog. [[Deljeni mrežni folder]] i [[Objektno skladište]] razlikuju se po obliku podataka i načinu pristupa, a ne po tome da li su u firmi ili van nje.
+- 2026-11-16: Po primedbama nastavnika, razgraničenje skladišta. Datoteka je imenovani niz bajtova koji se ne tumači. Podatak u bazi adresira se po strukturi. JSON dokument u [[Dokument-orijentisana baza podataka|dokument-orijentisanoj bazi]] nije datoteka. PDF, slika i JSON datoteka jesu, i zato mogu stajati u istom [[Skladište datoteka|skladištu datoteka]]. **Zapis** je samo unos o radnji koja se već desila, u [[Skladište zapisa|skladištu zapisa]]. Red u bazi nije zapis. Rečenica kojom su se skladište zapisa i repozitorijum poredili, uvedena 2026-11-11, uklonjena je. [[Skladište tajni]] nije peta podvrsta. Od [[Ključ-vrednost baza podataka|ključ-vrednost baze]] razlikuju ga zaštite, ne oblik. Odeljak Pristup svake vrste kaže kako se predstavljaju servis i čovek. Privremeni pristup [[Objektno skladište|objektnom skladištu]] opisan je prema AWS Signature Version 4: potpis veže radnju, ključ objekta i rok, najviše sedam dana, a skladište potpis ponovo izračuna. API ključ, kriptografski ključ i pristupni token su pretpostavljeni.
+- 2026-11-07: Za rad na [[Tok podataka|tokovima podataka]] dodati su predlozi za [[Protokol]], [[Aplikacioni protokol]] i [[Transportni protokol]]. Tok podataka je preformulisan kao prenos podataka između elemenata dijagrama, da bi se razlikovao od kanala kojim se prenos ostvaruje. Protokoli uz strelicu opisuju način prenosa; podaci koji se prenose mogu se navesti kao oznaka toka. Primeri HTTP i TCP su ilustrativni, ne određuju konfiguraciju [[Fakturis]]. Sve nove formulacije su predlozi.
+- 2026-11-07: Dodate su predložene beleške za [[HTTP]], [[DNS]], [[SSH]], [[TCP]], [[UDP]] i QUIC kao primere protokola. QUIC je dodat da bi se objasnio prenos HTTP/3 i razlika u odnosu na TCP. Primeri su ilustrativni, ne utvrđuju protokole koje Fakturis stvarno koristi.
+- 2026-11-07: Po želji studenta, beleška QUIC je uklonjena iz skupa pojmova za ovu komponentu, a dodat je [[MQTT]]. MQTT je klasifikovan kao aplikacioni protokol u ovoj bazi, uz napomenu da ga OASIS opisuje kao messaging transport protocol, što ne znači da pripada transportnom sloju TCP/UDP. Primer objavljivanja/pretplate koristi hipotetičkog posrednika i drugu procesnu jedinicu, koji nisu utvrđeni u osnovnoj skici [[Fakturis]].
+- 2026-11-07: Dodati su predlozi [[Spoljni entitet]], [[Dijagram toka podataka]] i [[Granica poverenja]] i povezani sa postojećim pojmovima i studijom [[Fakturis]]. Spoljni entitet je ovde određen u odnosu na opseg modelovanog sistema; protumačen je kroz granicu kontrole organizacije, jer u studiji korisnici i servisi drugih organizacija razmenjuju podatke sa komponentama firme. Granica poverenja je logička i ne poistovećuje se sa fizičkom ili mrežnom granicom.
+- 2026-11-10: Na osnovu prezentacije o Data Flow dodat je predlog [[FTP]] kao aplikacionog protokola. Beleška povezuje komande i odgovore na kontrolnoj vezi sa prenosom datoteke preko zasebne podatkovne veze, objašnjava aktivni i pasivni režim, osnovne komande i odgovore, kao i to da običan FTP ne šifruje saobraćaj. Primer je sekundaran i ne određuje konfiguraciju [[Fakturis]].
 
 ## Otvorena pitanja
 - **Pravo pristupa i ovlašćenje.** Koji od ta dva termina ostaje, bira se kad se bude definisala kontrola pristupa.
 - **Skeneri ranjivosti kao kontrola.** Da li su SAST, DAST i pentest detektivne kontrole (otkrivaju) ili preventivne (deluju pre napada)? Izvori se razlikuju.
 - **Rizik.** Kostur ga stavlja u temelj, ali ga nema na dijagramu sa predavanja. Treba ga definisati pre prioritizacije ranjivosti (CVSS).
+- **Aliasi roditeljskih beleški.** „SQL baza“ i „relaciona baza“ u [[Baza podataka]], i „NAS“ i „deljeni folder“ u [[Skladište datoteka]], sada imaju sopstvene beleške ([[Relaciona baza podataka]], [[Deljeni mrežni folder]]). Da li ih premestiti? „Skladište dokumenata“ ostaje alias skladišta datoteka, uz napomenu da je to starije ime, a ne JSON dokument.
+- 2026-11-13: Po dopunama Data Flow prezentacije razrađeni su pojmovi protokola i kriterijum aplikacionog/transportnog/protokola zaštite; „server“ kao računar razdvojen je od [[Serverski program|serverske uloge]]. Dodati su OSI i TCP/IP modeli, HTTP/2, HTTP/3 i QUIC, DNS uloge/poddomen/zapisi A i AAAA, MQTT broker/tema/QoS, te FTP kontrolna veza, veza za prenos podataka, aktivni/pasivni režim i napad posrednikom. U TCP-u su razjašnjeni prozor, broj sekvence, ACK i nepredvidivi početni broj. QUIC vraćen je kao pojam jer je neophodan za novu obradu HTTP/3. Root DNS činjenice opisuju globalnu infrastrukturu, ne komponente Fakturisa. Sve mrežne konfiguracije iz primera ostaju ilustrativne.
+
+
+
+
+
+- 2026-11-13: Dodat je [[Prevođenje mrežnih adresa|NAT]] radi objašnjenja mrežnog prolaza i FTP režima. Primer NAT preslikavanja je hipotetički i ne definiše konfiguraciju Fakturisa.

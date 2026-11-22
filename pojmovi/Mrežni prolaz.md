@@ -17,3 +17,6 @@ Kontraprimer: mrežni preklopnik u firmi takođe prenosi saobraćaj, ali povezuj
 
 ## Napomene
 - Sav saobraćaj između firme i interneta prolazi kroz mrežni prolaz. [[Spoljni servis|Spoljni servis]] ipak nije deo prolaza: prolaz prenosi saobraćaj, a servisom upravlja druga firma.
+- Ruter može obavljati [[Prevođenje mrežnih adresa|NAT]], ali NAT i filtriranje saobraćaja su različite funkcije. Konkretnu upotrebu NAT-a u Fakturisu ne pretpostavljamo.
+
+

@@ -24,3 +24,4 @@ Zaposleni dobija poruku u kojoj se od njega traži da poslovni dokument pošalje
 - Ukidanje naloga povezuje kadrovski postupak sa [[Kontrola pristupa|kontrolom pristupa]].
 - Granica prema [[Organizaciona kontrola|organizacionoj kontroli]] nije apsolutna; ovde ih odvojeno posmatramo radi jasnije obrade ljudi i procedura.
 - **Ideja za vizualizaciju:** dolazak → obuka i rad → promena uloge → odlazak i ukidanje pristupa.
+

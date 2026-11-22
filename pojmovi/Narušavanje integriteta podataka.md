@@ -20,8 +20,9 @@ Podrška organizacije sme da pročita poslovni dokument, ali ne i da promeni nje
 
 **Tok podataka.** Podaci se nedozvoljeno izmene, zamene ili dopune između slanja i prijema. Ranjivost može biti nepravilna provera autentičnosti i integriteta primljenih poruka.
 
-**Skladište podataka.** Napadač menja zapise u bazi, sadržaj datoteka, kod u repozitorijumu ili dokaze u skladištu zapisa. Nedozvoljeno brisanje može istovremeno ugroziti i [[Narušavanje dostupnosti resursa|dostupnost]].
+**Skladište podataka.** Napadač menja podatke u bazi, sadržaj datoteka, kod u repozitorijumu ili zapise u skladištu zapisa. Nedozvoljeno brisanje može istovremeno ugroziti i [[Narušavanje dostupnosti resursa|dostupnost]].
 
 Pravila određuju koje promene su dozvoljene i ko sme da ih izvrši. Svaka promena nije narušavanje integriteta.
 
 Izostanak potrebne provere integriteta može omogućiti da promena ostane neotkrivena. Ne objašnjava nužno kako je napadač dobio mogućnost izmene. Provera zahteva pouzdanu osnovu koju napadač ne može zameniti zajedno sa sadržajem.
+

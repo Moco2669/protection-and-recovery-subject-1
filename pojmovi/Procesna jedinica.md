@@ -11,9 +11,9 @@ sloj: temelj
 Procesna jedinica je komponenta sistema koja prima podatke, transformiše ih i šalje ih dalje.
 
 ## Primer
-Pri izdavanju fakture u firmi [[Fakturis]] [[Softverski proizvod|softverski proizvod]] je procesna jedinica: od stavki koje korisnik unese pravi zapis fakture i datoteku.
+Pri izdavanju fakture u firmi [[Fakturis]] [[Softverski proizvod|softverski proizvod]] je procesna jedinica: od stavki koje korisnik unese pravi red fakture i datoteku.
 
-Kontraprimer: [[Baza podataka|baza podataka]] u koju taj zapis stiže nije procesna jedinica. Ona ga čuva, a ne pravi drugi podatak od njega.
+Kontraprimer: [[Baza podataka|baza podataka]] u koju taj red stiže nije procesna jedinica. Ona ga čuva, a ne pravi drugi podatak od njega.
 
 ## Napomene
 - Softversku procesnu jedinicu opisujemo na tri nivoa: [[Hardverska platforma]], [[Sistemsko okruženje]] i [[Aplikativni softver]]. [[Sistemski softver]] uvodi podršku izvršavanju, a [[Virtuelna mašina]], [[Kontejner]] i [[Sandbox]] razjašnjavaju oblike okruženja i ograničenja.
@@ -22,4 +22,5 @@ Kontraprimer: [[Baza podataka|baza podataka]] u koju taj zapis stiže nije proce
 - Nije poslovni proces. Poslovni proces je sled rada. Procesna jedinica je jedno mesto koje od ulaza pravi izlaz.
 - [[Skladište podataka|Skladište podataka]] čuva podatke. Procesna jedinica ih obrađuje.
 - Na dubljem dijagramu procesna jedinica može biti deo proizvoda, ne samo proizvod kao celina. Klasa koja poziva [[Spoljni servis|spoljni servis]] crta se tako, a nije poseban pojam.
-- [[Zaposleni sa pristupom|Zaposleni sa pristupom]] koji od ulaznih podataka pravi druge, na dijagramu takođe može biti procesna jedinica. Lice ili servis van sistema nisu.
+- [[Zaposleni sa pristupom|Zaposleni sa pristupom]] koji od ulaznih podataka pravi druge, na dijagramu takođe može biti procesna jedinica. [[Spoljni entitet|Spoljni entiteti]] su izvan modelovanog sistema i nisu njegove procesne jedinice.
+

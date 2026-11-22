@@ -18,3 +18,9 @@ Kontraprimer: lokalna kopija koda na Milanovom laptopu sadrži isti kod, ali iz 
 ## Napomene
 - Repozitorijum sadrži više od koda: konfiguracione fajlove, skripte za objavljivanje, ponekad i pristupne podatke. Ko može da menja repozitorijum, može da promeni i ono što se izvršava na serveru.
 - Provera i objava nove verzije, kad se crta na dijagramu toka podataka, jeste [[Procesna jedinica|procesna jedinica]] koja čita ovo skladište. Sam repozitorijum je mesto gde kod stoji.
+
+**Čuvanje na disku.** Svaka kopija repozitorijuma sadrži celu istoriju izmena. Ono što je obrisano iz poslednje verzije ostaje u istoriji.
+
+**Pristup.** Programer se predstavlja SSH ključem ili pristupnim tokenom vezanim za svoj nalog. Token ima pravo čitanja ili i upisa. Servis koji proverava i objavljuje verziju ima svoj token ili svoj SSH ključ, užeg prava, i ne koristi programerov ključ. Prijava lozinkom preko veba služi čoveku.
+
+**Komande.** Preuzimanje kopije (clone), upis izmena (commit, push) i spajanje grana. Objava nove verzije čita repozitorijum.

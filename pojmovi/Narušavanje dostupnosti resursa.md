@@ -27,3 +27,4 @@ Pretnja obuhvata i degradaciju potrebne usluge, ne samo potpuni prekid rada.
 Nekontrolisana potrošnja resursa je mogući tip ranjivosti, slanje opterećujućih zahteva radnja napada, a nemogućnost dozvoljenog korišćenja posledica.
 
 Slučajni kvar sam po sebi nije napad. Ovde razmatramo narušavanje koje napadač može izazvati.
+
