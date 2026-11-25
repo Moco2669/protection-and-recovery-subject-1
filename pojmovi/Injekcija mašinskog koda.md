@@ -16,7 +16,7 @@ Modul za generisanje PDF faktura u [[Fakturis]] kopira naziv kupca iz zahteva u 
 Kontraprimer: ako napadač sačuvanu povratnu adresu preusmeri na postojeću funkciju `system` u biblioteci, to je [[Ponovna upotreba koda]], jer se izvršavaju već postojeće instrukcije.
 
 ## Napomene
-- Ubačene instrukcije nazivaju se shellcode. Naziv potiče od klasičnog primera u kome instrukcije pokreću shell, ali shellcode može da obavlja i drugu zlonamernu funkcionalnost.
+- Ubačene instrukcije nazivaju se shellcode. Naziv potiče od primera u kome instrukcije pokreću shell, ali shellcode može da obavlja i drugu zlonamernu funkcionalnost.
 - Klasičan oblik je napad poznat kao stack smashing: napadač smešta instrukcije u lokalni bafer na [[Stek|steku]], a zatim prekoračenjem bafera prepisuje sačuvanu povratnu adresu tako da pokazuje na taj bafer.
 - Kada napadač ne zna tačnu adresu bafera, može ispred shellcode-a da postavi niz NOP instrukcija (NOP sled). Tada je dovoljno da preusmerena adresa pogodi bilo koju instrukciju u tom nizu.
 - Ako se instrukcije unose kroz funkciju koja obrađuje nul-terminisane C niske, nul-bajt može prerano da prekine kopiranje. Zato takav shellcode mora biti kodiran bez nul-bajtova. Ovo ograničenje ne važi za svaki način prenosa ili kopiranja podataka.

@@ -14,8 +14,8 @@ Ručno upravljanje memorijom je način rada u kojem programer u kodu određuje k
 Ako bi deo [[Softverski proizvod|softverskog proizvoda]] firme [[Fakturis]] bio napisan u C-u, programer bi mogao da zauzme memoriju za stavke fakture i oslobodi je kada obrada završi. Ovo je ilustrativna mogućnost, a ne utvrđena tehnologija firme.
 
 ## Napomene
-- Programer mora voditi računa da se memorija ne koristi nakon oslobađanja i da se ne oslobađa više puta.
-- Ako se nepotrebna zauzeta memorija ne oslobađa, program vremenom može trošiti sve više memorije.
+- Programer mora voditi računa da se memorija ne koristi nakon oslobađanja ([[Korišćenje posle oslobađanja]]) i da se ne oslobađa više puta ([[Dvostruko oslobađanje]]).
+- Ako se nepotrebna zauzeta memorija ne oslobađa, program vremenom može trošiti sve više memorije ([[Curenje memorije]]).
 - Greške u korišćenju memorije mogu izazvati pad programa ili omogućiti napadaču da promeni njegovo ponašanje.
 - Nije sinonim za [[Nativni kod|nativni kod]]. Program može biti preveden u nativni kod i koristiti drugačiji model upravljanja memorijom.
 - U C++ programer može koristiti objekte koji oslobađaju memoriju po završetku svog životnog veka, umesto da svako oslobađanje piše kao zasebnu naredbu.

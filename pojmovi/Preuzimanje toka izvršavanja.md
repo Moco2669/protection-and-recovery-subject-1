@@ -8,7 +8,7 @@ sloj: jezgro
 # Preuzimanje toka izvršavanja (control-flow hijacking)
 
 ## Definicija
-Preuzimanje toka izvršavanja je [[Napad iskorišćavanjem memorijske ranjivosti|napad iskorišćavanjem memorijske ranjivosti]] u kome napadač menja adresu koda koji program treba da izvrši, na primer povratnu adresu funkcije ili pokazivač na funkciju, da bi program izvršavao kod koji je napadač izabrao.
+Preuzimanje toka izvršavanja je [[Napad iskorišćavanjem memorijske ranjivosti|napad iskorišćavanjem memorijske ranjivosti]] u kome napadač prepisuje vrednost koja određuje koji će kod program sledeći izvršiti, na primer povratnu adresu funkcije ili pokazivač na funkciju, kako bi program preusmerio na kod koji je napadač izabrao.
 
 ## Primer
 Funkcija modula za generisanje PDF faktura u [[Fakturis]] ima lokalni [[Bafer|bafer]] od 64 bajta, a iza njega na [[Stek|steku]] stoji povratna adresa. Napadač pošalje naziv od 200 bajtova čiji poslednji bajtovi sadrže adresu koju je izabrao. Kad funkcija završi, program umesto u pozivaoca prelazi na tu adresu i izvršava kod koji je napadač izabrao.
