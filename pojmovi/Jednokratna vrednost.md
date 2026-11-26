@@ -11,7 +11,7 @@ sloj: jezgro
 Jednokratna vrednost (nonce) je vrednost koja se, zajedno sa ključem, daje kao ulaz algoritmu šifrovanja, [[Digitalni potpis|potpisa]] ili [[Protokol|protokolu]] i koja se uz isti ključ sme upotrebiti samo jednom.
 
 ## Primer
-Program šifruje svaku noćnu rezervnu kopiju AES-GCM-om istim ključem. Za svaku kopiju pravi novu jednokratnu vrednost od 12 bajtova i zapisuje je otvoreno ispred šifrata. Ista kopija šifrovana dve noći zaredom daje dva potpuno različita šifrata.
+Aplikacija AES-GCM-om šifruje broj računa svakog kupca u [[Baza podataka|bazi]], istim ključem iz [[Skladište tajni|skladišta tajni]]. Za svaki zapis pravi novu jednokratnu vrednost od 12 bajtova i čuva je otvoreno ispred šifrata. Isti broj računa upisan dva puta daje dva potpuno različita šifrata.
 
 ## Napomene
 - Pri šifrovanju obezbeđuje da isti otvoreni tekst šifrovan istim ključem svaki put da drugačiji šifrat. Tada nije tajna: zapisuje se otvoreno pored šifrata, a bitno je samo da se uz isti ključ ne ponovi.

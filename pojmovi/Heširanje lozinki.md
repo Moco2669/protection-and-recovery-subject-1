@@ -26,7 +26,7 @@ Prva dva zapisa napadač proverava desetinama milijardi pokušaja u sekundi, a i
 - Argon2id i scrypt traže mnogo memorije po pokušaju, pa grafičke kartice gube prednost.
 - **Biber (pepper)**: dodatna tajna, ista za sve naloge, van baze, npr. u [[Skladište tajni|skladištu tajni]]. Ako procuri samo baza, pogađanje ne može ni da počne. Biber je tajan i zajednički; so je javna i različita za svaki zapis.
 - Zapis nosi algoritam i parametre, pa se posle uspešne prijave stari zapis zamenjuje jačim ([[Kriptografska agilnost]]).
-- Iste funkcije (PBKDF2, Argon2) služe i za izvođenje ključa iz lozinke, npr. pri šifrovanju datoteke lozinkom ([[Funkcija za izvođenje ključa]]).
+- Iste funkcije (PBKDF2, Argon2) služe i kao [[Funkcija za izvođenje ključa|funkcije za izvođenje ključa]] iz lozinke, npr. pri šifrovanju datoteke lozinkom. Tada je izlaz ključ, a ne zapis za proveru lozinke.
 - Heširanje ne štiti od pogađanja preko forme za prijavu; tu pomažu ograničenje pokušaja i drugi faktor.
 
 ## So
@@ -46,7 +46,7 @@ LinkedIn je 2012. izgubio heševe lozinki: SHA-1 bez soli. Oko 6,5 miliona heše
 - Napad je offline: ne prolazi kroz formu za prijavu, pa ga ne zaustavljaju zaključavanje naloga ni ograničenje pokušaja, i ne ostavlja [[Skladište zapisa|zapise]] na napadnutom sistemu.
 - **Napad rečnikom** isprobava poznate lozinke i varijacije („reč + godina + !“) i u praksi je uspešniji od isprobavanja svih kombinacija.
 - **Rainbow tabela** je tabela izračunata unapred, za jednu heš funkciju, iz koje se za dati heš brzo nalazi lozinka; umesto svih parova lozinka–heš čuva samo početke i krajeve dugih lanaca heširanja, pa zauzima mnogo manje prostora. So je čini beskorisnom, jer bi za svaku vrednost soli trebala posebna tabela.
-- Jedna grafička kartica (RTX 4090, hashcat) računa oko 160 milijardi MD5 i oko 50 milijardi SHA-1 heševa u sekundi. Za Argon2id sa preporučenim parametrima taj broj je za mnogo redova veličine manji, jer svaki pokušaj traži desetine MiB memorije.
+- Jedna grafička kartica (RTX 4090, hashcat) računa oko 160 milijardi MD5 i oko 50 milijardi SHA-1 heševa u sekundi. Za Argon2id sa preporučenim parametrima taj broj je za mnogo redova veličine manji, jer svaki pokušaj traži oko 19 MiB memorije ili više.
 - Heševi obično procure drugim napadom: krađom rezervne kopije, SQL injekcijom ili kopijom baze ostavljenom u repozitorijumu.
 - Odbijanje lozinki sa spiskova procurelih lozinki i drugi faktor smanjuju vrednost probijene lozinke.
 

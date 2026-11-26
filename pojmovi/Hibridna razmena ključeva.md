@@ -20,5 +20,5 @@ TLS grupa X25519MLKEM768: tajna iz [[Diffie-Hellman razmena ključeva|X25519]] r
 - Nije isto što i [[Hibridno šifrovanje]] (asimetrično + simetrično).
 
 ## Česti propusti i zaštita
-- **Sopstveno kombinovanje tajni** (npr. XOR) koje dozvoljava da jedna tajna poništi drugu. *Zaštita:* kombinovanje kako ga propisuje standard.
+- **Sopstveno kombinovanje tajni** (npr. XOR) umesto propisanog spajanja obe tajne u KDF zajedno sa porukama rukovanja: za takvu kombinaciju nema dokaza da je ključ bezbedan dok god je bar jedna razmena bezbedna. *Zaštita:* kombinovanje kako ga propisuje standard.
 - **Degradiranje na samo klasičnu razmenu** uklanjanjem hibridne grupe iz ponude ([[Napad degradiranjem verzije]]). *Zaštita:* potpis nad porukama rukovanja, kao u TLS 1.3.

@@ -20,5 +20,5 @@ Administrator upiše svoj javni [[SSH]] ključ na [[Server|server]], a privatni 
 - Javni ključ ne mora biti tajan, ali mora biti autentičan; tu vezu potvrđuje [[Digitalni sertifikat|sertifikat]].
 
 ## Česti propusti i zaštita
-- **Prihvatanje nepoznatog ključa.** Korisnik na upozorenje „host key changed“ odgovori „yes“. Ako je to bio [[Napad posrednikom|posrednik]], napadač vidi celu sesiju. *Zaštita:* otisak ključa servera proverava se iz drugog izvora; ključevi servera se unapred distribuiraju.
+- **Prihvatanje nepoznatog ključa.** Pri prvom povezivanju korisnik na pitanje da li veruje ključu servera odgovori „yes“ bez provere otiska, ili, kada SSH odbije vezu jer se ključ servera promenio, obriše stari ključ iz `known_hosts` ne proverivši zašto se promenio. Ako je to bio [[Napad posrednikom|posrednik]], napadač vidi celu sesiju. *Zaštita:* otisak ključa servera proverava se iz drugog izvora; ključevi servera se unapred distribuiraju.
 - **Privatni ključ bez zaštite.** Privatni SSH ključ bez lozinke ostaje u javnom repozitorijumu ili rezervnoj kopiji. *Zaštita:* ključ zaštićen lozinkom ili u hardverskom ključu; odmah zameniti ključ koji je procureo.

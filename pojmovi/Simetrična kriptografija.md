@@ -11,7 +11,7 @@ sloj: temelj
 Simetrična kriptografija je skup algoritama za šifrovanje i proveru autentičnosti podataka u kojima se isti tajni ključ koristi za obe suprotne operacije: za šifrovanje i dešifrovanje, odnosno za pravljenje i proveru [[Kod za autentifikaciju poruke|oznake autentičnosti]].
 
 ## Primer
-Tokom [[TLS]] veze pregledač i server šifruju sve zapise istim ključem sesije, AES-om. Ključ nije poslat mrežom: obe strane su ga izračunale [[Diffie-Hellman razmena ključeva|razmenom ključeva]] na početku veze.
+Tokom [[TLS]] veze pregledač šifruje zahtev AES-om ključem za smer klijent → server, a server ga dešifruje istim tim ključem. Odgovore server šifruje drugim ključem, za suprotan smer, koji takođe imaju obe strane. Nijedan ključ nije poslat mrežom: obe strane su ih izračunale iz zajedničke tajne dobijene [[Diffie-Hellman razmena ključeva|razmenom ključeva]] ([[Funkcija za izvođenje ključa]]).
 
 ## Napomene
 - Vrste i njihov odnos:
@@ -27,7 +27,7 @@ simetrična kriptografija
 ```
 
   Vidi [[Blokovska šifra]], [[Protočna šifra]] i [[Kod za autentifikaciju poruke]]. AES sam šifruje samo jedan blok; poruku šifruje tek AES u nekom režimu, na primer AES-GCM ([[Autentifikovano šifrovanje]]).
-- Brza je i ima kratke ključeve; 128 bita je dovoljno.
+- Brza je i ima kratke ključeve; 128 bita je danas dovoljno, a za podatke koji moraju ostati tajni decenijama bira se AES-256 ([[Postkvantna kriptografija]]).
 - Glavni problem je raspodela ključa: kako da dve strane koje se nisu srele dobiju isti tajni ključ? To rešava [[Asimetrična kriptografija|asimetrična kriptografija]], pa se u praksi kombinuju, kao u [[TLS|TLS-u]] i [[Hibridno šifrovanje|hibridnom šifrovanju]].
 - Kvantni računar je simetričnoj kriptografiji mnogo manja pretnja nego asimetričnoj ([[Postkvantna kriptografija]]).
 

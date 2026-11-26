@@ -28,7 +28,7 @@ Firma danas uspostavlja TLS veze razmenom X25519 i potpisuje ažuriranja svog so
 
 - **Šorov algoritam** (1994) na kvantnom računaru efikasno rastavlja broj na činioce i rešava diskretni logaritam, pa razbija RSA, DH i ECC u potpunosti. Veći ključ ne pomaže.
 - **Groverov algoritam** (1996) isprobavanje 2^n mogućnosti skraćuje na oko 2^(n/2) koraka. AES-128 se tako ponaša kao ključ od oko 64 bita, a AES-256 kao ključ od oko 128 bita, što je dovoljno.
-- **Kako zamene utiču na sistem:** ML-KEM menja oblik razmene (KEM umesto DH) i povećava poruke rukovanja za oko 1,2 KB; ML-DSA povećava potpise i sertifikate (3309 bajtova naspram 64 kod Ed25519); SLH-DSA je sporiji i ima još veće potpise, ali počiva samo na heš funkcijama, pa mu je pretpostavka najkonzervativnija.
+- **Kako zamene utiču na sistem:** ML-KEM menja oblik razmene (KEM umesto DH) i povećava poruke rukovanja za oko 1,2 KB; ML-DSA povećava potpise i sertifikate (ML-DSA-65: 3309 bajtova naspram 64 kod Ed25519); SLH-DSA je sporiji i ima još veće potpise, ali počiva samo na heš funkcijama, pa mu je pretpostavka najkonzervativnija.
 - Kao rezervni KEM iz druge porodice (kodovi za ispravljanje grešaka) NIST je 2025. izabrao HQC, za slučaj da se nađe slabost rešetki.
 
 ## Česti propusti i zaštita
