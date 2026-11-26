@@ -8,7 +8,7 @@ sloj: jezgro
 # Napad iskorišćavanjem memorijske ranjivosti (memory corruption attack)
 
 ## Definicija
-Napad iskorišćavanjem memorijske ranjivosti je napad u kome napadač pripremljenim ulazom pokušava da naruši [[Memorijska bezbednost|memorijsku bezbednost]] programa kako bi stekao mogućnost da čita ili upisuje memoriju kojoj kroz predviđeni interfejs programa ne bi mogao da pristupi.
+Napad iskorišćavanjem memorijske ranjivosti je napad u kome napadač pripremljenim ulazom pokušava da naruši [[Memorijska bezbednost|memorijsku bezbednost]] programa kako bi stekao mogućnost da čita ili upisuje memoriju kojoj kroz predviđeni interfejs programa ne bi mogao da pristupi, ili da program sruši.
 
 ## Primer
 Napadač pošalje zahtev za izdavanje fakture sa pažljivo sastavljenim nazivom kupca od 200 bajtova. Modul za generisanje PDF faktura u [[Fakturis]] ga kopira u [[Bafer|bafer]] od 64 bajta, pa [[Prekoračenje bafera|prekoračenje]] prepiše susedno polje sa statusom fakture i postavi ga na „plaćeno“. Napadač nema ovlašćenje da menja status, a ovako je stekao tu mogućnost.

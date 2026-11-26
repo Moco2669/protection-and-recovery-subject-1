@@ -25,7 +25,7 @@ void pdf_generate(const Request* request) {
 }
 ```
 
-Kada zahtev ne sadrži podatak o broju stranica, promenljiva `page_count` ostaje neinicijalizovana, ali se njena vrednost ipak koristi prilikom generisanja PDF-a. Vrednost je ostatak ranijeg sadržaja steka: može biti nasumičan broj stranica ili deo tuđeg podatka, koji se tada upisuje u PDF koji korisnik dobija.
+Kada zahtev ne sadrži podatak o broju stranica, promenljiva `page_count` ostaje neinicijalizovana, ali se njena vrednost ipak koristi prilikom generisanja PDF-a. U C-u je to nedefinisano ponašanje. Na konkretnim implementacijama, neinicijalizovana memorija može sadržati ostatke ranije upotrebe steka, što može dovesti do otkrivanja podataka iz prethodnih operacija ili zahteva.
 
 Kontraprimer: ako je promenljiva deklarisana kao `int page_count = 1;`, vrednost je uvek postavljena, pa ranjivosti nema. Ako bi modul pročitao inicijalizovan bajt iza kraja bafera, to je [[Čitanje van granica bafera]].
 
