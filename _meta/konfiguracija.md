@@ -27,5 +27,7 @@ Temeljni pojmovi i veze između njih preuzeti su iz predavanja *ZOSS 03: Osnovna
 ## Primarni kontekst
 [[Fakturis]], studija slučaja malog preduzeća. Skica, ne uslov definicija. Može se menjati, nadograđivati i uprošćavati kako projekat napreduje.
 
+Korišćenje Fakturisa u primerima je opciono. Primer može biti opšti (aplikacija, servis, firma bez imena) ili stvaran incident kada to bolje pokazuje pojam. Fakturis se koristi kada povezuje primere iz više beležaka ili kada je potreban konkretan kontekst za problem iz ove konfiguracije.
+
 ## Sekundarni konteksti
 - Za sada nema. Primeri sa predavanja (e-indeks, dostava hrane, gradski vodovod) mogu se koristiti kao sekundarni kada je to korisno.
