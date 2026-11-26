@@ -137,6 +137,17 @@ flowchart LR
   SD --> BK
 ```
 
+### Hipotetičke funkcije za primere injekcionih napada
+Ove funkcije nisu utvrđeni deo studije. Uvedene su samo da bi primeri za [[Injekcioni napad|injekcione napade]] i [[Napad spoljnim XML entitetom|napad spoljnim XML entitetom]] imali zajednički okvir. Formati, biblioteke i alati u tim primerima su ilustrativni. Primeri pokazuju šta bi bilo moguće kada bi funkcija bila ranjivo napisana, a ne potvrđene ranjivosti Fakturisa.
+
+1. **Razmena e-faktura u XML-u.** Proizvod izdatu fakturu može da izveze kao XML dokument, a korisnik može da uveze XML fakturu koju je primio od dobavljača. Pri izvozu proizvod sam upisuje podatke o izdavaocu iz naloga, a korisnik kroz formu menja stavke i napomenu. Pri uvozu proizvod izdavaoca prepoznaje po PIB-u iz dokumenta. Primeri: [[XML injekcija]] i [[Napad spoljnim XML entitetom]], uključujući zaštitna podešavanja parsera.
+2. **Zbirni XML dokument izvezenih faktura.** Proizvod izvezene e-fakture svih korisnika drži u jednom XML dokumentu u [[Skladište datoteka|skladištu datoteka]] i pretražuje ga [[XPath]] izrazom koji sadrži oznaku korisnika i naziv kupca. Zbirni dokument je namerno loš izbor dizajna. Primer: [[XPath injekcija]].
+3. **Pregled fakture za kupca.** Kupac dobija broj fakture i kontrolni kod i bez naloga otvara fakturu. U toj varijanti fakture su u MongoDB-u, kao u ilustrativnom primeru beleške [[Dokument-orijentisana baza podataka]]. Osnovna studija i dalje koristi PostgreSQL. Primer: [[NoSQL injekcija]].
+4. **Arhiva faktura za knjigovođu.** Korisnik može da preuzme ZIP arhivu svojih faktura za izabrani mesec, na primer za svog knjigovođu. Proizvod je pravi pozivom alata komandne linije na aplikacionom serveru, a naziv arhive unosi korisnik. Primer: [[Injekcija OS komandi]].
+5. **Podsetnik za neplaćene fakture.** Proizvod kupcima šalje podsetnik e-poštom. Korisnik može da prilagodi tekst podsetnika i u njega stavi oznake kao `{{ kupac }}` i `{{ iznos }}`, koje proizvod popunjava pomoću [[Mehanizam za šablone|mehanizma za šablone]]. Primer: [[Serverska injekcija šablona]].
+
+U svim slučajevima [[Nepouzdan ulaz|nepouzdan ulaz]] stiže tokom koji prelazi granicu poverenja, od korisnika ili kupca ka proizvodu. Dokument koji je pripremio dobavljač korisnika stiže istim putem, preko korisnika. Napadač je u primerima registrovani korisnik, a kod pregleda fakture svako ko može da pošalje zahtev za pregled. Ove funkcije ne dodaju nove komponente sistema.
+
 ## Napomena
 Ova beleška je skica za istraživanje teme. Može se menjati, nadograđivati i uprošćavati zavisno od napretka projekta. Konkretne ranjivosti i bezbednosni zahtevi dopisuju se kad zatrebaju, a ne unapred kao popis.
 
