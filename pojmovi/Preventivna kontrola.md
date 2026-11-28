@@ -22,6 +22,7 @@ Spoljni korisnik menja oznaku reda u zahtevu poslovnoj web aplikaciji i pokušav
 - ISO/IEC 27002:2022, odeljak 4.2(a), preventivno dejstvo vezuje za sprečavanje nastanka incidenta. Definicija je parafraza prilagođena pojmovima resursa i bezbednosnih svojstava, a ne doslovan prevod standarda.
 - Ovo je podela **prema svrsi**. Provera dozvole je istovremeno [[Tehnička kontrola|tehnička kontrola]], a deo je [[Kontrola pristupa|kontrole pristupa]].
 - Preventivnu ulogu mogu imati i [[Organizaciona kontrola|organizaciona]], [[Kadrovska kontrola|kadrovska]] i [[Fizička kontrola|fizička kontrola]]. Primeri su postupak odobravanja izmena, obuka zaposlenih i zaključavanje prostorije sa serverom.
+- [[Zaštita steka kanarincem|Kanarinac]], [[Randomizacija rasporeda adresnog prostora|ASLR]], [[Sprečavanje izvršavanja podataka|DEP]] i [[Integritet toka izvršavanja|CFI]] su preventivne kontrole koje otežavaju iskorišćavanje memorijskih ranjivosti: kanarinac prekida izvršavanje pre povratka preko prepisane povratne adrese, ASLR otežava predviđanje adresa, DEP sprečava izvršavanje instrukcija iz neizvršivih memorijskih stranica, a CFI odbija prenose kontrole ka nedozvoljenim odredištima. Nijedna ne uklanja samu ranjivost.
 - Prevencija ne garantuje da incident neće nastati. Dopunjuju je [[Detektivna kontrola|detektivne]] i [[Korektivna kontrola|korektivne kontrole]].
 - **Ideja za vizualizaciju:** zahtev → provera dozvole → dozvoljen pristup ili odbijanje.
 

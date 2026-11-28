@@ -21,6 +21,7 @@ Zaštitni zid firme ograničava pristup internim servisima sa interneta.
 ## Napomene
 - Ovo je podela **prema načinu sprovođenja**. Opisana kontrola ima [[Preventivna kontrola|preventivnu svrhu]].
 - Tehnička kontrola može imati i detektivnu ili korektivnu svrhu: automatsko upozorenje otkriva sumnjivo ponašanje, a mehanizam vraćanja pomaže oporavku.
+- [[Zaštita steka kanarincem]], [[Randomizacija rasporeda adresnog prostora|ASLR]], [[Sprečavanje izvršavanja podataka|DEP]] i [[Integritet toka izvršavanja|CFI]] su tehničke kontrole koje ublažavaju iskorišćavanje memorijskih ranjivosti. Kanarinac otkriva određena oštećenja steka, ASLR otežava predviđanje memorijskih adresa, DEP sprečava izvršavanje instrukcija iz neizvršivih memorijskih stranica, a CFI ograničava dozvoljene putanje izvršavanja.
 - [[Kontrola pristupa]] je oblast primene tehničkih kontrola. [[Sistem za zapise o radu]] i [[Sistem za rezervne kopije]] su komponente koje omogućavaju beleženje i pregled događaja, odnosno pravljenje kopija i vraćanje podataka. Sprovođenje kontrola pomoću tih komponenti zahteva i utvrđene postupke i odgovorne osobe.
 - [[Organizaciona kontrola|Organizaciona kontrola]] određuje ko odobrava i proverava pravila zaštitnog zida.
 - **Ideja za vizualizaciju:** internet → zaštitni zid → dozvoljene i blokirane veze ka servisima.
