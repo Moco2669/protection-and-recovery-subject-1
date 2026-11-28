@@ -35,7 +35,7 @@ void generate_pdf(const Request& request) {
 Kontraprimer: ako bi funkcija oslobodila `workspace` pre povratka i zatim ga ipak koristila, to je [[Korišćenje posle oslobađanja]], suprotna greška: memorija je oslobođena prerano, a ne nikad.
 
 ## Napomene
-- Curenje memorije nije samo po sebi [[Memorijska ranjivost]]: ne podrazumeva neispravan pristup izvan granica objekta niti pristup objektu nakon isteka njegovog životnog veka. Ako napadač može da izazove ponavljanje curenja, potrošnja memorije može da naraste do iscrpljivanja resursa i [[Narušavanje dostupnosti resursa|narušavanja dostupnosti]].
+- Curenje memorije nije samo po sebi [[Memorijska ranjivost]]: ne podrazumeva neispravan pristup izvan granica [[Memorijski objekat|memorijskog objekta]] niti pristup memorijskom objektu nakon isteka njegovog životnog veka. Ako napadač može da izazove ponavljanje curenja, potrošnja memorije može da naraste do iscrpljivanja resursa i [[Narušavanje dostupnosti resursa|narušavanja dostupnosti]].
 - MITRE CWE-401 koristi *memory leak* kao uobičajen naziv za neoslobađanje memorije, ali upozorava da se isti izraz koristi i za otkrivanje osetljivog sadržaja memorije. U ovoj belešci termin označava isključivo neoslobađanje alocirane memorije.
 - Nastaje pri [[Ručno upravljanje memorijom|ručnom upravljanju memorijom]], gde programer određuje kada se memorija oslobađa.
 - Nije svaka alokacija koja ostane zauzeta do završetka procesa curenje memorije. Memorija može namerno da se zadrži tokom celog životnog veka programa, ili vlasništvo nad njom može biti preneto drugom delu programa.

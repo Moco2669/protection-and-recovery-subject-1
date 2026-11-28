@@ -8,13 +8,13 @@ sloj: jezgro
 # Vremenska memorijska ranjivost (temporal memory safety vulnerability)
 
 ## Definicija
-Vremenska memorijska ranjivost je [[Memorijska ranjivost|memorijska ranjivost]] zbog koje program može da izvrši operaciju nad memorijskim objektom u trenutku kada objekat nije u stanju koje ta operacija zahteva: vrednost mora biti inicijalizovana da bi se čitala, a objekat mora još postojati da bi se čitao, upisivao ili oslobodio.
+Vremenska memorijska ranjivost je [[Memorijska ranjivost|memorijska ranjivost]] zbog koje program može da izvrši operaciju nad [[Memorijski objekat|memorijskim objektom]] u trenutku kada objekat nije u stanju koje ta operacija zahteva: vrednost mora biti inicijalizovana da bi se čitala, a objekat mora još postojati da bi se čitao, upisivao ili oslobodio.
 
 ## Primer
 Modul za generisanje PDF faktura u [[Fakturis]] oslobodi [[Bafer|bafer]] sa nazivom kupca kad zahtev bude odbijen, a zatim ga ipak upiše u PDF. Ako je ista memorija u međuvremenu dodeljena drugom zahtevu, PDF dobija njegove podatke.
 
 ## Napomene
-- Stanje objekta određuje koje su operacije dozvoljene. Vrednost može da se čita tek nakon inicijalizacije; čitanje i upis nisu dozvoljeni nakon prestanka životnog veka objekta, a dinamička alokacija može da se oslobodi samo jednom. Kod lokalnog objekta životni vek se završava, na primer, povratkom iz funkcije, iako nije eksplicitno oslobođen pozivom `free`.
+- Stanje memorijskog objekta određuje koje su operacije dozvoljene. Vrednost može da se čita tek nakon inicijalizacije; čitanje i upis nisu dozvoljeni nakon prestanka životnog veka memorijskog objekta, a dinamička alokacija može da se oslobodi samo jednom. Kod lokalnog objekta životni vek se završava, na primer, povratkom iz funkcije, iako nije eksplicitno oslobođen pozivom `free`.
 - Korišćenje posle oslobađanja i dvostruko oslobađanje nisu ista operacija. Prvo podrazumeva čitanje ili upis preko pokazivača nakon oslobađanja; drugo ponavljanje same operacije oslobađanja. MITRE CWE-672 opisuje širu klasu operacija nad resursom nakon isteka ili oslobađanja, a među demonstrativnim primerima navodi i dvostruko oslobađanje. U jednom od CWE hijerarhijskih prikaza CWE-415 je podvrsta CWE-672 i vodi se odvojeno od CWE-416 (Use After Free).
-- Klase se u praksi mogu preklapati, pa vrstu određuje uslov memorijske bezbednosti koji je prekršen. Pristup iza kraja bafera je [[Prostorna memorijska ranjivost|prostorna]] ranjivost; pristup oslobođenom baferu, [[Čitanje neinicijalizovane memorije|čitanje neinicijalizovane vrednosti]] i ponovljeno oslobađanje pripadaju vremenskoj klasi.
+- Klase se u praksi mogu preklapati, pa vrstu određuje uslov bezbednosti pristupa memoriji koji je prekršen. Pristup iza kraja bafera je [[Prostorna memorijska ranjivost|prostorna]] ranjivost; pristup oslobođenom baferu, [[Čitanje neinicijalizovane memorije|čitanje neinicijalizovane vrednosti]] i ponovljeno oslobađanje pripadaju vremenskoj klasi.
 - Vrste: [[Korišćenje posle oslobađanja]], [[Dvostruko oslobađanje]] i [[Čitanje neinicijalizovane memorije]].

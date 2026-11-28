@@ -8,7 +8,7 @@ sloj: jezgro
 # Čitanje neinicijalizovane memorije (uninitialized memory read)
 
 ## Definicija
-Čitanje neinicijalizovane memorije je [[Vremenska memorijska ranjivost]] zbog koje program može da pročita vrednost objekta koja nikada nije postavljena inicijalizacijom ni upisom.
+Čitanje neinicijalizovane memorije je [[Vremenska memorijska ranjivost]] zbog koje program može da pročita vrednost [[Memorijski objekat|memorijskog objekta]] koja nikada nije postavljena inicijalizacijom ni upisom.
 
 ## Primer
 U modulu za generisanje PDF faktura u [[Fakturis]]:
@@ -30,6 +30,6 @@ Kada zahtev ne sadrži podatak o broju stranica, promenljiva `page_count` ostaje
 Kontraprimer: ako je promenljiva deklarisana kao `int page_count = 1;`, vrednost je uvek postavljena, pa ranjivosti nema. Ako bi modul pročitao inicijalizovan bajt iza kraja bafera, to je [[Čitanje van granica bafera]].
 
 ## Napomene
-- Pokazivač i objekat su ispravni i unutar granica, ali vrednost nikada nije postavljena. Zato ovo nije [[Čitanje van granica bafera]].
+- Pokazivač i memorijski objekat su ispravni i unutar granica, ali vrednost nikada nije postavljena. Zato ovo nije [[Čitanje van granica bafera]].
 - Pročitana vrednost je obično ostatak ranije upotrebe memorije. Može otkriti tuđe podatke ([[Narušavanje poverljivosti podataka]]) ili dovesti do nepredvidivog ponašanja, uključujući rušenje programa.
-- Odnosi se na vrednost objekta, a ne na neinicijalizovani pokazivač, čija je klasifikacija otvorena (vidi [[Memorijska bezbednost]]).
+- Odnosi se na vrednost memorijskog objekta, a ne na neinicijalizovani pokazivač, čija je klasifikacija otvorena (vidi [[Bezbednost pristupa memoriji]]).

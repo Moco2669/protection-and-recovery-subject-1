@@ -8,7 +8,7 @@ sloj: jezgro
 # Prostorna memorijska ranjivost (spatial memory safety vulnerability)
 
 ## Definicija
-Prostorna memorijska ranjivost je [[Memorijska ranjivost|memorijska ranjivost]] zbog koje program može da pristupi memoriji van granica objekta preko pokazivača izvedenog iz tog objekta.
+Prostorna memorijska ranjivost je [[Memorijska ranjivost|memorijska ranjivost]] zbog koje program može da pristupi memoriji van granica [[Memorijski objekat|memorijskog objekta]] preko pokazivača izvedenog iz tog objekta.
 
 ## Primer
 Modul za generisanje PDF faktura u [[Softverski proizvod|softverskom proizvodu]] firme [[Fakturis]] kopira naziv kupca u [[Bafer|bafer]] od 64 bajta. Naziv od 200 bajtova navodi modul da upiše 136 bajtova van granica bafera.
